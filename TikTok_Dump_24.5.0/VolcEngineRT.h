@@ -563,8 +563,8 @@ typedef union {
 #pragma mark -
 
 //
-// File: /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/VolcEngineRTC.framework/VolcEngineRTC
-// UUID: C835236D-CF32-3318-8B69-3C6393E60215
+// File: VolcEngineRTC
+// UUID: 9DCC4551-FD97-3005-8706-5848A01C29CF
 //
 //                           Arch: arm64
 //                Current version: 330.0.0
@@ -576,9 +576,9 @@ typedef union {
 // Objective-C Garbage Collection: Unsupported
 //
 //                       Run path: @executable_path/../Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/Frameworks
+//                               = /Frameworks
 //                       Run path: @loader_path/Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/VolcEngineRTC.framework/Frameworks
+//                               = /Frameworks
 //
 
 @protocol AVCaptureVideoDataOutputSampleBufferDelegate <NSObject>
@@ -2498,6 +2498,8 @@ typedef union {
 - (void)destroy;
 - (void)dealloc;
 - (id)initWithRtcRoom:(struct IRtcRoom *)arg1 roomId:(id)arg2;
+- (void)rtcRoom:(id)arg1 onForwardStreamEvent:(id)arg2;
+- (void)rtcRoom:(id)arg1 onForwardStreamStateChanged:(id)arg2;
 - (void)rtcRoom:(id)arg1 onAudioStreamBanned:(id)arg2 isBanned:(_Bool)arg3;
 - (void)rtcRoom:(id)arg1 onVideoStreamBanned:(id)arg2 isBanned:(_Bool)arg3;
 - (void)rtcRoom:(id)arg1 onScreenVideoFramePlayStateChanged:(id)arg2 state:(unsigned long long)arg3;

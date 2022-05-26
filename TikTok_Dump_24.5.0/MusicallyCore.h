@@ -865,7 +865,7 @@ typedef union {
 
 //
 // File: MusicallyCore
-// UUID: DCCFDCFC-239E-3EAB-8B25-3B98AD733EC2
+// UUID: 0B29F68B-5048-3F16-90F0-6874E0EB2EE7
 //
 //                           Arch: arm64
 //                Current version: 1.0.0
@@ -1489,6 +1489,15 @@ typedef union {
 @end
 
 @protocol ACCFundSecurityCheckerProtocol
+@end
+
+@protocol ACCFuzzyNetServiceDelegate
+@end
+
+@protocol ACCFuzzyNetServiceProtocol
+@end
+
+@protocol ACCFuzzyNetToastProtocol
 @end
 
 @protocol ACCGameProvideProtocol
@@ -2205,6 +2214,9 @@ typedef union {
 @protocol ACCThemeChangeSubscriber
 @end
 
+@protocol ACCTikTokVideoConfigProtocol
+@end
+
 @protocol ACCToastProtocol
 @end
 
@@ -2426,9 +2438,6 @@ typedef union {
 @end
 
 @protocol AFURLResponseSerialization
-@end
-
-@protocol AMSearchRateProtocol
 @end
 
 @protocol APAddressBookExternalChangeDelegate
@@ -2859,9 +2868,6 @@ typedef union {
 @protocol AWEAppPlatformSettingMessage
 @end
 
-@protocol AWEAppSearchSettingManagerProtocol
-@end
-
 @protocol AWEAppSettingGetterProtocol
 @end
 
@@ -2899,9 +2905,6 @@ typedef union {
 @end
 
 @protocol AWEAvatarMattingViewDelegate
-@end
-
-@protocol AWEAweDoubleColumnDynamicCoverProtocol
 @end
 
 @protocol AWEAwemeContainerTableViewCellProtocol
@@ -3176,9 +3179,6 @@ typedef union {
 @protocol AWECommentGuideDelegate
 @end
 
-@protocol AWECommentListHeaderViewExtraInfoProtocol
-@end
-
 @protocol AWECommentListInputViewDataSource
 @end
 
@@ -3437,16 +3437,7 @@ typedef union {
 @protocol AWEDoubleColumnFeedDataController
 @end
 
-@protocol AWEDoubleColumnRecomMenuDelegate
-@end
-
 @protocol AWEDylibAdapterProtocol
-@end
-
-@protocol AWEDynamicCoverManager
-@end
-
-@protocol AWEDynamicCoverStrategyProtocol
 @end
 
 @protocol AWEEULAManagerProtocol
@@ -3506,9 +3497,6 @@ typedef union {
 @protocol AWEFavoriteMusicTableViewCellDelegate
 @end
 
-@protocol AWEFeedCollectionViewControllerProtocol
-@end
-
 @protocol AWEFeedContainerViewControllerProtocol
 @end
 
@@ -3525,9 +3513,6 @@ typedef union {
 @end
 
 @protocol AWEFeedModuleService
-@end
-
-@protocol AWEFeedNearbyCollectionCellProtocol
 @end
 
 @protocol AWEFeedPreloadManagerDelegate
@@ -3593,12 +3578,6 @@ typedef union {
 @protocol AWEGeneralPopupProtocol
 @end
 
-@protocol AWEGeneralSearchChunkControllerDelegate
-@end
-
-@protocol AWEGeneralSearchRecomMenuDelegate
-@end
-
 @protocol AWEGradientPunishManagerProtocol
 @end
 
@@ -3627,9 +3606,6 @@ typedef union {
 @end
 
 @protocol AWEHttpTask
-@end
-
-@protocol AWEHybridAudioPlayerManagerDelegate
 @end
 
 @protocol AWEI18NOnboardingContainer
@@ -3977,6 +3953,9 @@ typedef union {
 @protocol AWEIMMessagePanelTrackerProtocol
 @end
 
+@protocol AWEIMMessageReactionBarViewDelegate
+@end
+
 @protocol AWEIMModuleService
 @end
 
@@ -4158,25 +4137,6 @@ typedef union {
 @end
 
 @protocol AWEInviteUserTableViewCellProtocol
-@end
-
-@protocol AWEIronManModuleService
-@end
-
-@protocol AWEIrregularWordProtocol <NSObject>
-- (NSString *)getDisplayWord;
-
-@optional
-@property(copy, nonatomic) NSAttributedString *pureTextContent;
-- (NSString *)getQueryType;
-- (unsigned long long)getTagType;
-- (double)getTagPadding;
-- (long long)getRankPosition;
-- (NSString *)getWordID;
-- (NSString *)getSearchWord;
-@end
-
-@protocol AWEIrregularWordsViewControllerProtocol
 @end
 
 @protocol AWELabelDelegate
@@ -4392,6 +4352,9 @@ typedef union {
 @protocol AWEModernFeedCellContext
 @end
 
+@protocol AWEModernFullScreenTransManagerProtocol
+@end
+
 @protocol AWEModernFullscreenTransitionInnerContextProvider
 @end
 
@@ -4561,16 +4524,22 @@ typedef union {
 @protocol AWENetworkSpeedModeService
 @end
 
+@protocol AWENetworkTrafficEngineType
+@end
+
 @protocol AWENetworkTrafficMonitorDataSource
+@end
+
+@protocol AWENetworkTrafficObserverType
+@end
+
+@protocol AWENetworkTrafficResultType
 @end
 
 @protocol AWENewAdOpenGuideView
 @end
 
 @protocol AWENewAdOpenGuideViewDelegate
-@end
-
-@protocol AWENewCollectionDelegateWaterfallLayout
 @end
 
 @protocol AWENewCollectionViewWaterfallLayoutProtocol
@@ -4933,9 +4902,6 @@ typedef union {
 @protocol AWERegionServiceProtocol
 @end
 
-@protocol AWERegularWordProtocol
-@end
-
 @protocol AWERelationListDataProtocol
 @end
 
@@ -4991,67 +4957,13 @@ typedef union {
 @protocol AWERxStoreProtocol
 @end
 
-@protocol AWESearchActionListenerProtocol
-@end
-
 @protocol AWESearchBarPlaceholderDelegate
 @end
 
-@protocol AWESearchChildViewControllerProtocol
-@end
-
-@protocol AWESearchChildViewEventTrackDataProtocol
-@end
-
-@protocol AWESearchDynamicTableViewCellDelegate
-@end
-
-@protocol AWESearchFIlmTVEpisodeSheetProtocol
-@end
-
-@protocol AWESearchFilmTVEpisodesProtocol
-@end
-
-@protocol AWESearchFilmTVTagViewProtocol
-@end
-
-@protocol AWESearchGeneralFlowChunkDataReceiver
-@end
-
-@protocol AWESearchLynxEngineDelegate
-@end
-
-@protocol AWESearchMiddleProtocol
-@end
-
-@protocol AWESearchMiddleViewControllerProtocol
-@end
-
-@protocol AWESearchModuleService
-@end
-
-@protocol AWESearchMultiFeedFallThroughProtocol
-@end
-
-@protocol AWESearchPlaceholderProtocol
+@protocol AWESearchBundleService
 @end
 
 @protocol AWESearchPlayVideoPlayerControllerBizDelegate
-@end
-
-@protocol AWESearchRelatedSearchCellDelegate
-@end
-
-@protocol AWESearchResultViewControllerDelegate
-@end
-
-@protocol AWESearchSugTableViewCellDelegate
-@end
-
-@protocol AWESearchSugViewControllerProtocol
-@end
-
-@protocol AWESearchTopUserContentCellProtocol
 @end
 
 @protocol AWESecondaryDiggListDataControllerProtocol
@@ -5746,9 +5658,6 @@ typedef union {
 @protocol AWEUILoadingProvider
 @end
 
-@protocol AWEUILoadingSearchProtocol
-@end
-
 @protocol AWEUILoadingViewProtocol
 @end
 
@@ -6066,9 +5975,6 @@ typedef union {
 @protocol AWEVideoMusicManager
 @end
 
-@protocol AWEVideoNewPublishViewControllerPOI
-@end
-
 @protocol AWEVideoPlayBitrateControlerProtocol
 @end
 
@@ -6103,6 +6009,9 @@ typedef union {
 @end
 
 @protocol AWEVideoRecorderMessage
+@end
+
+@protocol AWEVideoRouterCreatorPreviewService
 @end
 
 @protocol AWEVideoSyncFramesProtocol
@@ -6281,6 +6190,9 @@ typedef union {
 @end
 
 @protocol BDConfigCenterDelegate
+@end
+
+@protocol BDContactsChangeRoutineDelegate
 @end
 
 @protocol BDDiskCache
@@ -6747,9 +6659,6 @@ typedef union {
 @protocol BDXLynxDevtoolProtocol
 @end
 
-@protocol BDXLynxElement
-@end
-
 @protocol BDXLynxFoldHeaderViewProDelegate
 @end
 
@@ -6787,6 +6696,9 @@ typedef union {
 @end
 
 @protocol BDXLynxScrollViewBounceView
+@end
+
+@protocol BDXLynxScrollViewUIDelegate
 @end
 
 @protocol BDXLynxSwiperDelegate
@@ -7169,9 +7081,6 @@ typedef union {
 @end
 
 @protocol DVECommonPanelSliderViewModelDelegate
-@end
-
-@protocol DVEComplementaryFrameContextProtocol
 @end
 
 @protocol DVEComponentActionProtocol
@@ -7789,6 +7698,9 @@ typedef union {
 @protocol FeedBackMessageCellProtocol
 @end
 
+@protocol GBLAnchorBusinessStatusAction
+@end
+
 @protocol GBLAnchorCenterAnimatorDelegate
 @end
 
@@ -8174,6 +8086,9 @@ typedef union {
 @property(retain, nonatomic) GBLHybridSparkWrapperProxy *liveSparkProxy;
 @end
 
+@protocol GBLHybridSparkContainer
+@end
+
 @protocol GBLHybridSparkRouterService
 @end
 
@@ -8282,6 +8197,9 @@ typedef union {
 @protocol GBLMessageCenterAnimatorDelegate
 @end
 
+@protocol GBLMessageCenterFilterToolbarDelegate
+@end
+
 @protocol GBLMessageCenterMessagesViewControllerDelegate
 @end
 
@@ -8292,6 +8210,12 @@ typedef union {
 @end
 
 @protocol GBLMessageConsumerFeedback
+@end
+
+@protocol GBLMessageGiftFilterActions
+@end
+
+@protocol GBLMessageGiftFilterRouter
 @end
 
 @protocol GBLMessageHandlerDelegate
@@ -8306,7 +8230,13 @@ typedef union {
 @protocol GBLMessageTracker
 @end
 
+@protocol GBLMessagesStorageDelegate
+@end
+
 @protocol GBLMessagesTableViewEventDelegate
+@end
+
+@protocol GBLMessagesTableViewUpdaterDataSource
 @end
 
 @protocol GBLMessagesViewDelegate
@@ -8445,6 +8375,9 @@ typedef union {
 @end
 
 @protocol GBLShortTouchRouter
+@end
+
+@protocol GBLSparkViewContainerProtocol
 @end
 
 @protocol GBLStartLiveRouter
@@ -9212,6 +9145,18 @@ typedef union {
 @protocol IESFalconMonitorInterceptor
 @end
 
+@protocol IESForestFetcherProtocol
+@end
+
+@protocol IESForestInterceptor
+@end
+
+@protocol IESForestRequestOperation
+@end
+
+@protocol IESForestResponseProtocol
+@end
+
 @protocol IESGLMovieWriterDelegate
 @end
 
@@ -9875,6 +9820,9 @@ typedef union {
 @protocol IESLiveMTAnchorFunctionGuideRouter
 @end
 
+@protocol IESLiveMTAnchorGameMonitor
+@end
+
 @protocol IESLiveMTAnchorGiftPreferenceService
 @end
 
@@ -9955,6 +9903,9 @@ typedef union {
 @end
 
 @protocol IESLiveMTAudienceFinishProtocol
+@end
+
+@protocol IESLiveMTAudienceGameLiveMonitor
 @end
 
 @protocol IESLiveMTAudienceListActions
@@ -10635,6 +10586,9 @@ typedef union {
 @protocol IESLiveMTMicInstanceProtocol
 @end
 
+@protocol IESLiveMTMicInviteeListProtocol
+@end
+
 @protocol IESLiveMTMicSettingSwitchCellDelegate
 @end
 
@@ -11122,6 +11076,9 @@ typedef union {
 @end
 
 @protocol IESLivePiperProtocol
+@end
+
+@protocol IESLivePlayerMessageAction
 @end
 
 @protocol IESLivePlayerSettings
@@ -11643,6 +11600,7 @@ typedef union {
 - (void)refreshEffectColorSpace:(VEColorSpaceInfo *)arg1;
 - (void)releaseCaptureImage:(VEEffectImage *)arg1;
 - (VEEffectImage *)getEffectCapturedImageWithKey:(NSString *)arg1;
+- (void)setEffectCacheDirectory:(NSString *)arg1;
 - (void)setEffectAudioPlayerEndMessage:(long long)arg1;
 - (void)setEffectAudioPlayerFactory:(void *)arg1;
 - (void)setEffectGenBitmap:(int (^)(char **, int *, int *, int *, char *, int, struct))arg1 utf32Gen:(int (^)(char **, int *, int *, int *, unsigned int *, int, struct))arg2;
@@ -11874,9 +11832,6 @@ typedef union {
 @protocol IGListAdapterDataSource
 @end
 
-@protocol IGListAdapterDelegate
-@end
-
 @protocol IGListAdapterUpdaterDelegate
 @end
 
@@ -11938,9 +11893,6 @@ typedef union {
 @end
 
 @protocol IGListScrollDelegate
-@end
-
-@protocol IGListSingleSectionControllerDelegate
 @end
 
 @protocol IGListSupplementaryViewSource
@@ -12383,6 +12335,9 @@ typedef union {
 @protocol LCLogReportDelegate
 @end
 
+@protocol LCPlayerDelegate
+@end
+
 @protocol LOTAnimationDelegate
 @end
 
@@ -12420,6 +12375,9 @@ typedef union {
 @end
 
 @protocol LSLiveAudioAlgorithmProcessor
+@end
+
+@protocol LSLiveAudioMixerProtocol
 @end
 
 @protocol LSLiveEffectABInfoProtocol <NSObject>
@@ -13041,7 +12999,37 @@ typedef union {
 @protocol POPAnimationDelegate
 @end
 
+@protocol PTYApplogHookProtocol
+@end
+
+@protocol PTYCrashContextProtocol
+@end
+
+@protocol PTYEventTrackerProtocol
+@end
+
+@protocol PTYMemoryMonitorProtocol
+@end
+
+@protocol PTYMonitorProtocol
+@end
+
+@protocol PTYNetworkProtocol
+@end
+
+@protocol PTYOpenTraceProtocol
+@end
+
+@protocol PTYReachabilityProtocol
+@end
+
 @protocol PTYSettingProtocol
+@end
+
+@protocol PTYUnZipProtocol
+@end
+
+@protocol PTYUserExceptionProtocol
 @end
 
 @protocol Push
@@ -13108,6 +13096,9 @@ typedef union {
 @end
 
 @protocol SKStoreProductViewControllerDelegate
+@end
+
+@protocol SRWebSocketDelegate
 @end
 
 @protocol STHookInfo
@@ -13402,6 +13393,9 @@ typedef union {
 @end
 
 @protocol TIMMonitorService
+@end
+
+@protocol TIMNetworkCaptureProtocol
 @end
 
 @protocol TIMNetworkRequestUpdater
@@ -13830,9 +13824,6 @@ typedef union {
 @protocol TTKAdSuperlikeLynxViewManager
 @end
 
-@protocol TTKAdaptPublishPageTitleInputZoomStateProtocol
-@end
-
 @protocol TTKAdaptivityEventProtocol
 @end
 
@@ -13882,9 +13873,6 @@ typedef union {
 @end
 
 @protocol TTKAuthorizedAppViewControllerProtocol
-@end
-
-@protocol TTKAutoGeneratedCaptionsManagerProtocol
 @end
 
 @protocol TTKAutoTestConfig
@@ -13959,6 +13947,9 @@ typedef union {
 @protocol TTKCLACaptionTrackerProvider
 @end
 
+@protocol TTKCLACaptionsManagerProtocol
+@end
+
 @protocol TTKCTableViewUpdatableDiffable
 @end
 
@@ -13971,9 +13962,6 @@ typedef union {
 @protocol TTKCampaignFeedBottomBarProtocol
 @end
 
-@protocol TTKCampaignFloatingNoticeViewDelegate
-@end
-
 @protocol TTKCampaignPendantBubbleViewDelegate
 @end
 
@@ -13984,6 +13972,9 @@ typedef union {
 @end
 
 @protocol TTKCampaignTaskOperationMessage
+@end
+
+@protocol TTKCaptionFoldStateManagerProtocol
 @end
 
 @protocol TTKChallengeAdTagView
@@ -14082,9 +14073,6 @@ typedef union {
 @protocol TTKCommerceLiveProductCardManager
 @end
 
-@protocol TTKCommercePlayVideoInteractionDelegate
-@end
-
 @protocol TTKCommerceShowTimeGapManager
 @end
 
@@ -14098,6 +14086,9 @@ typedef union {
 @end
 
 @protocol TTKContactCellContentViewDelegate
+@end
+
+@protocol TTKContactsService
 @end
 
 @protocol TTKCreatorToolsProtocol
@@ -14285,6 +14276,9 @@ typedef union {
 @protocol TTKFeedDescriptionCalculatorProtocol
 @end
 
+@protocol TTKFeedDetailBizPanelDataSource
+@end
+
 @protocol TTKFeedDetailBottomBarEffectViewServiceProtocol
 @end
 
@@ -14346,6 +14340,9 @@ typedef union {
 @end
 
 @protocol TTKFeedDetailPageStatusServiceProtocol
+@end
+
+@protocol TTKFeedDetailPanelServiceProtocol
 @end
 
 @protocol TTKFeedDetailPlayControlMultipleDelegate
@@ -14453,6 +14450,9 @@ typedef union {
 @protocol TTKFeedInteractionNodeTreeConfigProtocol
 @end
 
+@protocol TTKFeedInteractionNodeVisibilityProtocol
+@end
+
 @protocol TTKFeedInteractionPlayerDelegateProtocol
 @end
 
@@ -14460,6 +14460,9 @@ typedef union {
 @end
 
 @protocol TTKFeedInteractionViewElementProtocol
+@end
+
+@protocol TTKFeedInteractionViewModeProtocol
 @end
 
 @protocol TTKFeedLiveSkylightComponentProtocol
@@ -14576,6 +14579,9 @@ typedef union {
 @protocol TTKFeedServiceContextProtocol
 @end
 
+@protocol TTKFeedSingleAwemeDataControllerProtocol
+@end
+
 @protocol TTKFeedStoryComponentProtocol
 @end
 
@@ -14628,9 +14634,6 @@ typedef union {
 @end
 
 @protocol TTKFeedbackRecorderService
-@end
-
-@protocol TTKFeedbackViewDelegate
 @end
 
 @protocol TTKFilterVideoKeywordsDataManagerDelegate
@@ -14751,6 +14754,9 @@ typedef union {
 @end
 
 @protocol TTKHorizontalUserSuggestionCardProtocol
+@end
+
+@protocol TTKHybridAudioPlayerManagerProtocol
 @end
 
 @protocol TTKIMGiphyBarProtocol
@@ -15197,9 +15203,6 @@ typedef union {
 @protocol TTKOrbuSDKInterceptorCaller
 @end
 
-@protocol TTKOtherFeedbackViewDelegate
-@end
-
 @protocol TTKPOIDetailHeaderViewDelegate
 @end
 
@@ -15225,6 +15228,12 @@ typedef union {
 @end
 
 @protocol TTKPageTransferDelegate
+@end
+
+@protocol TTKPaidContentPolicy
+@end
+
+@protocol TTKPaidContentServiceProtocol
 @end
 
 @protocol TTKPendantBubbleControllerDelegate
@@ -15300,9 +15309,6 @@ typedef union {
 @end
 
 @protocol TTKPlayerTrackerProtocol
-@end
-
-@protocol TTKPoplayerProtocol
 @end
 
 @protocol TTKPopupCenterInternalProtocol
@@ -15602,100 +15608,22 @@ typedef union {
 @protocol TTKSearchAdLearnMoreView
 @end
 
-@protocol TTKSearchAdViewControllerDelegate
-@end
-
-@protocol TTKSearchAudioPlayerServiceProtocol
-@end
-
-@protocol TTKSearchBulletContainerDelegate
-@end
-
-@protocol TTKSearchCardViewProtocol
-@end
-
-@protocol TTKSearchCommonCollectionViewCellDelegate
-@end
-
-@protocol TTKSearchContaienrServiceProtocol
-@end
-
-@protocol TTKSearchContainerAutoPlayServiceProtocol
-@end
-
-@protocol TTKSearchContainerListServiceProtocol
-@end
-
-@protocol TTKSearchContainerSectionControllerDelegate
-@end
-
-@protocol TTKSearchContainerThemeServiceProtocol
-@end
-
-@protocol TTKSearchContainerTrackerServiceProtocol
-@end
-
-@protocol TTKSearchContainerTransitionServiceProtocol
-@end
-
-@protocol TTKSearchDynamicTableViewCellProtocol
-@end
-
 @protocol TTKSearchHistoryManagerProtocol
-@end
-
-@protocol TTKSearchHorizontalDelegate
-@end
-
-@protocol TTKSearchHorizontalViewCellProtocol
 @end
 
 @protocol TTKSearchLearnMoreViewContainer
 @end
 
-@protocol TTKSearchLynxContainerDataSourceProtocol
-@end
-
-@protocol TTKSearchLynxElementStatusDelegate
-@end
-
-@protocol TTKSearchLynxElementViewProtocol
-@end
-
-@protocol TTKSearchLynxLiveViewPlayerDelegate
-@end
-
-@protocol TTKSearchMessageDeliverer
-@end
-
-@protocol TTKSearchMessageHandler
-@end
-
 @protocol TTKSearchQueryListManager
 @end
 
-@protocol TTKSearchSparkCollectionViewCellDelegate
-@end
-
-@protocol TTKSearchSparkContainerDelegate
-@end
-
 @protocol TTKSearchTextFieldDelegate
-@end
-
-@protocol TTKSearchThemeColorProvider
 @end
 
 @protocol TTKSearchTrendingInflowContainerTableViewCellProtocol
 @end
 
 @protocol TTKSearchUserSuggestionElement
-@end
-
-@protocol TTKSearchVideoCollectionViewCellDelegate
-@end
-
-@protocol TTKSearchVideoViewPlayerDelegate
 @end
 
 @protocol TTKSelectMusicContainerParamsProtocol
@@ -16258,6 +16186,9 @@ typedef union {
 @protocol TTVideoEngineEventOneOutSyncProtocol
 @end
 
+@protocol TTVideoEngineFFmpegProtocol
+@end
+
 @protocol TTVideoEngineInternalDelegate
 @end
 
@@ -16638,9 +16569,6 @@ typedef union {
 @protocol TikTokAlogReporterProtocol
 @end
 
-@protocol TikTokAlogTrackerProtocol
-@end
-
 @protocol TikTokBizBridgeModuleService
 @end
 
@@ -16767,6 +16695,9 @@ typedef union {
 @protocol TikTokECSkuHeaderViewDelegate
 @end
 
+@protocol TikTokECVoucherSubscribeProtocol
+@end
+
 @protocol TikTokECommerceFeedCommodityAnchorConfigProtocol
 @end
 
@@ -16831,19 +16762,7 @@ typedef union {
 @protocol TikTokInfraConfigModuleInterface
 @end
 
-@protocol TikTokInlayScrollPanelActionDelegate
-@end
-
-@protocol TikTokInlayScrollPanelContentView
-@end
-
-@protocol TikTokInlayScrollPanelTopView
-@end
-
 @protocol TikTokInviteFriendCombineAvatarViewProtocol
-@end
-
-@protocol TikTokInviteSearchTableViewCellProtocol
 @end
 
 @protocol TikTokKidsAntiAddictedTimeManager
@@ -16941,6 +16860,12 @@ typedef union {
 @end
 
 @protocol TikTokLibraSettingManagerProtocol
+@end
+
+@protocol TikTokLiveAnchorBusinessService
+@end
+
+@protocol TikTokLiveAudienceBusinessService
 @end
 
 @protocol TikTokLiveBubbleProvider
@@ -17057,9 +16982,6 @@ typedef union {
 @end
 
 @protocol TikTokLiveToolbarProvider
-@end
-
-@protocol TikTokLiveTrackerHelper
 @end
 
 @protocol TikTokLiveUserService
@@ -17223,100 +17145,19 @@ typedef union {
 @protocol TikTokScanImagePickerProtocol
 @end
 
-@protocol TikTokSearchAladdinVideoListDataSourceHolder
-@end
-
-@protocol TikTokSearchAladdinVideoListProtocol
-@end
-
-@protocol TikTokSearchAutoPlayCardProtocol
-@end
-
-@protocol TikTokSearchAutoPlayContainerProtocol
-@end
-
-@protocol TikTokSearchAutoPlayHotZoneRule
-@end
-
 @protocol TikTokSearchBarMarqueePlaceholderViewDelegate
-@end
-
-@protocol TikTokSearchDynamicSectionControllerDelegate
-@end
-
-@protocol TikTokSearchDynamicTableViewCellDelegate
 @end
 
 @protocol TikTokSearchEntryService
 @end
 
-@protocol TikTokSearchGuideSearchComponentContextProvider
-@end
-
-@protocol TikTokSearchGuideSearchComponentDelegate
-@end
-
-@protocol TikTokSearchGuideSearchViewActionDelegate
-@end
-
-@protocol TikTokSearchGuideSearchViewDataSource
-@end
-
-@protocol TikTokSearchHorizontalAutoPlayCellProtocol
-@end
-
-@protocol TikTokSearchHorizontalAutoPlayViewDelegate
-@end
-
-@protocol TikTokSearchHotSpotBottomViewDelegate
-@end
-
 @protocol TikTokSearchMusicUGCNoticeTableViewCellProtocol
-@end
-
-@protocol TikTokSearchPlaceholderCellDelegate
-@end
-
-@protocol TikTokSearchPlaceholderDataSource
-@end
-
-@protocol TikTokSearchPlaceholderDelegate
-@end
-
-@protocol TikTokSearchPlaylistDataManagerDelegate
-@end
-
-@protocol TikTokSearchResultCorrectListener
-@end
-
-@protocol TikTokSearchResultStickyComponentViewModel
-@end
-
-@protocol TikTokSearchSortAndFilterButton
-@end
-
-@protocol TikTokSearchSortAndFilterPanelFeedbackViewActionDelegate
-@end
-
-@protocol TikTokSearchSortAndFilterPanelTopViewActionDelegate
-@end
-
-@protocol TikTokSearchSortAndFilterTableViewDataSource
-@end
-
-@protocol TikTokSearchSortAndFilterTableViewDelegate
 @end
 
 @protocol TikTokSearchSortAndFilterTrackerContextProvider
 @end
 
-@protocol TikTokSearchSortAndFilterViewController
-@end
-
 @protocol TikTokSearchSortAndFilterViewControllerDelegate
-@end
-
-@protocol TikTokSearchUserManagerProtocol
 @end
 
 @protocol TikTokSettingsModuleService
@@ -17350,9 +17191,6 @@ typedef union {
 @end
 
 @protocol TikTokStudioDetailCollectionServiceProtocol
-@end
-
-@protocol TikTokStudioDraftConfigProtocol
 @end
 
 @protocol TikTokStudioExternalRouterServiceProtocol
@@ -19618,6 +19456,12 @@ typedef union {
 
 @end
 
+@interface AWELazyRegisterDylibPremain : NSObject
+{
+}
+
+@end
+
 @interface AWEBaseListViewController : UIViewController
 {
 }
@@ -20267,6 +20111,66 @@ typedef union {
 @end
 
 @interface ADCAdAttributionResponseModel : NSObject
+{
+}
+
+@end
+
+@interface ASFAddDiffFilter : ASFImageFilter
+{
+}
+
+@end
+
+@interface ASFCalcGammaFilter : ASFImageFilter
+{
+}
+
+@end
+
+@interface ASFBoxFilter : ASFImageFilter
+{
+}
+
+@end
+
+@interface ASFRGB2YUVFilter : ASFImageFilter
+{
+}
+
+@end
+
+@interface ASFCalcDiffFilter : ASFImageFilter
+{
+}
+
+@end
+
+@interface ASFCopyUVFilter : ASFImageFilter
+{
+}
+
+@end
+
+@interface ASFYUV2RGBFilter : ASFImageFilter
+{
+}
+
+@end
+
+@interface ASFMetalContext : NSObject
+{
+}
+
+@end
+
+@interface ASFImageFilter : NSObject
+{
+}
+
+@end
+
+@interface ASFAdaptiveSharpen : NSObject
 {
 }
 
@@ -21520,6 +21424,120 @@ typedef union {
 
 @end
 
+@interface BDContactBaseHelper : NSObject
+{
+}
+
+@end
+
+@interface BDContactsAccessRoutine : BDContactsBaseRoutine
+{
+}
+
+@end
+
+@interface BDContactsBaseRoutine : NSObject
+{
+}
+
+@end
+
+@interface BDContactsBuilder : NSObject
+{
+}
+
+@end
+
+@interface BDContactsDataExtractors : NSObject
+{
+}
+
+@end
+
+@interface BDContactsExternalChangeRountine : BDContactsBaseRoutine
+{
+}
+
+@end
+
+@interface BDContactsKit : NSObject
+{
+}
+
+@end
+
+@interface BDContactsModel : NSObject
+{
+}
+
+@end
+
+@interface BDName : NSObject
+{
+}
+
+@end
+
+@interface BDJob : NSObject
+{
+}
+
+@end
+
+@interface BDPhone : NSObject
+{
+}
+
+@end
+
+@interface BDWebSite : NSObject
+{
+}
+
+@end
+
+@interface BDEmail : NSObject
+{
+}
+
+@end
+
+@interface BDAddress : NSObject
+{
+}
+
+@end
+
+@interface BDSocialProfile : NSObject
+{
+}
+
+@end
+
+@interface BDInstantMessage : NSObject
+{
+}
+
+@end
+
+@interface BDRelatedPerson : NSObject
+{
+}
+
+@end
+
+@interface BDContactDate : NSObject
+{
+}
+
+@end
+
+@interface BDContactsStoreRoutine : BDContactsBaseRoutine
+{
+}
+
+@end
+
 @interface BDDateFormatter : NSObject
 {
 }
@@ -22138,6 +22156,12 @@ typedef union {
 @end
 
 @interface BDSDKPrivacyCertEntry : BDPrivacyCertEntry
+{
+}
+
+@end
+
+@interface BDTokenCert : NSObject
 {
 }
 
@@ -26889,6 +26913,12 @@ typedef union {
 
 @end
 
+@interface AWEStudioPanelErrorView : UIView
+{
+}
+
+@end
+
 @interface AWESwitchModeSingleTabConfig : NSObject
 {
 }
@@ -27777,30 +27807,6 @@ typedef union {
 
 @end
 
-@interface DVEComplementaryFrameContext : NSObject
-{
-}
-
-@end
-
-@interface DVEComplementaryFrameOperation : NSOperation
-{
-}
-
-@end
-
-@interface DVEComplementaryFrameOperationGroup : NSObject
-{
-}
-
-@end
-
-@interface DVEComplementaryFrameViewModel : NSObject
-{
-}
-
-@end
-
 @interface DVEEditingContext : NSObject
 {
 }
@@ -28497,6 +28503,12 @@ typedef union {
 
 @end
 
+@interface IESRewardEffectResponseModel : MTLModel
+{
+}
+
+@end
+
 @interface IESSearchEffectsModel : MTLModel
 {
 }
@@ -28798,6 +28810,12 @@ typedef union {
 @end
 
 @interface MPSCNNMatrixMulBufferC4 : MPSCNNKernel
+{
+}
+
+@end
+
+@interface MPSCNNOnnxMatmul : MPSCNNKernel
 {
 }
 
@@ -44899,6 +44917,18 @@ typedef union {
 
 @end
 
+@interface HybridForestResourceLoader : NSObject
+{
+}
+
+@end
+
+@interface HybridResourceConfig : NSObject
+{
+}
+
+@end
+
 @interface HybridRLTask : NSObject
 {
 }
@@ -48034,6 +48064,12 @@ typedef union {
 
 @end
 
+@interface GBLCohostPreviewPullStreamApi : HTSLiveApi
+{
+}
+
+@end
+
 @interface IESLiveMTAnchorInviteeListViewController : IESLiveMTPopupBaseViewController
 {
 }
@@ -48568,13 +48604,25 @@ typedef union {
 
 @end
 
-@interface GBLHybridSparkRouter : NSObject
+@interface GBLHybridSparkWrapperProxy : NSProxy
 {
 }
 
 @end
 
-@interface GBLHybridSparkWrapperProxy : NSProxy
+@interface GBLHybridSparkCardContainerDelegateProxy : NSProxy
+{
+}
+
+@end
+
+@interface GBLHybridSparkCardView : SparkView
+{
+}
+
+@end
+
+@interface GBLHybridSparkRouter : NSObject
 {
 }
 
@@ -48712,30 +48760,6 @@ typedef union {
 
 @end
 
-@interface HTSLiveGiftDoodle : MTLModel
-{
-}
-
-@end
-
-@interface HTSLiveGiftPoint : MTLModel
-{
-}
-
-@end
-
-@interface HTSLivePKContributeListData : MTLModel
-{
-}
-
-@end
-
-@interface HTSLivePKContributeData : MTLModel
-{
-}
-
-@end
-
 @interface HTSLiveMessageDuplicatedFilter : NSObject
 {
 }
@@ -48761,6 +48785,12 @@ typedef union {
 @end
 
 @interface HTSGroupedLiveMessageHandler : HTSLiveMessageHandler
+{
+}
+
+@end
+
+@interface GBLIMTracker : NSObject
 {
 }
 
@@ -49043,6 +49073,18 @@ typedef union {
 @end
 
 @interface IESLiveVIPInfoModel : MTLModel
+{
+}
+
+@end
+
+@interface HTSLivePKContributeListData : MTLModel
+{
+}
+
+@end
+
+@interface HTSLivePKContributeData : MTLModel
 {
 }
 
@@ -52050,6 +52092,12 @@ typedef union {
 
 @end
 
+@interface GBLSubscriptionChainTracker : NSObject
+{
+}
+
+@end
+
 @interface GBLEmoteChatConfig : NSObject
 {
 }
@@ -52842,18 +52890,6 @@ typedef union {
 
 @end
 
-@interface IESLiveMTGuideScreenshotHintFragment : NSObject
-{
-}
-
-@end
-
-@interface IESLiveScreenshotHintView : UIView
-{
-}
-
-@end
-
 @interface IESLiveMTGuideScreenshotOrientationFragment : NSObject
 {
 }
@@ -53209,6 +53245,18 @@ typedef union {
 @end
 
 @interface GBLSendGiftCalmModel : MTLModel
+{
+}
+
+@end
+
+@interface HTSLiveGiftDoodle : MTLModel
+{
+}
+
+@end
+
+@interface HTSLiveGiftPoint : MTLModel
 {
 }
 
@@ -56532,6 +56580,18 @@ typedef union {
 
 @end
 
+@interface IESLiveChargeApplePayfailedInfo : NSObject
+{
+}
+
+@end
+
+@interface IESLiveChargeApplePayfailedHandler : NSObject
+{
+}
+
+@end
+
 @interface IESLiveMTChargeApi : HTSLiveApi
 {
 }
@@ -59058,6 +59118,12 @@ typedef union {
 
 @end
 
+@interface IESLiveMTAnchorGameMonitorImp : NSObject
+{
+}
+
+@end
+
 @interface IESLiveMTInteractUtils : NSObject
 {
 }
@@ -59191,6 +59257,12 @@ typedef union {
 @end
 
 @interface GBLAudienceDeepLinkSubscribeHandler : NSObject
+{
+}
+
+@end
+
+@interface IESLiveMTAudienceGameLiveMonitor : NSObject
 {
 }
 
@@ -60413,6 +60485,12 @@ typedef union {
 
 @end
 
+@interface GBLMessageCenterABTest : NSObject
+{
+}
+
+@end
+
 @interface GBLMessageCenterQuestionAnswerCell : IESLiveQuestionAnswerCell
 {
 }
@@ -60420,6 +60498,12 @@ typedef union {
 @end
 
 @interface GBLAlertMessageView : UIView
+{
+}
+
+@end
+
+@interface GBLMessagesTableDataAdapter : NSObject
 {
 }
 
@@ -60485,7 +60569,55 @@ typedef union {
 
 @end
 
+@interface GBLMessageGiftFilterPipeline : UIView
+{
+}
+
+@end
+
+@interface GBLMessageCenterGiftFilterImpl : NSObject
+{
+}
+
+@end
+
+@interface GBLMessageGiftFilterStorage : GBLMessagesStorage
+{
+}
+
+@end
+
+@interface GBLMessagesStorage : NSObject
+{
+}
+
+@end
+
 @interface GBLMessageCenterBottomGuideView : UIView
+{
+}
+
+@end
+
+@interface GBLMessagesGiftFilterEmptyView : UIView
+{
+}
+
+@end
+
+@interface GBLMessageCenterFilterToolbar : UIView
+{
+}
+
+@end
+
+@interface GBLMessageCenterRadioButton : UIView
+{
+}
+
+@end
+
+@interface GBLMessageCenterGiftCountView : UIView
 {
 }
 
@@ -61433,6 +61565,60 @@ typedef union {
 
 @end
 
+@interface GBLGoalContributorApiRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface GBLGetContributorsResponse : GPBMessage
+{
+}
+
+@end
+
+@interface GBLGetContributorsResponse_Data : GPBMessage
+{
+}
+
+@end
+
+@interface GBLGoalGetApiRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface GBLGetResponse : GPBMessage
+{
+}
+
+@end
+
+@interface GBLGetResponse_Data : GPBMessage
+{
+}
+
+@end
+
+@interface GBLGoalHistoryApiRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface GBLGetHistoryResponse : GPBMessage
+{
+}
+
+@end
+
+@interface GBLGetHistoryResponse_Data : GPBMessage
+{
+}
+
+@end
+
 @interface InteractionChatEmoteChatApiRoot : GPBRootObject
 {
 }
@@ -61560,6 +61746,36 @@ typedef union {
 @end
 
 @interface IESLiveWordlistResponse_ResponseData : GPBMessage
+{
+}
+
+@end
+
+@interface InteractionPinPinApiRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface PinResponse : GPBMessage
+{
+}
+
+@end
+
+@interface PinResponse_ResponseData : GPBMessage
+{
+}
+
+@end
+
+@interface InteractionPinPinCancelApiRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface PinCancelResponse : GPBMessage
 {
 }
 
@@ -61841,6 +62057,18 @@ typedef union {
 
 @end
 
+@interface GBLLinkMicJoinDirectReq : GPBMessage
+{
+}
+
+@end
+
+@interface GBLLinkMicJoinDirectResp : GPBMessage
+{
+}
+
+@end
+
 @interface IESLiveLinkmicLinkmicGetSettingsApiRoot : GPBRootObject
 {
 }
@@ -61908,6 +62136,36 @@ typedef union {
 @end
 
 @interface IESLiveLinkmicJoinChannelResponse_ResponseData : GPBMessage
+{
+}
+
+@end
+
+@interface IESLiveLinkmicLinkmicMgetPullStreamInfosApiRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface IESLiveLinkmicMgetPullStreamInfosParams : GPBMessage
+{
+}
+
+@end
+
+@interface IESLiveLinkmicMgetPullStreamInfosResponse : GPBMessage
+{
+}
+
+@end
+
+@interface IESLiveLinkmicMgetPullStreamInfosResponse_PullStreamInfo : GPBMessage
+{
+}
+
+@end
+
+@interface IESLiveLinkmicMgetPullStreamInfosResponse_ResponseData : GPBMessage
 {
 }
 
@@ -64349,6 +64607,42 @@ typedef union {
 
 @end
 
+@interface GBLGoalRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface GBLGoalContributor : GPBMessage
+{
+}
+
+@end
+
+@interface GBLGiftSubGoal : GPBMessage
+{
+}
+
+@end
+
+@interface GBLSubGoal : GPBMessage
+{
+}
+
+@end
+
+@interface GBLSubGoalRecommendInfo : GPBMessage
+{
+}
+
+@end
+
+@interface GBLGoal : GPBMessage
+{
+}
+
+@end
+
 @interface HTSLiveHashtagRoot : GPBRootObject
 {
 }
@@ -64433,6 +64727,18 @@ typedef union {
 
 @end
 
+@interface GBLIndicatorRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface GBLIndicator : GPBMessage
+{
+}
+
+@end
+
 @interface HTSLiveInteractionQuestionRoot : GPBRootObject
 {
 }
@@ -64494,6 +64800,18 @@ typedef union {
 @end
 
 @interface GBLLinkMicLinkPosition : GPBMessage
+{
+}
+
+@end
+
+@interface GBLLinkMicLinkLayerListUser : GPBMessage
+{
+}
+
+@end
+
+@interface GBLLinkMicAllListUser : GPBMessage
 {
 }
 
@@ -64667,6 +64985,24 @@ typedef union {
 
 @end
 
+@interface GBLLinkMicMultiLiveBizJoinDirectParams : GPBMessage
+{
+}
+
+@end
+
+@interface GBLLinkMicMultiLiveBizJoinDirectResponse : GPBMessage
+{
+}
+
+@end
+
+@interface GBLLinkMicMultiLiveBizJoinDirectResponse_ResponseData : GPBMessage
+{
+}
+
+@end
+
 @interface GBLLinkMicMultiLiveRealBusinessContent : GPBMessage
 {
 }
@@ -64698,6 +65034,12 @@ typedef union {
 @end
 
 @interface GBLLinkMicMultiLivePermitBizContent : GPBMessage
+{
+}
+
+@end
+
+@interface GBLLinkMicMultiLiveJoinDirectBizContent : GPBMessage
 {
 }
 
@@ -65358,6 +65700,12 @@ typedef union {
 @end
 
 @interface HTSLivePerceptionInfo : GPBMessage
+{
+}
+
+@end
+
+@interface HTSLivePinInfo : GPBMessage
 {
 }
 
@@ -66503,6 +66851,18 @@ typedef union {
 
 @end
 
+@interface HTSLiveGiftRecordCapsuleMessageRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface HTSLiveGiftRecordCapsuleMessage : GPBMessage
+{
+}
+
+@end
+
 @interface HTSLiveGiftUnlockMessageRoot : GPBRootObject
 {
 }
@@ -66522,6 +66882,18 @@ typedef union {
 @end
 
 @interface HTSLiveGiftUpdateMessage : GPBMessage
+{
+}
+
+@end
+
+@interface HTSLiveGoalUpdateMessageRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface HTSLiveGoalUpdateMessage : GPBMessage
 {
 }
 
@@ -67097,12 +67469,6 @@ typedef union {
 
 @end
 
-@interface GBLLinkMicMultiLiveContent : GPBMessage
-{
-}
-
-@end
-
 @interface GBLLinkMicLinkLayerMessage : GPBMessage
 {
 }
@@ -67116,12 +67482,6 @@ typedef union {
 @end
 
 @interface GBLLinkMicFinishChannelContent : GPBMessage
-{
-}
-
-@end
-
-@interface GBLLinkMicLinkLayerListUser : GPBMessage
 {
 }
 
@@ -67176,6 +67536,12 @@ typedef union {
 @end
 
 @interface GBLLinkMicKickOutContent : GPBMessage
+{
+}
+
+@end
+
+@interface GBLLinkMicJoinDirectContent : GPBMessage
 {
 }
 
@@ -67506,6 +67872,18 @@ typedef union {
 @end
 
 @interface HTSLivePictionaryUpdateMessage : GPBMessage
+{
+}
+
+@end
+
+@interface HTSLivePinMessageRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface HTSLivePinMessage : GPBMessage
 {
 }
 
@@ -70934,6 +71312,12 @@ typedef union {
 
 @end
 
+@interface LCKaraokeMovie : NSObject
+{
+}
+
+@end
+
 @interface LiveCoreForInteractClient : NSObject
 {
 }
@@ -71191,6 +71575,7 @@ typedef union {
     _Bool _audioMute;
     _Bool _enableExternalClientMix;
     _Bool _externalPushDark;
+    _Bool _isForceMediaMode;
     _Bool _audioMuteExceptBgm;
     _Bool _muteLocalAudioStream;
     _Bool _needCloseAEC;
@@ -71327,6 +71712,7 @@ typedef union {
 @property(retain, nonatomic) LiveStreamMultiTimerManager *timerManager; // @synthesize timerManager=_timerManager;
 @property(retain, nonatomic) NSObject<OS_dispatch_queue> *timer_quque; // @synthesize timer_quque=_timer_quque;
 @property(retain, nonatomic) NSObject<OS_dispatch_queue> *queue; // @synthesize queue=_queue;
+@property(nonatomic) _Bool isForceMediaMode; // @synthesize isForceMediaMode=_isForceMediaMode;
 @property(nonatomic) _Bool externalPushDark; // @synthesize externalPushDark=_externalPushDark;
 @property(copy, nonatomic) NSString *effectLicense; // @synthesize effectLicense=_effectLicense;
 @property(retain, nonatomic) UIView *previewView; // @synthesize previewView=_previewView;
@@ -71488,6 +71874,21 @@ typedef union {
 - (void)updateLiveCoreModule:(unsigned long long)arg1;
 - (id)initWithMode:(unsigned long long)arg1;
 - (id)init;
+- (int)karaokeMovieZOrder;
+- (void)playMV;
+- (void)pauseMV;
+- (void)setKaraokeMoviePitch:(double)arg1;
+- (_Bool)isEnableKaraokeMovieAudioPitchShifter;
+- (void)setEnableKaraokeMovieAudioPitchShifter:(_Bool)arg1;
+- (void)setKaraokePlayVolume:(float)arg1;
+- (void)setKaraokeMixVolume:(float)arg1 captureVolume:(float)arg2;
+- (void)stopPushKaraokeAudio;
+- (void)prepareKaraokeMovieAudio:(int)arg1 channels:(int)arg2;
+- (void)pushKaraokeMovieAudioBuffer:(float **)arg1 samples:(int)arg2;
+- (void)pushKaraokeMovieBuffer:(struct __CVBuffer *)arg1 andCMTime:(CDStruct_1b6d18a9)arg2;
+- (void)setKaraokeVideoMixerDescription:(long long)arg1 zOrder:(int)arg2 withPosition:(struct CGRect)arg3;
+- (void)setKaraokeVideoMixerDescription:(long long)arg1 withPosition:(struct CGRect)arg2;
+- (void)resetMovieRenderView:(id)arg1;
 - (void)updateLiveCoreExtInfo:(id)arg1;
 - (void)setPerformanceProfile:(long long)arg1;
 - (id)getLastPixelBufferWithUid:(id)arg1 compressionRatio:(double)arg2;
@@ -71703,6 +72104,8 @@ typedef union {
 - (void)configureAudioCatcher:(id)arg1 durationMs:(long long)arg2 format:(unsigned long long)arg3 isPeriodCatch:(_Bool)arg4 totalDurationMsOnPeriodCatch:(long long)arg5 outSampleHz:(int)arg6 outChannel:(int)arg7;
 - (id)getJpegDataWithIsEffected:(_Bool)arg1 compressionRatio:(double)arg2;
 - (struct __CVBuffer *)getPixelBufferWithIsEffected:(_Bool)arg1;
+- (_Bool)setCroppedEffectFrameCallbackWithRect:(struct CGRect)arg1 originSize:(struct CGSize)arg2 callback:(CDUnknownBlockType)arg3;
+- (_Bool)setCroppedInputFrameCallbackWithRect:(struct CGRect)arg1 originSize:(struct CGSize)arg2 callback:(CDUnknownBlockType)arg3;
 - (void)setEffectFrameCallback:(CDUnknownBlockType)arg1;
 - (void)setInputFrameCallback:(CDUnknownBlockType)arg1;
 - (void)audioCatchOnComplete;
@@ -71826,7 +72229,145 @@ typedef union {
 
 @end
 
+@interface LSLiveAudioCleaner : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioConverter : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioEffect : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioReverbFormat : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioReverb2Format : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioEqualizerFormat : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioCleanerFormat : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioExciterFormat : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioEffectData : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioEqualizer : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioExciter : NSObject
+{
+}
+
+@end
+
 @interface LSLiveAudioLoudNorm : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioMixerHandle : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioPitchShifter : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioReverb : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioReverbV2 : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioStereoWiden : NSObject
+{
+}
+
+@end
+
+@interface LSLiveReverbModel : NSObject
+{
+}
+
+@end
+
+@interface LSLiveDynamicsProcessorModel : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioUnitConfig : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioUnitProcess : NSObject
+{
+}
+
+@end
+
+@interface LSLiveExtAudioFileWriter : NSObject
+{
+}
+
+@end
+
+@interface LSLiveAudioCompressorFormat : NSObject
+{
+}
+
+@end
+
+@interface LSLiveMMAudioCompressor : NSObject
 {
 }
 
@@ -71839,6 +72380,12 @@ typedef union {
 @end
 
 @interface LSLiveNoiseSuppressionV2 : NSObject
+{
+}
+
+@end
+
+@interface LSAudioBufferQueue : NSObject
 {
 }
 
@@ -71869,6 +72416,24 @@ typedef union {
 @end
 
 @interface BigAVRTCVideoFrame : NSObject
+{
+}
+
+@end
+
+@interface LSAudioDrivePictureEffectHandler : NSObject
+{
+}
+
+@end
+
+@interface LSAudioDrivePictureEffectPreviewAudioCapture : NSObject
+{
+}
+
+@end
+
+@interface LSAudioPlayer : NSObject
 {
 }
 
@@ -72523,6 +73088,7 @@ typedef union {
     _Bool _abKeyForenableDownGradeFlag;
     _Bool _protocolDownGrade;
     unsigned long long _reconnectDownGradeThreshold;
+    unsigned long long _enableNetFpsAdaptive;
     long long _reconnectErrorCode;
     _Bool _connectFailFlag;
     double _startStreamTime;
@@ -72709,6 +73275,7 @@ typedef union {
 - (void)pullMicAudio:(void *)arg1 size:(unsigned int)arg2 timeStamp:(long long)arg3 mNumberChannels:(unsigned int)arg4 numberOfFrames:(unsigned int)arg5 processedData:(void *)arg6 earMonitorData:(void *)arg7;
 - (void)pushPlayerAudioData:(struct AudioBufferList *)arg1 frames:(int)arg2 bytesPerSample:(int)arg3 channels:(int)arg4 sampleRate:(int)arg5;
 - (void)requestIDRFrame;
+- (void)__updateFps:(int)arg1 min:(int)arg2 max:(int)arg3;
 - (void)__updateBitrate:(long long)arg1 min:(long long)arg2 max:(long long)arg3 flushEncoder:(_Bool)arg4;
 - (void)__updateBitrate:(long long)arg1 mix:(long long)arg2 max:(long long)arg3;
 - (id)getEAGLContext;
@@ -72813,8 +73380,10 @@ typedef union {
 - (int)checkFpsFallback:(_Bool)arg1;
 - (void)updateTransportParamter:(id)arg1 value:(id)arg2;
 - (void)setupSITI;
-- (void)onSITIFpsChangedWithCategory:(int)arg1 newFps:(int)arg2;
+- (void)onTransportFpsChange:(int)arg1;
+- (void)onSITIFpsChangedWithCategory:(int)arg1 initFps:(int)arg2 minFps:(int)arg3 maxFps:(int)arg4;
 - (void)onSITIBitrateChangedWithCategory:(int)arg1 minBitrate:(int)arg2 maxBitrate:(int)arg3;
+- (void)onVideoEncodeFpsAdjustForAdpt:(int)arg1 adjustment:(id)arg2;
 - (void)updateEncodeStreamOption;
 - (void)startStreamWithURL:(id)arg1;
 - (void)handleFullLinkEnableDumpNotifications:(id)arg1;
@@ -75792,6 +76361,12 @@ typedef union {
 
 @end
 
+@interface NLESegmentAudioFadeFilter_OC : NLESegmentFilter_OC
+{
+}
+
+@end
+
 @interface NLESegmentAudioLoudnessBalanceFilter_OC : NLESegmentFilter_OC
 {
 }
@@ -76368,6 +76943,12 @@ typedef union {
 
 @end
 
+@interface PTYApplogHooker : NSObject
+{
+}
+
+@end
+
 @interface PTYByteNNTrainLoader : NSObject
 {
 }
@@ -76380,7 +76961,13 @@ typedef union {
 
 @end
 
-@interface PTYMonitor : NSObject
+@interface PTYInternalNetworkManager : NSObject
+{
+}
+
+@end
+
+@interface PTYNetworkManager : NSObject
 {
 }
 
@@ -76447,6 +77034,30 @@ typedef union {
 @end
 
 @interface Pitaya : NSObject
+{
+}
+
+@end
+
+@interface PTYCoreLoader : NSObject
+{
+}
+
+@end
+
+@interface PTYDebugLoader : NSObject
+{
+}
+
+@end
+
+@interface PTYWebSocketWrapper : NSObject
+{
+}
+
+@end
+
+@interface PTYEventTracker : NSObject
 {
 }
 
@@ -76560,19 +77171,19 @@ typedef union {
 
 @end
 
+@interface PTYFeatureAppLogLoader : NSObject
+{
+}
+
+@end
+
+@interface PTYFeatureBaseLoader : NSObject
+{
+}
+
+@end
+
 @interface PTYFeatureCore : NSObject
-{
-}
-
-@end
-
-@interface PTYAppLogEventHooker : NSObject
-{
-}
-
-@end
-
-@interface PTYFeatureCoreLoader : NSObject
 {
 }
 
@@ -76584,7 +77195,61 @@ typedef union {
 
 @end
 
+@interface PTYFeatureDatabaseCacheLoader : NSObject
+{
+}
+
+@end
+
+@interface PTYFeatureMemoryCacheLoader : NSObject
+{
+}
+
+@end
+
 @interface PTYKVStore : NSObject
+{
+}
+
+@end
+
+@interface PTYFeatureCoreLoader : NSObject
+{
+}
+
+@end
+
+@interface PTYFeatureStoreLoader : NSObject
+{
+}
+
+@end
+
+@interface PTYCrashDetector : NSObject
+{
+}
+
+@end
+
+@interface PTYMemoryInfo : NSObject
+{
+}
+
+@end
+
+@interface PTYMonitor : NSObject
+{
+}
+
+@end
+
+@interface PTYOpenTrace : NSObject
+{
+}
+
+@end
+
+@interface PTYUserException : NSObject
 {
 }
 
@@ -76603,6 +77268,24 @@ typedef union {
 @end
 
 @interface PTYPyLoader : NSObject
+{
+}
+
+@end
+
+@interface PTYTTReachability : NSObject
+{
+}
+
+@end
+
+@interface PTYTTNetManager : NSObject
+{
+}
+
+@end
+
+@interface PTYUnZip : NSObject
 {
 }
 
@@ -77904,6 +78587,18 @@ typedef union {
 @end
 
 @interface SparkMultiDelegate : NSProxy
+{
+}
+
+@end
+
+@interface SparkViewContainerSerivce : NSObject
+{
+}
+
+@end
+
+@interface SparkView : UIView
 {
 }
 
@@ -82345,6 +83040,18 @@ typedef union {
 
 @end
 
+@interface QueryFilterObject : NSObject
+{
+}
+
+@end
+
+@interface QueryFilterResult : NSObject
+{
+}
+
+@end
+
 @interface Regex : NSObject
 {
 }
@@ -82352,6 +83059,12 @@ typedef union {
 @end
 
 @interface TTCdnCacheVerifyManager : NSObject
+{
+}
+
+@end
+
+@interface UrlMatchRule : NSObject
 {
 }
 
@@ -82537,6 +83250,18 @@ typedef union {
 
 @end
 
+@interface TTNetMpaService : NSObject
+{
+}
+
+@end
+
+@interface TTNetRequestLevelController : NSObject
+{
+}
+
+@end
+
 @interface TTNetworkHTTPErrorCodeMapper : NSObject
 {
 }
@@ -82629,7 +83354,25 @@ typedef union {
 
 @end
 
+@interface TTNetworkQualityV2 : NSObject
+{
+}
+
+@end
+
 @interface TTPacketLossMetrics : NSObject
+{
+}
+
+@end
+
+@interface QueryPairObject : NSObject
+{
+}
+
+@end
+
+@interface TaskDetailInfo : NSObject
 {
 }
 
@@ -82750,6 +83493,12 @@ typedef union {
 @end
 
 @interface AudioUnitPool : NSObject
+{
+}
+
+@end
+
+@interface DisplayLinkWrapper : NSObject
 {
 }
 
@@ -84859,6 +85608,7 @@ typedef union {
 - (void)refreshEffectColorSpace:(id)arg1;
 - (void)releaseCaptureImage:(id)arg1;
 - (id)getEffectCapturedImageWithKey:(id)arg1;
+- (void)setEffectCacheDirectory:(id)arg1;
 - (_Bool)operateComposerNodes:(id)arg1;
 - (id)dumpComposerNodes;
 - (_Bool)dumpComposerNodes:(id)arg1;
@@ -85646,78 +86396,6 @@ typedef union {
 @end
 
 @interface VEAdaptiveFrameRateController : NSObject
-{
-}
-
-@end
-
-@interface VEAlgorithmSession : NSObject
-{
-}
-
-@end
-
-@interface VEAlgorithmSessionConfig : NSObject
-{
-}
-
-@end
-
-@interface VEAlgorithmSessionParams : NSObject
-{
-}
-
-@end
-
-@interface VEAlgorithmSessionParamsBachCommonImage : VEAlgorithmSessionParams
-{
-}
-
-@end
-
-@interface VEAlgorithmSessionParamsOneKeyHdr : VEAlgorithmSessionParams
-{
-}
-
-@end
-
-@interface VEAlgorithmSessionParamsFaceReenact : VEAlgorithmSessionParams
-{
-}
-
-@end
-
-@interface VEAlgorithmSessionParamsBorderDetect : VEAlgorithmSessionParams
-{
-}
-
-@end
-
-@interface VEAlgorithmSessionResult : NSObject
-{
-}
-
-@end
-
-@interface VEAlgorithmSessionResultOneKeyHdr : VEAlgorithmSessionResult
-{
-}
-
-@end
-
-@interface VEAlgorithmSessionResultCommonImage : VEAlgorithmSessionResult
-{
-}
-
-@end
-
-@interface VEAlgorithmSessionResultFaceReenact : VEAlgorithmSessionResult
-{
-}
-
-@end
-
-@interface VEAlgorithmSessionResultBorderDetect : VEAlgorithmSessionResult
 {
 }
 
@@ -86810,6 +87488,12 @@ typedef union {
 @end
 
 @interface VELVEffectProcessUtils : NSObject
+{
+}
+
+@end
+
+@interface VELensColorTransAlgorithm : NSObject
 {
 }
 
@@ -88345,12 +89029,6 @@ typedef union {
 
 @end
 
-@interface TVLRTCPlayerWrapper : NSObject
-{
-}
-
-@end
-
 @interface TTMPQUICModule : NSObject
 {
 }
@@ -88604,6 +89282,7 @@ typedef union {
     _Bool _allowsByteVC1Degrade;
     _Bool _allowsVideoAutoCrop;
     _Bool _shouldReportAudioFrame;
+    _Bool _shouldReportVideoFrame;
     _Bool _shouldUseVideoFrameInViceView;
     _Bool _shouldPlayerCloseWithoutStop;
     _Bool _shouldDegradeResolutionWhenStallRetryWithLLASH;
@@ -88630,6 +89309,7 @@ typedef union {
     CDUnknownBlockType _playerDidReceivePacketWithPacketInfoCallback;
     CDUnknownBlockType _playerWillRenderFrameCallback;
     CDUnknownBlockType _playerDidReceiveBinarySeiCallback;
+    CDUnknownBlockType _playerAbrDecisionInfoCallback;
     long long _previousAudioPacketDTS;
     long long _previousRenderingAudioFrameDTS;
     long long _currentVideoBitrate;
@@ -88671,6 +89351,7 @@ typedef union {
 @property(nonatomic) long long currentVideoBitrate; // @synthesize currentVideoBitrate=_currentVideoBitrate;
 @property(nonatomic) long long previousRenderingAudioFrameDTS; // @synthesize previousRenderingAudioFrameDTS=_previousRenderingAudioFrameDTS;
 @property(nonatomic) long long previousAudioPacketDTS; // @synthesize previousAudioPacketDTS=_previousAudioPacketDTS;
+@property(copy, nonatomic) CDUnknownBlockType playerAbrDecisionInfoCallback; // @synthesize playerAbrDecisionInfoCallback=_playerAbrDecisionInfoCallback;
 @property(copy, nonatomic) CDUnknownBlockType playerDidReceiveBinarySeiCallback; // @synthesize playerDidReceiveBinarySeiCallback=_playerDidReceiveBinarySeiCallback;
 @property(copy, nonatomic) CDUnknownBlockType playerWillRenderFrameCallback; // @synthesize playerWillRenderFrameCallback=_playerWillRenderFrameCallback;
 @property(copy, nonatomic) CDUnknownBlockType playerDidReceivePacketWithPacketInfoCallback; // @synthesize playerDidReceivePacketWithPacketInfoCallback=_playerDidReceivePacketWithPacketInfoCallback;
@@ -88680,6 +89361,7 @@ typedef union {
 @property(retain, nonatomic) TVLRetryer *retryer; // @synthesize retryer=_retryer;
 @property(nonatomic) long long delay; // @synthesize delay=_delay;
 @property(nonatomic) _Bool shouldUseVideoFrameInViceView; // @synthesize shouldUseVideoFrameInViceView=_shouldUseVideoFrameInViceView;
+@property(nonatomic) _Bool shouldReportVideoFrame; // @synthesize shouldReportVideoFrame=_shouldReportVideoFrame;
 @property(nonatomic) _Bool shouldReportAudioFrame; // @synthesize shouldReportAudioFrame=_shouldReportAudioFrame;
 @property(nonatomic) _Bool allowsVideoAutoCrop; // @synthesize allowsVideoAutoCrop=_allowsVideoAutoCrop;
 @property(nonatomic) _Bool allowsByteVC1Degrade; // @synthesize allowsByteVC1Degrade=_allowsByteVC1Degrade;
@@ -88711,7 +89393,6 @@ typedef union {
 - (void)stallStart;
 - (void)startRender;
 - (void)autoSmoothSwitchAfterNSeconds;
-- (_Bool)checkIfSupportNNSR:(id)arg1;
 - (void)recieveError:(id)arg1;
 - (void)playerController:(id)arg1 videoSizeDidChange:(struct CGSize)arg2;
 - (_Bool)playerController:(id)arg1 shouldRetryWithReason:(long long)arg2 times:(long long)arg3 duration:(double)arg4;
@@ -88720,6 +89401,7 @@ typedef union {
 - (void)audioPacketDTSDidRollbackWithPreviousDTS:(long long)arg1 latestDTS:(long long)arg2;
 - (void)playerDidReceivePacketWithStreamType:(int)arg1 DTS:(long long)arg2 PTS:(long long)arg3 packetInfo:(id)arg4;
 - (void)renderingAudioFrameDTSDidRollbackWithPreviousDTS:(long long)arg1 latestDTS:(long long)arg2;
+- (void)tvlManagerAbrDecisionInfo:(unsigned long long)arg1 content:(const char *)arg2;
 - (void)tvlManagerDidReceiveBinarySei:(const char *)arg1 length:(int)arg2;
 - (void)playerWillRenderFrameWithStreamType:(int)arg1 DTS:(long long)arg2 PTS:(long long)arg3 frameData:(id)arg4;
 - (void)degradeFromURL:(id)arg1 toURL:(id)arg2 reason:(long long)arg3;
@@ -88751,6 +89433,7 @@ typedef union {
 - (double)renderingFPS;
 - (void)addExtraHttpRequestHeadersByUser:(id)arg1;
 - (long long)currentAudioStreamDecibel;
+- (void)setEffect:(id)arg1;
 - (struct __CVBuffer *)cropCopyPixelBuffer:(float)arg1 topLeftY:(float)arg2 cropW:(float)arg3 cropH:(float)arg4;
 - (struct __CVBuffer *)copyPixelBuffer;
 - (void)autoUpdateCropAreaIfNeededWithSEI:(id)arg1;
@@ -89028,6 +89711,12 @@ typedef union {
 @end
 
 @interface TVLPlayerItemAccessLogSilenceEvent : TVLPlayerItemLogEvent
+{
+}
+
+@end
+
+@interface TVLPlayerItemAccessLogAvOutSyncEvent : TVLPlayerItemLogEvent
 {
 }
 
@@ -92626,12 +93315,6 @@ typedef union {
 
 @end
 
-@interface PACContextManager : NSObject
-{
-}
-
-@end
-
 @interface CRWHTTPStreamDelegate : NSObject
 {
 }
@@ -92704,6 +93387,72 @@ typedef union {
 
 @end
 
+@interface VHDRMetalContext : NSObject
+{
+}
+
+@end
+
+@interface MetalAbsDiffFilter : MetalFilter
+{
+}
+
+@end
+
+@interface MetalBoxFilter : MetalFilter
+{
+}
+
+@end
+
+@interface MetalDiffFilter : MetalFilter
+{
+}
+
+@end
+
+@interface MetalFilter : NSObject
+{
+}
+
+@end
+
+@interface MetalGaussianFilter3x3 : MetalFilter
+{
+}
+
+@end
+
+@interface MetalResizeFilter : MetalFilter
+{
+}
+
+@end
+
+@interface MetalSeparableGaussianFilter5x5 : MetalFilter
+{
+}
+
+@end
+
+@interface MetalSumFilter : MetalFilter
+{
+}
+
+@end
+
+@interface MetalUpdateSigmodExpFilter : MetalFilter
+{
+}
+
+@end
+
+@interface VDMetalContext : NSObject
+{
+}
+
+@end
+
 @interface FilterBase : NSObject
 {
 }
@@ -92740,6 +93489,12 @@ typedef union {
 
 @end
 
+@interface MetalFilterLensDistortion : MetalFilterDefault
+{
+}
+
+@end
+
 @interface MetalFilterLensWrapper : FilterBase
 {
 }
@@ -92747,6 +93502,18 @@ typedef union {
 @end
 
 @interface MetalFilterLut : MetalFilterDefault
+{
+}
+
+@end
+
+@interface MetalFilterVR : MetalFilterDefault
+{
+}
+
+@end
+
+@interface MetalFilterVROutput : MetalFilterDefault
 {
 }
 
@@ -92764,7 +93531,37 @@ typedef union {
 
 @end
 
+@interface VPVRDistortionRender : NSObject
+{
+}
+
+@end
+
+@interface VPVREye : NSObject
+{
+}
+
+@end
+
+@interface VPVRHeadTracker : NSObject
+{
+}
+
+@end
+
+@interface VPVRSpace : NSObject
+{
+}
+
+@end
+
 @interface VCVideoProcessorInstance : NSObject
+{
+}
+
+@end
+
+@interface CardboardSensorHelper : NSObject
 {
 }
 
@@ -98034,6 +98831,18 @@ typedef union {
 
 @end
 
+@interface AWENetworkTrafficResult : NSObject
+{
+}
+
+@end
+
+@interface AWENetworkTrafficEngine : NSObject
+{
+}
+
+@end
+
 @interface AWENetworkURLProtocol : NSURLProtocol
 {
 }
@@ -99157,12 +99966,6 @@ typedef union {
 @end
 
 @interface ACCActionToolTip : ACCToolTip
-{
-}
-
-@end
-
-@interface ACCAddWikipediaManager : NSObject
 {
 }
 
@@ -100578,12 +101381,6 @@ typedef union {
 
 @end
 
-@interface ACCEditPageTextStorage : NSTextStorage
-{
-}
-
-@end
-
 @interface ACCEditPageTextView : UITextView
 {
 }
@@ -100753,6 +101550,12 @@ typedef union {
 @end
 
 @interface ACCEffectGameScene : ACCCaptureScene
+{
+}
+
+@end
+
+@interface ACCEffectsCacheDirectoryManager : NSObject
 {
 }
 
@@ -103350,12 +104153,6 @@ typedef union {
 
 @end
 
-@interface ACCTTEditPageLayoutManager : ACCEditPageLayoutManager
-{
-}
-
-@end
-
 @interface ACCUIButton : UIButton
 {
 }
@@ -104005,12 +104802,6 @@ typedef union {
 @end
 
 @interface ACCWaveLayerConfig : NSObject
-{
-}
-
-@end
-
-@interface ACCWikipediaTextAttachment : NSTextAttachment
 {
 }
 
@@ -105361,12 +106152,6 @@ typedef union {
 @end
 
 @interface AWEStoryFontChooseView : UIView
-{
-}
-
-@end
-
-@interface ACCStoryTextAnchorModels : NSObject
 {
 }
 
@@ -107480,6 +108265,126 @@ typedef union {
 
 @end
 
+@interface IESForestBaseFetcher : NSObject
+{
+}
+
+@end
+
+@interface IESForestBuiltinFetcher : IESForestBaseFetcher
+{
+}
+
+@end
+
+@interface IESForestCDNErrorMessage : NSObject
+{
+}
+
+@end
+
+@interface IESForestCDNFetcher : IESForestBaseFetcher
+{
+}
+
+@end
+
+@interface IESForestConfig : NSObject
+{
+}
+
+@end
+
+@interface IESMutableForestConfig : IESForestConfig
+{
+}
+
+@end
+
+@interface IESForestEventTrackData : NSObject
+{
+}
+
+@end
+
+@interface IESForestGeckoFetcher : IESForestBaseFetcher
+{
+}
+
+@end
+
+@interface IESForestRequestOperation : NSObject
+{
+}
+
+@end
+
+@interface IESForestKit : NSObject
+{
+}
+
+@end
+
+@interface IESForestMemoryCache : NSObject
+{
+}
+
+@end
+
+@interface IESForestMemoryFetcher : IESForestBaseFetcher
+{
+}
+
+@end
+
+@interface IESForestQueryParameters : NSObject
+{
+}
+
+@end
+
+@interface IESForestRemoteParameters : NSObject
+{
+}
+
+@end
+
+@interface IESForestPerformanceMetrics : NSObject
+{
+}
+
+@end
+
+@interface IESForestRequest : NSObject
+{
+}
+
+@end
+
+@interface IESForestRequestParameters : NSObject
+{
+}
+
+@end
+
+@interface IESForestResponse : NSObject
+{
+}
+
+@end
+
+@interface IESForestWorkflowDebugInfo : NSObject
+{
+}
+
+@end
+
+@interface IESForestWorkflow : NSObject
+{
+}
+
+@end
+
 @interface PodsDummy_IESGeckoKit_Pods_MusicallyCore : NSObject
 {
 }
@@ -108849,18 +109754,6 @@ typedef union {
 
 @end
 
-@interface SparkViewContainerSerivce : NSObject
-{
-}
-
-@end
-
-@interface SparkView : UIView
-{
-}
-
-@end
-
 @interface SparkPageContainerService : NSObject
 {
 }
@@ -109011,6 +109904,18 @@ typedef union {
 
 @end
 
+@interface TSPKAuthMediaLibraryPipeline : TSPKDetectPipeline
+{
+}
+
+@end
+
+@interface TSPKAuthPhotoLibraryPipeline : TSPKDetectPipeline
+{
+}
+
+@end
+
 @interface TSPKBaseEvent : NSObject
 {
 }
@@ -109150,6 +110055,30 @@ typedef union {
 @end
 
 @interface TSPKDetectPlanModel : NSObject
+{
+}
+
+@end
+
+@interface TSPKDetectReleaseBadCaseTask : TSPKDetectReleaseTask
+{
+}
+
+@end
+
+@interface TSPKDetectReleaseStatusTask : TSPKDetectReleaseTask
+{
+}
+
+@end
+
+@interface TSPKDetectResult : NSObject
+{
+}
+
+@end
+
+@interface TSPKDetectReleaseTask : TSPKDetectTask
 {
 }
 
@@ -109389,6 +110318,12 @@ typedef union {
 
 @end
 
+@interface TSPKMediaPlayerPipeline : TSPKDetectPipeline
+{
+}
+
+@end
+
 @interface TSPKMethodTrigger : TSPKDetectTrigger
 {
 }
@@ -109443,6 +110378,12 @@ typedef union {
 
 @end
 
+@interface TSPKPhotoLibraryPipeline : TSPKDetectPipeline
+{
+}
+
+@end
+
 @interface TSPKPluginModel : NSObject
 {
 }
@@ -109473,18 +110414,6 @@ typedef union {
 
 @end
 
-@interface TSPKDetectResult : NSObject
-{
-}
-
-@end
-
-@interface TSPKReleaseDetectTask : TSPKDetectTask
-{
-}
-
-@end
-
 @interface TSPKReporter : NSObject
 {
 }
@@ -109498,6 +110427,12 @@ typedef union {
 @end
 
 @interface TSPKSceneRuleModel : NSObject
+{
+}
+
+@end
+
+@interface TSPKScreenRecorderPipeline : TSPKDetectPipeline
 {
 }
 
@@ -109732,6 +110667,12 @@ typedef union {
 @end
 
 @interface TUXBenefitItemConfiguration : NSObject
+{
+}
+
+@end
+
+@interface TUXBenefitItemLinkAction : NSObject
 {
 }
 
@@ -112639,6 +113580,12 @@ typedef union {
 
 @end
 
+@interface TTKBROnboardingConfig : TTKBaseClientExperiment
+{
+}
+
+@end
+
 @interface TTKClientExperimentStatusInfo : NSObject
 {
 }
@@ -112682,6 +113629,12 @@ typedef union {
 @end
 
 @interface TTKLoginSignupRedesignConfig : TTKBaseClientExperiment
+{
+}
+
+@end
+
+@interface TTKMoveAgeGateLaterConfig : TTKBaseClientExperiment
 {
 }
 
@@ -114055,6 +115008,12 @@ typedef union {
 
 @end
 
+@interface TTKAggregatedBoolValue : NSObject
+{
+}
+
+@end
+
 @interface TTKBezierFunction : NSObject
 {
 }
@@ -114062,6 +115021,18 @@ typedef union {
 @end
 
 @interface TTKCommentSharePanelTransition : NSObject
+{
+}
+
+@end
+
+@interface TTKCSSRadialGradientColorComponent : NSObject
+{
+}
+
+@end
+
+@interface TTKCSSRadialGradientLayer : CALayer
 {
 }
 
@@ -114290,6 +115261,12 @@ typedef union {
 @end
 
 @interface AWEUIKitViewControllerEmptyPageConfig : NSObject
+{
+}
+
+@end
+
+@interface YYLabelRenderAnimation : NSObject
 {
 }
 
@@ -119011,7 +119988,7 @@ typedef union {
 
 @end
 
-@interface AWENewPersonalizedAdSettingModel : AWEBaseApiModel
+@interface AWEUnifiedModeTextModel : AWEBaseApiModel
 {
 }
 
@@ -119246,6 +120223,12 @@ typedef union {
 @end
 
 @interface LiveFeedBackUtil : NSObject
+{
+}
+
+@end
+
+@interface TikTokBRConsentSheetViewController : UIViewController
 {
 }
 
@@ -119924,6 +120907,48 @@ typedef union {
 @end
 
 @interface TTKGiftSupporterPanelResponse : AWEBaseApiModel
+{
+}
+
+@end
+
+@interface TTKPaidContentModerationRejection : MTLModel
+{
+}
+
+@end
+
+@interface TTKPaidContentModerationInfo : MTLModel
+{
+}
+
+@end
+
+@interface TTKPaidContentVideoModel : MTLModel
+{
+}
+
+@end
+
+@interface TTKPaidContentCollectionDetailModel : MTLModel
+{
+}
+
+@end
+
+@interface TTKPaidContentCollectionDetailResponseModel : AWEBaseApiModel
+{
+}
+
+@end
+
+@interface TTKPaidContentPolicyManager : HTSService
+{
+}
+
+@end
+
+@interface TTKPaidContentService : NSObject
 {
 }
 
@@ -122653,6 +123678,36 @@ typedef union {
 
 @end
 
+@interface BDXBridgeEcFetchCommonDataMethod : BDXBridgeMethod
+{
+}
+
+@end
+
+@interface BDXBridgeEcFetchCommonDataMethodResultModel : BDXBridgeModel
+{
+}
+
+@end
+
+@interface BDXBridgeEcFetchItemDataMethod : BDXBridgeMethod
+{
+}
+
+@end
+
+@interface BDXBridgeEcFetchItemDataMethodParamModel : BDXBridgeModel
+{
+}
+
+@end
+
+@interface BDXBridgeEcFetchItemDataMethodResultModel : BDXBridgeModel
+{
+}
+
+@end
+
 @interface BDXBridgeEcMallLoadMarketingDataMethod : BDXBridgeMethod
 {
 }
@@ -122660,6 +123715,42 @@ typedef union {
 @end
 
 @interface BDXBridgeEcMallLoadMarketingDataMethodParamModel : BDXBridgeModel
+{
+}
+
+@end
+
+@interface BDXBridgeEcPageGetDistanceMethod : BDXBridgeMethod
+{
+}
+
+@end
+
+@interface BDXBridgeEcPageGetDistanceMethodParamModel : BDXBridgeModel
+{
+}
+
+@end
+
+@interface BDXBridgeEcPageGetDistanceMethodResultModel : BDXBridgeModel
+{
+}
+
+@end
+
+@interface BDXBridgeEcRefreshPageMethod : BDXBridgeMethod
+{
+}
+
+@end
+
+@interface BDXBridgeEcSendPageLogMethod : BDXBridgeMethod
+{
+}
+
+@end
+
+@interface BDXBridgeEcSendPageLogMethodParamModel : BDXBridgeModel
 {
 }
 
@@ -124225,6 +125316,12 @@ typedef union {
 
 @end
 
+@interface TikTokECCommonFeeTagDataModel : MTLModel
+{
+}
+
+@end
+
 @interface TikTokECCommonPromotionDataModel : MTLModel
 {
 }
@@ -124249,7 +125346,7 @@ typedef union {
 
 @end
 
-@interface TikTokECCouponsSectionController : AWEBaseListSectionController
+@interface TikTokECCouponsSectionController : TikTokECBaseModuleSectionController
 {
 }
 
@@ -124387,6 +125484,12 @@ typedef union {
 
 @end
 
+@interface TikTokECDeliveryDetailBuyMoreView : UIView
+{
+}
+
+@end
+
 @interface TikTokECDeliveryDetailCell : TikTokECSheetsListCell
 {
 }
@@ -124454,6 +125557,12 @@ typedef union {
 @end
 
 @interface TikTokECDeliveryLogisticTextModel : MTLModel
+{
+}
+
+@end
+
+@interface TikTokECDeliverySpendMoreForFreeModel : MTLModel
 {
 }
 
@@ -124856,6 +125965,30 @@ typedef union {
 @end
 
 @interface TikTokECIconTextTag : UIView
+{
+}
+
+@end
+
+@interface TikTokECPDPLynxCardExtraModel : MTLModel
+{
+}
+
+@end
+
+@interface TikTokECPDPLynxCardStylePaddingModel : MTLModel
+{
+}
+
+@end
+
+@interface TikTokECPDPLynxCardStyleModel : MTLModel
+{
+}
+
+@end
+
+@interface TikTokECLynxCardModel : MTLModel
 {
 }
 
@@ -125647,6 +126780,24 @@ typedef union {
 
 @end
 
+@interface TikTokECPdpDividerCardCell : UICollectionViewCell
+{
+}
+
+@end
+
+@interface TikTokECPdpDividerCardSectionController : TikTokECBaseModuleSectionController
+{
+}
+
+@end
+
+@interface TikTokECPdpDividerCardSectionViewModel : TikTokECBaseListSectionViewModel
+{
+}
+
+@end
+
 @interface TikTokECPdpFlashSaleCell : UICollectionViewCell
 {
 }
@@ -125767,6 +126918,24 @@ typedef union {
 
 @end
 
+@interface TikTokECPdpLynxCardCell : UICollectionViewCell
+{
+}
+
+@end
+
+@interface TikTokECPdpLynxCardSectionController : TikTokECBaseModuleSectionController
+{
+}
+
+@end
+
+@interface TikTokECPdpLynxCardSectionViewModel : TikTokECBaseListSectionViewModel
+{
+}
+
+@end
+
 @interface TikTokECPdpNaviBar : UIView
 {
 }
@@ -125774,6 +126943,12 @@ typedef union {
 @end
 
 @interface TikTokECPdpOptionCell : UICollectionViewCell
+{
+}
+
+@end
+
+@interface TikTokECPdpOptionItemCell : UICollectionViewCell
 {
 }
 
@@ -125834,6 +127009,12 @@ typedef union {
 @end
 
 @interface TikTokECPdpProductAdditionInfoModel : MTLModel
+{
+}
+
+@end
+
+@interface TikTokECRelateProduct : MTLModel
 {
 }
 
@@ -126157,6 +127338,12 @@ typedef union {
 
 @end
 
+@interface TikTokPDPContentUICollectionView : UICollectionView
+{
+}
+
+@end
+
 @interface TikTokECProductDetailViewController : AWEBaseListViewController
 {
 }
@@ -126164,6 +127351,12 @@ typedef union {
 @end
 
 @interface TikTokECProductDetailViewModel : AWEBaseListViewModel
+{
+}
+
+@end
+
+@interface TikTokECProductDynamicPageModel : MTLModel
 {
 }
 
@@ -126763,18 +127956,6 @@ typedef union {
 
 @end
 
-@interface TikTokECVoucherCacheModel : NSObject
-{
-}
-
-@end
-
-@interface TikTokECVoucherCacheManager : NSObject
-{
-}
-
-@end
-
 @interface TikTokECVoucherCellLabel : UILabel
 {
 }
@@ -126847,6 +128028,18 @@ typedef union {
 
 @end
 
+@interface TikTokECVoucherCacheModel : NSObject
+{
+}
+
+@end
+
+@interface TikTokECVoucherManager : NSObject
+{
+}
+
+@end
+
 @interface TikTokECVoucherSectionController : AWEBaseListSectionController
 {
 }
@@ -126871,7 +128064,7 @@ typedef union {
 
 @end
 
-@interface TikTokECVoucherTagSectionController : AWEBaseListSectionController
+@interface TikTokECVoucherTagSectionController : TikTokECBaseModuleSectionController
 {
 }
 
@@ -129078,12 +130271,6 @@ typedef union {
 
 @end
 
-@interface TTKAutoGeneratedCaptionsManager : NSObject
-{
-}
-
-@end
-
 @interface TTKBottomAnalyticsView : UIView
 {
 }
@@ -129102,7 +130289,19 @@ typedef union {
 
 @end
 
+@interface TTKCaptionFoldStateManager : NSObject
+{
+}
+
+@end
+
 @interface TTKCheckBoxOptionView : UIView
+{
+}
+
+@end
+
+@interface TTKCLACaptionsManager : NSObject
 {
 }
 
@@ -129366,6 +130565,12 @@ typedef union {
 
 @end
 
+@interface TTKFeedClearModeComponent : TTKFeedBizComponent
+{
+}
+
+@end
+
 @interface TTKFeedCommerceComponent : TTKFeedBizComponent
 {
 }
@@ -129438,6 +130643,12 @@ typedef union {
 
 @end
 
+@interface TTKFeedDetailClearModeComponent : TTKFeedDetailBizComponent
+{
+}
+
+@end
+
 @interface TTKFeedDetailCommentComponent : TTKFeedDetailBizComponent
 {
 }
@@ -129463,6 +130674,12 @@ typedef union {
 @end
 
 @interface TTKFeedDetailComplianceComponent : TTKFeedDetailBizComponent
+{
+}
+
+@end
+
+@interface TTKFeedDetailCountDownComponent : TTKFeedDetailBizComponent
 {
 }
 
@@ -129522,6 +130739,12 @@ typedef union {
 
 @end
 
+@interface TTKFeedDetailPanelService : TTKFeedDetailContainerService
+{
+}
+
+@end
+
 @interface TTKFeedDetailPhotoAlbumPreloadComponent : TTKFeedDetailBizComponent
 {
 }
@@ -129558,6 +130781,12 @@ typedef union {
 
 @end
 
+@interface TTKFeedDetailRouteParamParseModel : NSObject
+{
+}
+
+@end
+
 @interface TTKFeedDetailSearchBarViewComponent : TTKFeedDetailBizViewComponent
 {
 }
@@ -129577,6 +130806,12 @@ typedef union {
 @end
 
 @interface TTKFeedDetailSearchService : TTKFeedDetailContainerService
+{
+}
+
+@end
+
+@interface TTKFeedDetailSharePanelComponent : TTKFeedDetailBizComponent
 {
 }
 
@@ -129654,13 +130889,31 @@ typedef union {
 
 @end
 
+@interface TTKFeedDetailVideoInvisibleTipsViewComponent : TTKFeedDetailBizViewComponent
+{
+}
+
+@end
+
 @interface TTKFeedDetailVideoPreloadComponent : TTKFeedDetailBizComponent
 {
 }
 
 @end
 
-@interface TTKFeedDetailWatchHistoryComponent : TTKFeedBizComponent
+@interface TTKFeedDetailVoteComponent : TTKFeedDetailBizComponent
+{
+}
+
+@end
+
+@interface TTKFeedDetailWatchHistoryComponent : TTKFeedDetailBizComponent
+{
+}
+
+@end
+
+@interface TTKFeedDetaiPrivateAccountTipsViewComponent : TTKFeedDetailBizViewComponent
 {
 }
 
@@ -130189,6 +131442,12 @@ typedef union {
 @end
 
 @interface TTKFeedRootComponent : TTKFeedContainerViewService
+{
+}
+
+@end
+
+@interface TTKFeedSingleAwemeDataController : AWEListDataController
 {
 }
 
@@ -131982,12 +133241,6 @@ typedef union {
 
 @end
 
-@interface AWEPlayInteractionAntiAddictedNoticeBarElement : AWEPlayInteractionBottomElement
-{
-}
-
-@end
-
 @interface AWEPlayInteractionAuthorView : TTKFeedPassthroughView
 {
 }
@@ -132156,12 +133409,6 @@ typedef union {
 
 @end
 
-@interface AWEPlayInteractionPoliticalAccountWarningElement : AWEPlayInteractionBottomElement
-{
-}
-
-@end
-
 @interface AWEPlayInteractionProgressManager : AWEPlayInteractionBaseManager
 {
 }
@@ -132169,12 +133416,6 @@ typedef union {
 @end
 
 @interface AWEPlayInteractionProhibitedContentManager : AWEPlayInteractionBaseManager
-{
-}
-
-@end
-
-@interface AWEPlayInteractionProhibitedURLElement : AWEPlayInteractionBottomElement
 {
 }
 
@@ -132222,12 +133463,6 @@ typedef union {
 
 @end
 
-@interface AWEPlayInteractionSingleManager : NSObject
-{
-}
-
-@end
-
 @interface AWEPlayInteractionTagsElement : AWEPlayInteractionLeftElement
 {
 }
@@ -132259,12 +133494,6 @@ typedef union {
 @end
 
 @interface AWEPlayInteractionUserAvatarView : UIView
-{
-}
-
-@end
-
-@interface AWEPlayInteractionVideoGiftStripeElement : AWEPlayInteractionBottomElement
 {
 }
 
@@ -132474,6 +133703,18 @@ typedef union {
 
 @end
 
+@interface TTKFeedExitClearModeButton : UIButton
+{
+}
+
+@end
+
+@interface TTKFeedExitClearModeElement : AWEPlayInteractionRightElement
+{
+}
+
+@end
+
 @interface TTKFeedInteractionAutoAdjustSystemVolumeManager : AWEPlayInteractionBaseManager
 {
 }
@@ -132493,6 +133734,18 @@ typedef union {
 @end
 
 @interface TTKFeedInteractionBusinessPreloadManager : AWEPlayInteractionBaseManager
+{
+}
+
+@end
+
+@interface TTKFeedInteractionClearModeManager : AWEPlayInteractionBaseManager
+{
+}
+
+@end
+
+@interface TTKFeedInteractionEnterClearModeRecord : NSObject
 {
 }
 
@@ -132553,6 +133806,12 @@ typedef union {
 @end
 
 @interface TTKFeedInteractionPrivateAccountEnhanceManager : AWEPlayInteractionBaseManager
+{
+}
+
+@end
+
+@interface TTKFeedInteractionScreenRecordManager : AWEPlayInteractionBaseManager
 {
 }
 
@@ -133410,6 +134669,12 @@ typedef union {
 
 @end
 
+@interface TextStickerStructV2 : GPBMessage
+{
+}
+
+@end
+
 @interface InteractionStickerStructV2 : GPBMessage
 {
 }
@@ -134190,6 +135455,12 @@ typedef union {
 
 @end
 
+@interface CommerceRerankInfo : GPBMessage
+{
+}
+
+@end
+
 @interface PodsDummy_TikTokFeedProtoBuf_Pods_MusicallyCore : NSObject
 {
 }
@@ -134341,12 +135612,6 @@ typedef union {
 @end
 
 @interface TTKEmbedStickerDisplayHandler : NSObject
-{
-}
-
-@end
-
-@interface TTKFeedAutoCaptionFoldStateManager : NSObject
 {
 }
 
@@ -134545,6 +135810,12 @@ typedef union {
 @end
 
 @interface TikTokGogTaskPageNormalTableViewCell : UITableViewCell
+{
+}
+
+@end
+
+@interface TTKFarmABTestManager : NSObject
 {
 }
 
@@ -135402,7 +136673,7 @@ typedef union {
 
 @end
 
-@interface AWEGurdPostLaunchByteDiffExpTask : NSObject
+@interface AWEGurdDownloadPostLaunchExpTask : NSObject
 {
 }
 
@@ -135655,6 +136926,12 @@ typedef union {
 @end
 
 @interface AWEIMBlurImageOperation : NSOperation
+{
+}
+
+@end
+
+@interface AWEIMBottomActionUIBarItemView : UIView
 {
 }
 
@@ -137604,6 +138881,12 @@ typedef union {
 
 @end
 
+@interface AWEIMMessageBottomActionUIBarView : UIView
+{
+}
+
+@end
+
 @interface AWEIMMessageBottomUserHintView : UIView
 {
 }
@@ -137718,6 +139001,18 @@ typedef union {
 
 @end
 
+@interface AWEIMMessageInteractiveUserListViewController : UIViewController
+{
+}
+
+@end
+
+@interface AWEIMMessageInteractiveUserTableViewCell : UITableViewCell
+{
+}
+
+@end
+
 @interface AWEIMMessageListViewController : UIViewController
 {
 }
@@ -137749,6 +139044,24 @@ typedef union {
 @end
 
 @interface AWEIMMessagePushInteractor : AWEIMInteractorObject
+{
+}
+
+@end
+
+@interface AWEIMMessageReactionBarView : UIView
+{
+}
+
+@end
+
+@interface AWEIMMessageReactionMaskView : UIView
+{
+}
+
+@end
+
+@interface AWEIMMessageReactionViewPresenter : NSObject
 {
 }
 
@@ -137881,6 +139194,12 @@ typedef union {
 @end
 
 @interface AWEIMMultiAvatarView : UIView
+{
+}
+
+@end
+
+@interface AWEIMMultiEmojiReplyView : UIView
 {
 }
 
@@ -144351,18 +145670,6 @@ typedef union {
 
 @end
 
-@interface TTKInvocationGrabber : NSProxy
-{
-}
-
-@end
-
-@interface TikTokOCMethodALogger : NSObject
-{
-}
-
-@end
-
 @interface TikTokTrampolineAllocator : TikTokAbstractAllocator
 {
 }
@@ -144370,12 +145677,6 @@ typedef union {
 @end
 
 @interface TikTokTrampolineContextMTC : TikTokTrampolineContext
-{
-}
-
-@end
-
-@interface TikTokTrampolineContextAlog : TikTokTrampolineContext
 {
 }
 
@@ -149801,6 +151102,24 @@ typedef union {
 
 @end
 
+@interface TTKPrivacyItemRestrictionModel : AWEBaseApiModel
+{
+}
+
+@end
+
+@interface TTKPrivacyItemSettingsModel : AWEBaseApiModel
+{
+}
+
+@end
+
+@interface TTKPrivacyItemModel : AWEBaseApiModel
+{
+}
+
+@end
+
 @interface TTKPrivacySettingAdAuthorizationItemModel : TTKPrivacySettingSwitchItemModel
 {
 }
@@ -150336,6 +151655,12 @@ typedef union {
 @end
 
 @interface TTKSyncSwitchCell : TTKSyncSettingBaseCell
+{
+}
+
+@end
+
+@interface ATSAspectManager : NSObject
 {
 }
 
@@ -151313,6 +152638,12 @@ typedef union {
 
 @end
 
+@interface AWESearchDongCheDiVideoModel : AWEBaseApiModel
+{
+}
+
+@end
+
 @interface AWESearchEffectsModel : AWEBaseApiModel
 {
 }
@@ -151457,7 +152788,55 @@ typedef union {
 
 @end
 
+@interface AWEGeneralSearchScrollTailView : UIView
+{
+}
+
+@end
+
 @interface AWEHotSearchManager : NSObject
+{
+}
+
+@end
+
+@interface AWEHybridAudioPlayerManager : NSObject
+{
+}
+
+@end
+
+@interface AWELynxScrollView : LynxUI
+{
+}
+
+@end
+
+@interface AWEModernFullScreenTransManager : NSObject
+{
+}
+
+@end
+
+@interface AWESearchPostLaunchInitTask : NSObject
+{
+}
+
+@end
+
+@interface AWESearchActiveInternalPackageTask : NSObject
+{
+}
+
+@end
+
+@interface AWESearchLynxBridgeRegister : NSObject
+{
+}
+
+@end
+
+@interface AWEUserPersonalSearchUtility : NSObject
 {
 }
 
@@ -151499,2010 +152878,6 @@ typedef union {
 
 @end
 
-@interface AWEAppSearchSettingManagerImpl : HTSService
-{
-}
-
-@end
-
-@interface AWEConcernUsersCardDataController : NSObject
-{
-}
-
-@end
-
-@interface AWEDoubleColumnDynamicCardViewModel : NSObject
-{
-}
-
-@end
-
-@interface AWEDoubleColumnGeneralDivideLineViewModel : NSObject
-{
-}
-
-@end
-
-@interface AWEDoubleColumnGeneralSearchCommonCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWEDoubleColumnGeneralSearchCommonCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWEDoubleColumnGeneralSearchMoreViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWEDoubleColumnGeneralSearchMoreViewCellApdater : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface AWEDoubleColumnGeneralSearchMoreViewModel : NSObject
-{
-}
-
-@end
-
-@interface AWEDoubleColumnGeneralSearchViewController : AWESearchBaseViewController
-{
-}
-
-@end
-
-@interface AWEDoubleColumnGeneralVideoSectionController : IGListSectionController
-{
-}
-
-@end
-
-@interface AWEDoubleColumnRelatedSearchViewModel : NSObject
-{
-}
-
-@end
-
-@interface AWEDynamicCoverManager : HTSService
-{
-}
-
-@end
-
-@interface AWEDynamicCoverStrategyManager : NSObject
-{
-}
-
-@end
-
-@interface AWEFeedCollectionHeaderView : UICollectionReusableView
-{
-}
-
-@end
-
-@interface AWEFeedCollectionViewController : UIViewController
-{
-}
-
-@end
-
-@interface AWEFeedCollectionViewForSearchController : AWEFeedCollectionViewController
-{
-}
-
-@end
-
-@interface AWEFeedHotTestImageCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWEFeedModuleConfig : NSObject
-{
-}
-
-@end
-
-@interface AWEFeedSearchVideoAuthorUpCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWEFeedSearchVideoCardCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWEFeedSearchVideoCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWEFeedSearchDoubleColumnVideoCollectionViewCell : AWEFeedSearchVideoCollectionViewCell
-{
-}
-
-@end
-
-@interface AWEFilmTVEpisodeResponseModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface AWEFilmTVEpisodeDataController : AWEListDataController
-{
-}
-
-@end
-
-@interface AWEGeneralActivityView : UIView
-{
-}
-
-@end
-
-@interface AWEGeneralSearchCardDataController : AWEListDataController
-{
-}
-
-@end
-
-@interface AWEGeneralSearchDataController : AWEListDataController
-{
-}
-
-@end
-
-@interface AWEGeneralSearchRecomMenuItemView : UIControl
-{
-}
-
-@end
-
-@interface AWEGeneralSearchRecomMenuView : UIView
-{
-}
-
-@end
-
-@interface AWEGeneralSearchScrollTailView : UIView
-{
-}
-
-@end
-
-@interface AWEGuessSearchViewController : AWEIrregularWordsBaseViewController
-{
-}
-
-@end
-
-@interface AWEHybridAudioPlayerManager : NSObject
-{
-}
-
-@end
-
-@interface AWEInviteSearchTableViewCell : AWESearchUserTableViewCell
-{
-}
-
-@end
-
-@interface AWEIrregularWordsBaseViewController : UIViewController
-{
-}
-
-@end
-
-@interface AWELynxScrollView : LynxUI
-{
-}
-
-@end
-
-@interface AWEModernFeedTikTokVideoFrame : AWEModernFeedCellFrame
-{
-}
-
-@end
-
-@interface AWEModernFullscreenMagnifyTransition : NSObject
-{
-}
-
-@end
-
-@interface AWEModernFullscreenShrinkTransition : NSObject
-{
-}
-
-@end
-
-@interface AWEModernFullscreenInteractiveShrinkTransition : NSObject
-{
-}
-
-@end
-
-@interface AWEModernFullScreenPopTransition : NSObject
-{
-}
-
-@end
-
-@interface AWEModernFullScreenTransManager : NSObject
-{
-}
-
-@end
-
-@interface AWENewHotSearchModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface AWESearchABTestRegister : NSObject
-{
-}
-
-@end
-
-@interface AWESearchAladdinBaseVideoListView : UIView
-{
-}
-
-@end
-
-@interface AWESearchAladdinNewVideoListView : AWESearchAladdinBaseVideoListView
-{
-}
-
-@end
-
-@interface AWESearchAladdinUserMusicListView : UIView
-{
-}
-
-@end
-
-@interface AWESearchAladdinVideoListFooterView : UICollectionReusableView
-{
-}
-
-@end
-
-@interface AWESearchAladdinVideoListUpdateModel : NSObject
-{
-}
-
-@end
-
-@interface AWESearchAladdinVideoListView : AWESearchAladdinBaseVideoListView
-{
-}
-
-@end
-
-@interface AWESearchAllManager : AWESearchBaseManager
-{
-}
-
-@end
-
-@interface AWESearchBaseManager : NSObject
-{
-}
-
-@end
-
-@interface AWESearchBaseViewController : UIViewController
-{
-}
-
-@end
-
-@interface AWESearchBridgeRegister : NSObject
-{
-}
-
-@end
-
-@interface AWESearchChallengeManager : AWESearchBaseManager
-{
-}
-
-@end
-
-@interface AWESearchChallengeTableViewCell : AWEUIListTableViewCell
-{
-}
-
-@end
-
-@interface AWESearchChallengeViewController : AWESearchBaseViewController
-{
-}
-
-@end
-
-@interface AWESearchCorrectView : UICollectionReusableView
-{
-}
-
-@end
-
-@interface AWESearchDictionaryBuilder : NSObject
-{
-}
-
-@end
-
-@interface AWESearchDongCheDiVideoModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface AWESearchDynamicCardCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWESearchDynamicTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface AWESearchFeedAutoPlayManager : NSObject
-{
-}
-
-@end
-
-@interface AWESearchFeedbackGuideView : UIView
-{
-}
-
-@end
-
-@interface AWESearchFIlmTVEpisodeSheet : UIView
-{
-}
-
-@end
-
-@interface AWESearchFilmTVEpisodesView : UIView
-{
-}
-
-@end
-
-@interface AWESearchFilmTVEpisodesViewController : UIViewController
-{
-}
-
-@end
-
-@interface AWESearchTagBackgroudImageTransformer : NSObject
-{
-}
-
-@end
-
-@interface AWESearchFilmTVTagView : UIView
-{
-}
-
-@end
-
-@interface AWESearchFinitePushController : NSObject
-{
-}
-
-@end
-
-@interface AWESearchFrequencyManager : NSObject
-{
-}
-
-@end
-
-@interface AWESearchGeneralFlowChunkDataHelper : NSObject
-{
-}
-
-@end
-
-@interface AWESearchGradientBackgroundView : UIView
-{
-}
-
-@end
-
-@interface AWESearchHarmfulCategoryManager : NSObject
-{
-}
-
-@end
-
-@interface AWESearchHistoryCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWESearchHistoryFlowLayout : UICollectionViewFlowLayout
-{
-}
-
-@end
-
-@interface AWESearchHistoryReusableHeaderView : UICollectionReusableView
-{
-}
-
-@end
-
-@interface AWESearchRSImageItemCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWESearchImageRecommendCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWELegacySearchKeyWord : NSString
-{
-}
-
-@end
-
-@interface AWESearchKeyWordModel : NSString
-{
-}
-
-@end
-
-@interface AWESearchLandingPagePropsResponseModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface AWESearchLandingPageEffectsListModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface AWESearchLandingPageDataController : AWEListDataController
-{
-}
-
-@end
-
-@interface AWESearchLandingPageTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface AWESearchLandingPageViewController : UIViewController
-{
-}
-
-@end
-
-@interface AWESearchLynxBridgeRegister : NSObject
-{
-}
-
-@end
-
-@interface AWESearchLynxEngine : NSObject
-{
-}
-
-@end
-
-@interface AWESearchMiddleUtility : NSObject
-{
-}
-
-@end
-
-@interface AWESearchMiddleViewController : UIViewController
-{
-}
-
-@end
-
-@interface AWESearchModule : NSObject
-{
-}
-
-@end
-
-@interface AWESearchPostLaunchInitTask : NSObject
-{
-}
-
-@end
-
-@interface AWESearchActiveInternalPackageTask : NSObject
-{
-}
-
-@end
-
-@interface AWESearchModuleService : HTSService
-{
-}
-
-@end
-
-@interface AWESearchMonitorHelper : NSObject
-{
-}
-
-@end
-
-@interface AWESearchMultiFeedFallThroughParams : NSObject
-{
-}
-
-@end
-
-@interface AWESearchMusicsAuthorCardMoreTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface AWESearchMusicsAuthorCardTitleTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface AWESearchMusicsClusterTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface AWESearchMusicsManager : AWESearchBaseManager
-{
-}
-
-@end
-
-@interface AWESearchMusicsViewController : AWESearchBaseViewController
-{
-}
-
-@end
-
-@interface AWESearchMusicTableViewCell : AWEUIListTableViewCell
-{
-}
-
-@end
-
-@interface AWESearchPlaceholderHistoryTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface AWESearchPlaceholderHotTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface AWESearchPlaceholderViewController : UIViewController
-{
-}
-
-@end
-
-@interface AWESearchRateItemView : UIView
-{
-}
-
-@end
-
-@interface AWESearchRecommendWordTagView : UIView
-{
-}
-
-@end
-
-@interface AWESearchRecommendCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWESearchRelatedSearchItemModel : MTLModel
-{
-}
-
-@end
-
-@interface AWESearchRelatedSearchCellModel : MTLModel
-{
-}
-
-@end
-
-@interface AWESearchRelatedSearchItemView : UIControl
-{
-}
-
-@end
-
-@interface AWESearchRelatedSearchCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWESearchResultViewController : UIViewController
-{
-}
-
-@end
-
-@interface AWESearchScrollViewTheme : NSObject
-{
-}
-
-@end
-
-@interface AWESearchStarAlladinVideoCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWESearchSugManager : NSObject
-{
-}
-
-@end
-
-@interface AWESearchSugTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface AWESearchSugViewController : UIViewController
-{
-}
-
-@end
-
-@interface AWESearchTabConfig : NSObject
-{
-}
-
-@end
-
-@interface AWESearchTracker : NSObject
-{
-}
-
-@end
-
-@interface AWESearchTrendBoardEditionModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface AWESearchTrendBoardEditionResponseModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface AWESearchTVEpisodeTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface AWESearchUserManager : AWESearchBaseManager
-{
-}
-
-@end
-
-@interface AWESearchUserTableViewCell : AWEUIListTableViewCell
-{
-}
-
-@end
-
-@interface AWESearchUserViewController : AWESearchBaseViewController
-{
-}
-
-@end
-
-@interface AWESearchUtility : NSObject
-{
-}
-
-@end
-
-@interface AWESearchVarietyEpisodeTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface AWESearchVideoListDataViewController : AWEListDataController
-{
-}
-
-@end
-
-@interface AWESearchVideoViewController : AWESearchBaseViewController
-{
-}
-
-@end
-
-@interface AWESearchViewController : UIViewController
-{
-}
-
-@end
-
-@interface AWEUserPersonalSearchUtility : NSObject
-{
-}
-
-@end
-
-@interface BDXBridgeClickSearchCardMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeClickSearchCardMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeClickSearchCardCardParams : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeFollowPACheckMethodMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeLoadMoreLiveMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeOpenHotspotMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeOpenHotspotMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeOpenLiveMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeOpenLiveMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeOpenLiveMoreMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeOpenLiveMoreMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeOpenPlaylistMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeOpenPlaylistMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeOpenShortVideoMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeOpenShortVideoMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeOpenSingleFeedbackSheetMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeOpenSingleFeedbackSheetMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeSearchEnterLiveFlowMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeSearchEnterLiveFlowMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeSearchKeywordChangeMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeSearchKeywordChangeMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeSearchLaunchChatMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeSearchLaunchChatMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeShowSearchRSReportPanelMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeShowSearchRSReportPanelMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeUpdateRawDataMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeUpdateRawDataMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface BDXBridgeUserFollowNoticeMethod : BDXBridgeMethod
-{
-}
-
-@end
-
-@interface BDXBridgeUserFollowNoticeMethodParamModel : BDXBridgeModel
-{
-}
-
-@end
-
-@interface TikTokSugWordModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface TikTokClickSugModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface TikTokInlayScrollPanelViewController : UIViewController
-{
-}
-
-@end
-
-@interface TikTokMutualRelationAvatarsView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchAladdinCardLoadmoreResponseModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface TikTokSearchAutoPlayHandler : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchAutoPlayManager : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchCellInfoHelper : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchDynamicPlaceHolderTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchDynamicSectionController : IGListSectionController
-{
-}
-
-@end
-
-@interface TikTokSearchFeedAutoPlayDoubleColumnHotZoneRule : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchFeedAutoPlayHotZoneRule : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchSelectSectionModel : MTLModel
-{
-}
-
-@end
-
-@interface TikTokSearchActivityItemModel : MTLModel
-{
-}
-
-@end
-
-@interface TikTokSearchActivitySectionModel : MTLModel
-{
-}
-
-@end
-
-@interface TikTokSearchFilterItemModel : MTLModel
-{
-}
-
-@end
-
-@interface TikTokSearchFilterSectionModel : MTLModel
-{
-}
-
-@end
-
-@interface TikTokSearchFeedbackSectionModel : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchFilterSettingsModel : MTLModel
-{
-}
-
-@end
-
-@interface TikTokSearchGuideSearchCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchGuideSearchView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchGuideSearchViewModel : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchHorizontalAutoPlayBaseContentView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchHorizontalAutoPlayCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchHorizontalAutoPlayHotSpotContentView : TikTokSearchHorizontalAutoPlayBaseContentView
-{
-}
-
-@end
-
-@interface RTLUICollectionViewFlowLayout : UICollectionViewFlowLayout
-{
-}
-
-@end
-
-@interface TikTokSearchHorizontalAutoPlayView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchHorizontalScrollTailView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchHotSpotAutoPlayCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchHotSpotBottomView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchHotSpotTopView : UIView
-{
-}
-
-@end
-
-@interface PodsDummy_TikTokSearchImpl_Pods_MusicallyCore : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchLiveCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchLiveViewController : AWESearchBaseViewController
-{
-}
-
-@end
-
-@interface TikTokSearchLiveConfig : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchLiveViewModel : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchMusicHeaderTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchPlaceholderABTestUISettings : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchPlaceHolderModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface TikTokSearchPlaceHolderDynamicListModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface TikTokSearchPlaceHolderSettingManager : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchPlaceholderViewModel : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchPlaylistDataManager : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchPreciseAdAutoPlayCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchPreciseAdAutoPlayHotZoneRule : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchPreciseAdHorizontalAutoPlayContentView : TikTokSearchHorizontalAutoPlayBaseContentView
-{
-}
-
-@end
-
-@interface TikTokSearchPreciseAdTopView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchResultClickThroughView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchResultStickyComponentViewController : UIViewController
-{
-}
-
-@end
-
-@interface TikTokSearchResultTabRecord : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchSelectTableViewSectionHeaderView : UITableViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchSortAndFilterButton : UIButton
-{
-}
-
-@end
-
-@interface TikTokSearchSortAndFilterPanelFeedbackOnlyTopView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchSortAndFilterPanelTopView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchSortAndFilterSettingsManager : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchActivityTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchSortAndFilterTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchShowMoreFilterTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchFeedbackTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchSortAndFilterTableViewSectionHeaderView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchSortAndFilterTableViewSectionFooterView : UIView
-{
-}
-
-@end
-
-@interface TikTokSearchSortAndFilterTableView : UITableView
-{
-}
-
-@end
-
-@interface TikTokSearchSortAndFilterViewController : UIViewController
-{
-}
-
-@end
-
-@interface TikTokSearchSortAndFilterViewModel : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchSSHVideoFlowLayoutRowInfo : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchSSHVideoFlowLayout : UICollectionViewFlowLayout
-{
-}
-
-@end
-
-@interface TikTokSearchSugReportHintTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TikTokSearchUserVideoListAutoPlayContentView : TikTokSearchHorizontalAutoPlayBaseContentView
-{
-}
-
-@end
-
-@interface TikTokSearchVideoListSyncDataResponseModel : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchVideoListSyncDataController : AWEListDataController
-{
-}
-
-@end
-
-@interface TikTokSearchVideoVerticalCustomFlowLayoutRowInfo : NSObject
-{
-}
-
-@end
-
-@interface TikTokSearchVideoVerticalCustomFlowLayout : UICollectionViewFlowLayout
-{
-}
-
-@end
-
-@interface TTKAutoPlayRuleActiveModel : NSObject
-{
-}
-
-@end
-
-@interface TTKCollectionViewSkeletonAnimationControl : TTKViewSkeletonAnimationControl
-{
-}
-
-@end
-
-@interface TTKDividingLineCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKDividingLineCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKDoubleColumnGeneralSearchCommonCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKDoubleColumnGeneralSearchCommonCollectionViewCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKDoubleColumnGeneralSearchMusicCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKDynamicBulletLynxCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKDynamicSparkLynxCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKFeedbackGuideInteractionView : UIView
-{
-}
-
-@end
-
-@interface TTKFeedbackManager : NSObject
-{
-}
-
-@end
-
-@interface TTKFeedbackView : UIView
-{
-}
-
-@end
-
-@interface TTKFeedSearchVideoCellAdaper : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKGeneralSearchSkeletonView : UIView
-{
-}
-
-@end
-
-@interface TTKGeneralSearchViewController : AWESearchBaseViewController
-{
-}
-
-@end
-
-@interface TTKJsonPatchManager : NSObject
-{
-}
-
-@end
-
-@interface TTKJsonPatchInfo : NSObject
-{
-}
-
-@end
-
-@interface TTKLiveVerticalSearchViewController : TTKVerticalSparkSearchViewController
-{
-}
-
-@end
-
-@interface TTKLynxContainerViewController : UIViewController
-{
-}
-
-@end
-
-@interface TTKOtherFeedbackView : UIView
-{
-}
-
-@end
-
-@interface TTKPoplayer : NSObject
-{
-}
-
-@end
-
-@interface TTKPoplayerMiddleParamsModel : TTKPoplayerParamsModel
-{
-}
-
-@end
-
-@interface TTKPoplayerParamsModel : NSObject
-{
-}
-
-@end
-
-@interface TTKPoplayerPresentationAnimator : NSObject
-{
-}
-
-@end
-
-@interface TTKPoplayerPresentationDelegate : NSObject
-{
-}
-
-@end
-
-@interface TTKPoplayerSearchCompletionParamsModel : TTKPoplayerParamsModel
-{
-}
-
-@end
-
-@interface TTKSearchAccessibleCollectionView : UICollectionView
-{
-}
-
-@end
-
-@interface TTKSearchAudioPlayerService : TTKSearchService
-{
-}
-
-@end
-
-@interface TTKSearchBarActionInfoManager : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchCardAdapter : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchCardManager : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchCommonCardContext : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchCommonCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKSearchContainerAutoPlayService : TTKSearchService
-{
-}
-
-@end
-
-@interface TTKSearchContainerListService : TTKSearchService
-{
-}
-
-@end
-
-@interface TTKSearchContainerSectionController : IGListSectionController
-{
-}
-
-@end
-
-@interface TTKSearchContainerService : TTKSearchService
-{
-}
-
-@end
-
-@interface TTKSearchContainerThemeService : TTKSearchService
-{
-}
-
-@end
-
-@interface TTKSearchContainerTrackerService : TTKSearchService
-{
-}
-
-@end
-
-@interface TTKSearchContainerTransitionService : TTKSearchService
-{
-}
-
-@end
-
-@interface TTKSearchContext : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchFailureManager : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchFilterCollectionViewFlowLayout : UICollectionViewFlowLayout
-{
-}
-
-@end
-
-@interface TTKSearchFilterCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKSearchFilterCollectionViewTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TTKSearchFrequencyControlModel : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchHorizentalLiveCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKSearchHorizentalLiveCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKSearchHorizentalLiveViewModel : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchHorizontalCollectionLiveView : TTKSearchHorizontalLivePlayBaseView
-{
-}
-
-@end
-
-@interface TTKSearchHorizontalLivePlayBaseView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchHorizontalLoadMoreAdditionView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchHorizontalLoadMoreControl : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchHorizontalLynxView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchHorizontalPlayRule : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchHorizontalView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchHorizontalViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKSearchHotSpotAutoPlayCollectionViewCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKSearchImageRecommendCollectionViewCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKSearchLiveConfig : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchLivePlayControllerManager : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchLivePlayView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchLiveView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchLynxAwemeModelIndex : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface TTKSearchLynxBounceView : LynxUIView
-{
-}
-
-@end
-
-@interface TTKSearchLynxElementBridge : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchLynxElement : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchLynxElementManager : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchLynxHorizontalElement : LynxUI
-{
-}
-
-@end
-
-@interface TTKSearchLynxLiveElement : LynxUI
-{
-}
-
-@end
-
-@interface TTKSearchLynxVideoElement : LynxUI
-{
-}
-
-@end
-
-@interface TTKResourcePreLoad : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchMaskPoplayer : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchMessageCenter : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchMessageModel : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchNewLiveView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchPerfBlockManager : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchPlaceholderAccountCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKSearchPlaceholderMostVisitedTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TTKSearchPlaceholderTrendingCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKSearchPlaceholderTrendingTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TTKSearchPoplayer : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchPreciseAdAutoPlayCollectionViewCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKSearchRecommendCollectionViewCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKSearchRichSugSectionHeader : UIView
-{
-}
-
-@end
-
-@interface TTKSearchRichUserSugTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TTKSearchService : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchServiceManager : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchShopProductCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKSearchShopProductListView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchSingleAutoPlayHotZoneRule : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchSkeletonCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKSearchSkeletonTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TTKSearchSparkCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKSearchSparkContainerViewController : UIViewController
-{
-}
-
-@end
-
-@interface TTKSearchSurveyDetailModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface TTKSearchSurveyDataController : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchSurveyViewController : UIViewController
-{
-}
-
-@end
-
-@interface TTKSearchThemeColorManager : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchTimeManager : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchTrackParamsHandlerRegister : NSObject
-{
-}
-
-@end
-
 @interface TTKSearchTrendingBarBottomElement : AWEPlayInteractionBottomElement
 {
 }
@@ -153510,120 +152885,6 @@ typedef union {
 @end
 
 @interface TTKSearchTrendingBarView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchTrendingInflowDataController : AWEListDataController
-{
-}
-
-@end
-
-@interface TTKSearchUserCardViewModel : NSObject
-{
-}
-
-@end
-
-@interface TTKSearchUserTabContainerView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchVideoCellInteractionView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchVideoCSCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKSearchVideoCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKSearchVideoCollectionViewCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKSearchVideoView : UIView
-{
-}
-
-@end
-
-@interface TTKSearchViewDelegateProxy : NSProxy
-{
-}
-
-@end
-
-@interface TTKShopVerticalSearchViewController : TTKVerticalSearchViewController
-{
-}
-
-@end
-
-@interface TTKSoundVerticalSearchViewController : TTKVerticalSearchViewController
-{
-}
-
-@end
-
-@interface TTKTableViewSkeletonAnimationControl : TTKViewSkeletonAnimationControl
-{
-}
-
-@end
-
-@interface TTKTrendingBillboardManager : NSObject
-{
-}
-
-@end
-
-@interface TTKUserSearchCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface TTKUserSearchCollectionViewCellAdapter : TTKSearchCardAdapter
-{
-}
-
-@end
-
-@interface TTKVerticalRespondModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface TTKVerticalSearchViewController : AWESearchBaseViewController
-{
-}
-
-@end
-
-@interface TTKVerticalSparkSearchViewController : AWESearchBaseViewController
-{
-}
-
-@end
-
-@interface TTKViewSkeletonAnimationControl : NSObject
 {
 }
 
@@ -154660,6 +153921,12 @@ typedef union {
 @end
 
 @interface AWEShareUtils : NSObject
+{
+}
+
+@end
+
+@interface AWEShareVideoCaptionChannel : AWEShareBaseChannel
 {
 }
 
@@ -155979,6 +155246,12 @@ typedef union {
 
 @end
 
+@interface ForestResourceLoaderHandler : NSObject
+{
+}
+
+@end
+
 @interface PodsDummy_TikTokSparkKitImpl_Pods_MusicallyCore : NSObject
 {
 }
@@ -155986,6 +155259,12 @@ typedef union {
 @end
 
 @interface TTKLynxMonitor : NSObject
+{
+}
+
+@end
+
+@interface TTSparkContextHandler : NSObject
 {
 }
 
@@ -157240,6 +156519,18 @@ typedef union {
 @end
 
 @interface AWEACCFontImpl : NSObject
+{
+}
+
+@end
+
+@interface AWEACCFuzzyNetServiceImpl : NSObject
+{
+}
+
+@end
+
+@interface AWEACCFuzzyNetToastImpl : NSObject
 {
 }
 
@@ -158565,6 +157856,12 @@ typedef union {
 
 @end
 
+@interface AWEPanelErrorTableViewCell : UITableViewCell
+{
+}
+
+@end
+
 @interface AWEPhotoManagerImpl : HTSService
 {
 }
@@ -159645,12 +158942,6 @@ typedef union {
 
 @end
 
-@interface AWEVideoCommonDraftViewController : AWEVideoDraftViewController
-{
-}
-
-@end
-
 @interface AWEVideoCoverChooseViewController : UIViewController
 {
 }
@@ -159753,12 +159044,6 @@ typedef union {
 
 @end
 
-@interface AWEVideoDraftViewController : UIViewController
-{
-}
-
-@end
-
 @interface AWEVideoEditorFactory : NSObject
 {
 }
@@ -159814,12 +159099,6 @@ typedef union {
 @end
 
 @interface AWEVideoMusicManager : NSObject
-{
-}
-
-@end
-
-@interface AWEVideoNewPublishViewController : UIViewController
 {
 }
 
@@ -160161,12 +159440,6 @@ typedef union {
 
 @end
 
-@interface TikTokDraftKidsConfig : NSObject
-{
-}
-
-@end
-
 @interface TikTokGalleryKidsConfig : NSObject
 {
 }
@@ -160252,12 +159525,6 @@ typedef union {
 @end
 
 @interface TikTokStudioDetailCollectionServiceImpl : NSObject
-{
-}
-
-@end
-
-@interface TikTokStudioDraftConfigTikTok : NSObject
 {
 }
 
@@ -160419,18 +159686,6 @@ typedef union {
 
 @end
 
-@interface TTKAdaptPublishPageZoomOutState : NSObject
-{
-}
-
-@end
-
-@interface TTKAdataPublishPageZoomInState : NSObject
-{
-}
-
-@end
-
 @interface TTKAddVideosInCaptionsHelper : NSObject
 {
 }
@@ -160456,6 +159711,18 @@ typedef union {
 @end
 
 @interface TTKAlbumAssetListCollectionViewCell : UICollectionViewCell
+{
+}
+
+@end
+
+@interface TTKAlbumSingleSelectConfig : NSObject
+{
+}
+
+@end
+
+@interface TTKAlbumConfig : NSObject
 {
 }
 
@@ -160755,6 +160022,12 @@ typedef union {
 
 @end
 
+@interface TTKFetchDraftVoiceService : HTSService
+{
+}
+
+@end
+
 @interface TTKGiphyGalleryCollectionViewCell : UICollectionViewCell
 {
 }
@@ -161014,12 +160287,6 @@ typedef union {
 @end
 
 @interface TTKPublishImageAlbumPreviewController : UIViewController
-{
-}
-
-@end
-
-@interface TTKPublishImageAlbumTableViewCell : UITableViewCell
 {
 }
 
@@ -162177,48 +161444,6 @@ typedef union {
 
 @end
 
-@interface AWEMARelationInfoResponse : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface AWEIronManModuleService : HTSService
-{
-}
-
-@end
-
-@interface AWEStationDataNetworkManager : NSObject
-{
-}
-
-@end
-
-@interface AWEStationDataNetworkSection : NSObject
-{
-}
-
-@end
-
-@interface AWEStationDataNetworkTask : NSObject
-{
-}
-
-@end
-
-@interface AWEStationVideoDetailListDataManager : AWEListDataController
-{
-}
-
-@end
-
-@interface PodsDummy_TikTokTimor_Pods_MusicallyCore : NSObject
-{
-}
-
-@end
-
 @interface TTKIDFAWatchdogProtect : NSObject
 {
 }
@@ -162388,6 +161613,12 @@ typedef union {
 @end
 
 @interface TTKCATaskStorage : NSObject
+{
+}
+
+@end
+
+@interface TTKCTTelephonyNetworkInfoQueueFix : NSObject
 {
 }
 
@@ -162778,12 +162009,6 @@ typedef union {
 @end
 
 @interface TTKCampaignFeedBottomBarController : NSObject
-{
-}
-
-@end
-
-@interface TTKCampaignFloatingNoticeView : UIView
 {
 }
 
@@ -163366,6 +162591,12 @@ typedef union {
 @end
 
 @interface TTKReferralInAppPushModel : TTKTouchPoint
+{
+}
+
+@end
+
+@interface TTKReferralPendantBubbleModel : TTKTouchPoint
 {
 }
 
@@ -164756,6 +163987,12 @@ typedef union {
 
 @end
 
+@interface TMChangeUsernameRemoveVerifiedBadgeBanner : UIControl
+{
+}
+
+@end
+
 @interface TMChangeUsernameViewController : UIViewController
 {
 }
@@ -166094,12 +165331,6 @@ typedef union {
 
 @end
 
-@interface AWESettingItemModel : NSObject
-{
-}
-
-@end
-
 @interface AWESettingLoginOrSwitchCellPlugin : NSObject
 {
 }
@@ -166982,6 +166213,12 @@ typedef union {
 
 @end
 
+@interface TTKNewPersonalizationAdAlertViewController : UIViewController
+{
+}
+
+@end
+
 @interface TTKNotifyCreatorVideoWasFavoritedPromptDataController : NSObject
 {
 }
@@ -167204,6 +166441,18 @@ typedef union {
 
 @end
 
+@interface AWESettingItemModel : NSObject
+{
+}
+
+@end
+
+@interface PodsDummy_TikTokUserCenterConfig_Pods_MusicallyCore : NSObject
+{
+}
+
+@end
+
 @interface AWECotentLanguageGuideItem : AWEBaseApiModel
 {
 }
@@ -167373,30 +166622,6 @@ typedef union {
 @end
 
 @interface AWENewUserJourneyManager : NSObject
-{
-}
-
-@end
-
-@interface AWENewUserJourneyPersonalAdsCollectionModel : AWEBaseApiModel
-{
-}
-
-@end
-
-@interface AWENewUserJourneyPersonalAdsCellModel : NSObject
-{
-}
-
-@end
-
-@interface AWENewUserJourneyPersonalAdsCollectionViewCell : UICollectionViewCell
-{
-}
-
-@end
-
-@interface AWENewUserJourneyPersonalAdsViewController : AWENewUserJourneyBaseViewController
 {
 }
 
@@ -167781,6 +167006,12 @@ typedef union {
 @end
 
 @interface TikTokUserSpecialAccountModel : MTLModel
+{
+}
+
+@end
+
+@interface TTKSpecialAccountTTSellerModel : MTLModel
 {
 }
 
@@ -169600,7 +168831,7 @@ typedef union {
 
 @end
 
-@interface TTKContactsPermissionManager : NSObject
+@interface TTKContactsServiceImpl : HTSService
 {
 }
 
@@ -169865,6 +169096,12 @@ typedef union {
 @end
 
 @interface TTKFollowingBackToFeedMaskView : UIView
+{
+}
+
+@end
+
+@interface TTKFollowingFeedReverseManager : NSObject
 {
 }
 
@@ -171240,6 +170477,12 @@ typedef union {
 
 @end
 
+@interface AWEWeb31NavigationMonitorPlugin : IWKPluginObject
+{
+}
+
+@end
+
 @interface AWEWebConfigImpl : HTSService
 {
 }
@@ -172107,6 +171350,8 @@ typedef union {
 + (id)awe_invalidCaptchaError;
 + (id)awe_canceledError;
 + (id)awe_invalidParameterError;
++ (id)errorWithCode:(long long)arg1 userInfo:(id)arg2;
++ (id)errorWithCode:(long long)arg1 message:(id)arg2;
 + (id)mtl_modelErrorWithException:(id)arg1;
 + (id)aweim_failedToDeleteChatGroupBanned;
 + (id)aweim_invalidImageURLLocalError;
@@ -172119,6 +171364,17 @@ typedef union {
 @property(retain, nonatomic) NSString *res_lineFlagString;
 - (_Bool)isLiveApiError;
 - (id)ieslive_prompts;
+@property(copy, nonatomic) NSString *failReason;
+@property(copy, nonatomic) NSString *amsErrorCode;
+@property(copy, nonatomic) NSString *detailErrorCode;
+@property(copy, nonatomic) NSString *originErrorCode;
+@property(nonatomic) _Bool isApplePayfailed;
+- (id)applePayfailedTrackInfo;
+- (_Bool)enableApplePayfailed;
+- (_Bool)shouldShowApplePayfailedAlert;
+- (id)errorInfoForErrorStr:(id)arg1;
+- (id)applePayfailedTipsInfo;
+- (unsigned long long)applePayfailedType;
 - (id)ieslivePromptsForSubscription;
 - (id)subscriptionFailReasonForTracing;
 - (_Bool)gbl_needShowAlert;
@@ -172160,6 +171416,7 @@ typedef union {
 @interface NSData (MD5) <WCTColumnCoding>
 + (_Bool)bd_dataUseRandom;
 + (void)setBd_dataUseRandom:(_Bool)arg1;
++ (unsigned int)bd_unpackedMethod;
 + (id)dataWithHexString:(id)arg1;
 + (int)columnTypeForWCDB;
 + (id)unarchiveWithWCTValue:(id)arg1;
@@ -172207,6 +171464,12 @@ typedef union {
 - (id)bdd_aes256EncryptWithKey:(id)arg1 iv:(id)arg2;
 - (id)bd_dataByRandom;
 - (id)bd_dataByDecorated;
+- (id)bd_unpackedDataWithSeedData:(id)arg1 method:(unsigned int)arg2;
+- (id)bd_unpackedDataWithSeedString:(id)arg1 method:(unsigned int)arg2;
+- (id)bd_unpackedData;
+- (id)bd_packedDataWithSeedData:(id)arg1;
+- (id)bd_packedDataWithSeedString:(id)arg1;
+- (id)bd_packedData;
 - (id)bdtracker_jsonDictionary;
 - (_Bool)turing_isGzipCompressed;
 - (id)turing_objectFromJSONData;
@@ -172842,7 +172105,7 @@ typedef union {
 - (id)passport_dictionaryForKey:(id)arg1;
 @end
 
-@interface NSString (APMD5Additions) <WCTColumnCoding, IGListDiffable, AWEURLConvertible, TikTokIconColorProtocol, AWEIrregularWordProtocol>
+@interface NSString (APMD5Additions) <WCTColumnCoding, IGListDiffable, AWEURLConvertible, TikTokIconColorProtocol>
 + (id)AWERouter_URLStringWithFormat:(id)arg1 arguments:(char *)arg2;
 + (id)AWERouter_formatWithURLString:(id)arg1 params:(id)arg2;
 + (id)bda_objectWithJSONString:(id)arg1 error:(id *)arg2;
@@ -172950,6 +172213,10 @@ typedef union {
 - (id)bdat_URLEncode;
 - (id)bdd_aesDecryptwithKey:(id)arg1 keySize:(long long)arg2 iv:(id)arg3;
 - (id)bdd_aesEncryptWithkey:(id)arg1 keySize:(long long)arg2 iv:(id)arg3;
+- (id)bd_unpackedDataWithSeed:(id)arg1 method:(unsigned int)arg2;
+- (id)bd_unpackedData;
+- (id)bd_packedDataWithSeedData:(id)arg1;
+- (id)bd_packedData;
 - (id)bdtracker_safeJsonKey;
 - (id)bdtracker_safeJsonObject;
 - (id)bdtracker_jsonDictionary;
@@ -173255,11 +172522,6 @@ typedef union {
 @property(readonly, nonatomic) UIColor *tiktokIconColor;
 - (id)aweth_RTLFormat;
 - (id)aweth_replacePlaceholderWithParams:(id)arg1 resultRangeOfParams:(id)arg2;
-- (id)getSearchWord;
-- (id)getDisplayWord;
-- (id)p_routerKeywordEncodingCharacterSet;
-- (id)search_decodeURIComponent;
-- (id)search_encodeURIComponent;
 - (id)ttkUGKit_appendingCurrentUserID;
 - (id)user_stringByURLEncode;
 - (_Bool)user_containsNumberOnly;
@@ -173275,7 +172537,6 @@ typedef union {
 @property(readonly, copy) NSString *debugDescription;
 @property(readonly, copy) NSString *description;
 @property(readonly) unsigned long long hash;
-@property(copy, nonatomic) NSAttributedString *pureTextContent;
 @property(readonly) Class superclass;
 @end
 
@@ -173702,9 +172963,7 @@ typedef union {
 + (void)awetransition_install;
 + (id)ttsession_topViewControllerForController:(id)arg1;
 + (id)ttsession_topViewController;
-+ (void)swizzleIfNeeded:(_Bool)arg1;
-+ (_Bool)hasBeenSwizzled;
-+ (void)initialize;
++ (void)bdx_swizzleIfNeeded:(_Bool)arg1;
 + (void)hmd_startSwizzle;
 + (void)ieslive_hookModalTransitionStyleSetting;
 + (id)tta_topViewControllerForController:(id)arg1;
@@ -173818,6 +173077,7 @@ typedef union {
 - (void)transition_viewDidAppear:(_Bool)arg1;
 @property(nonatomic) long long bdx_statusBarStyle;
 @property(nonatomic) _Bool bdx_statusBarHidden;
+- (void)bdx_updateStatusBarBackgroundColor:(id)arg1;
 - (void)bdx_configureStatusBarWithParamModel:(id)arg1 completionHandler:(CDUnknownBlockType)arg2;
 - (long long)bdx_preferredStatusBarStyle;
 - (_Bool)bdx_prefersStatusBarHidden;
@@ -174170,11 +173430,10 @@ typedef union {
 @property(retain, nonatomic) ECCombinePaymentPageContenxt *ec_paymentContext;
 - (void)speedMode_viewDidDisappear:(_Bool)arg1;
 - (void)speedMode_viewDidAppear:(_Bool)arg1;
-- (void)p_presentOpenSettingsAlertWithAnimated:(_Bool)arg1 trackConfig:(id)arg2;
-- (CDUnknownBlockType)ttk_locationPermissionChangeAfterOpenSystemSettingBlock;
-- (void)setTtk_locationPermissionChangeAfterOpenSystemSettingBlock:(CDUnknownBlockType)arg1;
-- (id)ttk_locationOpenSettingAlertVC;
-- (void)setTtk_locationOpenSettingAlertVC:(id)arg1;
+- (void)p_presentOpenSettingsAlertWithIsFirstShow:(_Bool)arg1 trackConfig:(id)arg2;
+- (void)ttk_presentOpenSettingsAlertWithTrackConfig:(id)arg1;
+@property(copy, nonatomic) CDUnknownBlockType ttk_locationPermissionChangeAfterOpenSystemSettingBlock;
+@property(retain, nonatomic) UIAlertController *ttk_locationOpenSettingAlertVC;
 @property(copy, nonatomic) NSString *awe_musicTabTitle;
 @property(readonly, nonatomic) NSMutableDictionary *ttk_popupManuallyActiveDict;
 - (void)setTtk_popupPageAppear:(_Bool)arg1;
@@ -174183,8 +173442,6 @@ typedef union {
 - (void)ttkpopup_unmountScenesIfNeed;
 - (void)ttkpopup_updateSceneActiveState:(_Bool)arg1;
 - (void)updateSceneActiveStateManually:(_Bool)arg1 sceneID:(id)arg2;
-@property(nonatomic) long long searchMultiFeed_awemeIndex;
-@property(nonatomic) long long searchMultiFeed_isEnterFeed;
 @property(nonatomic, setter=ttk_setSharePanelNotDismissWhenPresentNew:) _Bool ttk_SharePanelNotDismissWhenPresentNew;
 - (void)acc_dismissViewControllerAnimated:(_Bool)arg1 completion:(CDUnknownBlockType)arg2;
 @property(nonatomic) _Bool acc_isDismissing;
@@ -174567,9 +173824,6 @@ typedef union {
 - (_Bool)desc_isHashtag;
 - (id)aweim_jsonString;
 @property(retain, nonatomic) id live_attachingDIContext;
-@property(nonatomic) long long yy_searchRank;
-@property(retain, nonatomic) NSNumber *ttk_searchMonitorIsFinished;
-- (id)awe_searchMonitorContext;
 
 // Remaining properties
 @property(readonly, copy) NSString *debugDescription;
@@ -174602,9 +173856,6 @@ typedef union {
 - (void)awe_updateGradientBackgroundOffset:(double)arg1;
 - (void)awe_addGradientBackgroundWithOffset:(double)arg1 stickyHeaderHeight:(double)arg2 color:(id)arg3 height:(double)arg4;
 - (void)awe_addGradientBackgroundWithOffset:(double)arg1 stickyHeaderHeight:(double)arg2;
-- (void)ttk_stopSkeletonAnimation;
-- (void)ttk_startSkeletonAnimation;
-@property(retain, nonatomic) TTKCollectionViewSkeletonAnimationControl *ttk_skeletonAnimationControl;
 @end
 
 @interface UIViewController (AWEListLifeCycle)
@@ -174628,7 +173879,6 @@ typedef union {
 + (void)enableSafeOfflineLogic;
 + (void)aweme_safe_install;
 + (void)_aweLazyRegisterLoad_StatusBar;
-+ (void)_aweLazyRegisterLoad_TTKTransitionFix;
 + (void)lazyLoad_TTKSetVCProtect;
 + (void)lazyLoad_TTKPushProtect;
 - (void)awerouter_pushViewController:(id)arg1 animated:(_Bool)arg2 completion:(CDUnknownBlockType)arg3;
@@ -174670,8 +173920,6 @@ typedef union {
 - (id)safePopToRootViewControllerAnimated:(_Bool)arg1;
 - (void)acc_themeReload;
 - (id)awe_uinavigationcontroller_childViewControllerForStatusBarStyle;
-- (void)tt_setViewControllers:(id)arg1;
-- (void)tt_setViewControllers:(id)arg1 animated:(_Bool)arg2;
 - (void)ttk_setVCProtectSetViewControllers:(id)arg1 animated:(_Bool)arg2;
 - (void)ttk_pushProtectPushViewController:(id)arg1 animated:(_Bool)arg2;
 - (id)aweuser_popViewControllerAnimated:(_Bool)arg1 completion:(CDUnknownBlockType)arg2;
@@ -175158,9 +174406,6 @@ typedef union {
 + (id)mixColor1:(id)arg1 withColor2:(id)arg2;
 + (id)ec_colorOfLightColor:(id)arg1 darkColor:(id)arg2;
 + (id)ttkgm_clearColor;
-+ (id)awe_colorWithHexString:(id)arg1;
-+ (id)aweSearch_colorWithARGBHexString:(id)arg1 defaultColor:(id)arg2;
-+ (id)aweSearch_colorWithARGBHexString:(id)arg1;
 - (id)btd_hexStringWithAlpha:(_Bool)arg1;
 - (id)btd_hexStringWithAlpha;
 - (id)btd_hexString;
@@ -175378,7 +174623,7 @@ typedef union {
 + (id)playlist_ImageNamed:(id)arg1 compatibleWithTraitCollection:(id)arg2;
 + (id)playlist_ImageNamed:(id)arg1;
 + (id)awe_privacyCenterImageNamed:(id)arg1;
-+ (id)awe_searchImageNamed:(id)arg1;
++ (id)awe_searchEntryImageNamed:(id)arg1;
 + (id)awe_shareImageNamed:(id)arg1;
 + (id)ttkSocialImageNamed:(id)arg1;
 + (id)ttk_imagesCollctionWithDragonBonesMetaFilePath:(id)arg1;
@@ -176117,6 +175362,7 @@ typedef union {
 - (void)awe_makeToast:(id)arg1;
 - (void)eci_roundCornersInRect:(struct CGRect)arg1 withCorners:(unsigned long long)arg2 radius:(double)arg3;
 - (void)eci_roundCornersInSelfBoundsWithCorners:(unsigned long long)arg1 radius:(double)arg2;
+- (id)ttecpdp_getCurrentLynxUICollectionViewFromView:(id)arg1 forHitTestView:(id)arg2;
 - (id)ttkecstore_getCurrentLynxUICollectionViewFromView:(id)arg1 forHitTestView:(id)arg2;
 - (id)ttkecmall_getCurrentLynxUICollectionViewFromView:(id)arg1 forHitTestView:(id)arg2;
 - (void)ec_roundCornersInRect:(struct CGRect)arg1 withCorners:(unsigned long long)arg2 radius:(double)arg3;
@@ -176279,8 +175525,6 @@ typedef union {
 @property(nonatomic) _Bool animatedImage;
 @property(retain, nonatomic) NSString *animationImageVID;
 @property(nonatomic) _Bool animationTypeReciprocating;
-@property(readonly, nonatomic) _Bool awe_emptyListHitCoreTable;
-@property(retain, nonatomic) AWESearchNilInfoModel *awe_searchListNilInfo;
 - (id)studio_audit_flatMap:(CDUnknownBlockType)arg1;
 @end
 
@@ -176426,7 +175670,6 @@ typedef union {
 - (id)bdturing_URLByMergingQueries:(id)arg1;
 - (_Bool)ies_isHttpURL;
 - (_Bool)falcon_isWaitFixURL;
-- (id)bdx_urlWithoutQuery;
 - (id)_bdx_URLByMergingQueries:(id)arg1;
 - (id)bdx_URLByMergingQueries:(id)arg1 fullyEncoded:(_Bool)arg2;
 - (id)bdx_URLByMergingQueries:(id)arg1;
@@ -176707,6 +175950,7 @@ typedef union {
 - (void)setHmdTempDataFilePath:(id)arg1;
 - (id)hmdTempDataFilePath;
 @property(readonly, copy, nonatomic) NSArray *SR_SSLPinnedCertificates;
+@property(nonatomic) _Bool needCommonParams;
 @property(copy, nonatomic) NSDictionary *webviewInfo;
 @property(readonly, copy) NSString *awenf_source;
 - (id)awenf_bodyFromStream;
@@ -176988,6 +176232,7 @@ typedef union {
 - (id)awe_trimmed;
 - (id)awe_trim:(id)arg1;
 - (id)awe_rtlString;
+- (id)awe_ltrString;
 @end
 
 @interface UIDevice (BTDLegacy)
@@ -177271,6 +176516,7 @@ typedef union {
 @interface UIScrollView (BTDAdditions) <BDXLynxImpressionParentView>
 + (void)_aweLazyRegisterLoad_BDXPageView;
 + (void)lazyLoad_UIScrollView_popGesture;
++ (void)_aweLazyRegisterLoad_Utility;
 - (void)btd_scrollToRightAnimated:(_Bool)arg1;
 - (void)btd_scrollToLeftAnimated:(_Bool)arg1;
 - (void)btd_scrollToBottomAnimated:(_Bool)arg1;
@@ -177415,6 +176661,8 @@ typedef union {
 - (void)setTiktok_delegateForwarder:(id)arg1;
 @property(nonatomic) _Bool shouldEnablePopGesture;
 - (_Bool)enablePop_gestureRecognizerShouldBegin:(id)arg1;
+@property(nonatomic) _Bool awe_disableContentOffsetChange;
+- (void)p_setContentOffset:(struct CGPoint)arg1 animated:(_Bool)arg2;
 
 // Remaining properties
 @property(readonly, copy) NSString *debugDescription;
@@ -177740,11 +176988,19 @@ typedef union {
 
 @interface CTTelephonyNetworkInfo (AWEDataService)
 + (id)currentRaidoAccess;
++ (_Bool)awe_swizzleAllocMethod;
++ (_Bool)awe_swizzleInitMethod;
++ (id)ttk_allocWithZone:(struct _NSZone *)arg1;
++ (id)awe_launch_allocWithZone:(struct _NSZone *)arg1;
++ (void)p_awe_launchEnd:(id)arg1;
++ (void)_aweLazyRegisterLoad_LaunchOptimization;
 - (id)tokamak_currentRadioAccessTechnology;
 - (id)tokamak_serviceCurrentRadioAccessTechnology;
 - (void)tokamak_postNotificationIfReady:(id)arg1 object:(id)arg2;
 - (void)tokamak_updateSignal:(id)arg1 descriptor:(id)arg2;
 - (void)tokamak_updateRat:(id)arg1 descriptor:(id)arg2;
+- (id)ttk_init;
+- (id)awe_launch_init;
 @end
 
 @interface NSValueTransformer (HTSLive)
@@ -177888,9 +177144,6 @@ typedef union {
 - (void)aweim_insertRowsAtIndexPaths:(id)arg1 withRowAnimation:(long long)arg2;
 - (void)aweim_endUpdates;
 - (void)aweim_beginUpdates;
-- (void)ttk_stopSkeletonAnimation;
-- (void)ttk_startSkeletonAnimation;
-@property(retain, nonatomic) TTKTableViewSkeletonAnimationControl *ttk_skeletonAnimationControl;
 @end
 
 @interface UINavigationBar (TokamakFix)
@@ -178160,21 +177413,10 @@ typedef union {
 - (void)setSecondVideoCompostion:(id)arg1;
 @end
 
-@interface TVLManager (RTC)
-+ (void)load;
-- (void)setTVLRTCPlayerWrapper2Class:(Class)arg1;
-- (Class)TVLRTCPlayerWrapper2Class;
-- (void)setRtsRetryMaxCount:(long long)arg1;
-- (long long)rtsRetryMaxCount;
-- (void)setRTCPlayerWrapper:(id)arg1;
-- (id)RTCPlayerWrapper;
-- (id)dealWithRealXParam:(id)arg1;
-- (void)configRTCEngineWithUserInfo:(id)arg1;
-- (void)deallocRTCEngine;
-@end
-
 @interface TVLManager (VideoProcessing)
 + (void)load;
+- (void)removeAllEffects;
+- (void)setEffectParams:(id)arg1;
 - (void)setImageFliterLength:(int)arg1;
 - (int)imageFliterLength;
 - (void)setCurrentImageFliterName:(id)arg1;
@@ -178217,6 +177459,7 @@ typedef union {
 @property(retain, nonatomic) NSMutableArray *fallbackInfoList;
 @property(readonly, nonatomic) _Bool firstFrameDidRender;
 @property(readonly, nonatomic) TVLFallbackInfo *latestFallbackInfo;
+@property(copy, nonatomic) CDUnknownBlockType playerAbrDecisionInfoCallback;
 @property(copy, nonatomic) CDUnknownBlockType playerDidReceiveBinarySeiCallback;
 @property(readonly, copy, nonatomic) CDUnknownBlockType playerDidReceivePacketCallback; // @dynamic playerDidReceivePacketCallback;
 @property(readonly, copy, nonatomic) CDUnknownBlockType playerDidReceivePacketWithPacketInfoCallback;
@@ -178227,6 +177470,7 @@ typedef union {
 @property(nonatomic) _Bool shouldBackupOriginInDecodeError;
 @property(nonatomic) _Bool shouldDegradeResolutionWhenStallRetryWithLLASH;
 @property(nonatomic) _Bool shouldPlayerCloseWithoutStop;
+@property(nonatomic) _Bool shouldReportVideoFrame;
 @property(nonatomic) _Bool shouldRepoteABRSwtichInfoToDelegate;
 @property(nonatomic) _Bool shouldUseMaxRetryTimeInError;
 @property(retain, nonatomic) NSTimer *smoothlySwitchTimer;
@@ -178241,6 +177485,8 @@ typedef union {
 - (void)hooking_setupVideoProcessingWithUserInfo:(id)arg1;
 - (void)hooking_configRTCEngineWithUserInfo:(id)arg1;
 - (void)hooking_deallocRTCEngine;
+- (void)hooking_deallocVROutlet;
+- (void)hooking_configVRWithUserInfo:(id)arg1;
 - (void)hooking_deallocExternalRender;
 - (void)hooking_updateExternalRenderVideoFrame:(struct __CVBuffer *)arg1;
 @end
@@ -178309,6 +177555,7 @@ typedef union {
 @property(copy, nonatomic) NSString *commonTag;
 @property(nonatomic) _Bool shouldUseVideoFrameInViceView;
 @property(nonatomic) _Bool shouldReportAudioFrame;
+- (void)setShouldReportVideoFrame:(_Bool)arg1;
 @property(nonatomic) _Bool shouldReportTimeSeries;
 @end
 
@@ -178512,6 +177759,7 @@ typedef union {
 @property(retain, nonatomic) NSMutableDictionary *calc_insertions;
 - (void)calc_addInsertedAttributes;
 - (void)calc_addAttribute:(id)arg1 value:(id)arg2 range:(struct _NSRange)arg3;
+- (void)ttkgm_addAttribute:(id)arg1 value:(id)arg2 range:(struct _NSRange)arg3;
 @end
 
 @interface NSParagraphStyle (YYText)
@@ -178586,6 +177834,9 @@ typedef union {
 @end
 
 @interface PHAsset (FBSDKShareVideo)
++ (id)tspk_fetchAssetsWithMediaType:(long long)arg1 options:(id)arg2;
++ (id)tspk_fetchAssetsWithOptions:(id)arg1;
++ (void)tspk_photo_preload;
 @property(readonly, copy, nonatomic) NSURL *videoURL;
 - (id)awe_getALAssetURL;
 - (void)awe_getURLWithComletion:(CDUnknownBlockType)arg1;
@@ -178593,15 +177844,6 @@ typedef union {
 
 @interface NSLocale (Korean)
 + (_Bool)isKorean;
-@end
-
-@interface CTTelephonyNetworkInfo (LaunchOptimization)
-+ (_Bool)awe_swizzleAllocMethod;
-+ (_Bool)awe_swizzleInitMethod;
-+ (id)awe_launch_allocWithZone:(struct _NSZone *)arg1;
-+ (void)p_awe_launchEnd:(id)arg1;
-+ (void)load;
-- (id)awe_launch_init;
 @end
 
 @interface UICollectionReusableView (AWEBinding)
@@ -178702,7 +177944,6 @@ typedef union {
 + (void)tspk_normal_preload;
 - (void)tspk_requestWhenInUseAuthorization;
 - (void)tspk_requestAlwaysAuthorization;
-- (id)convertStatusText:(int)arg1;
 - (int)getCurrentStatus;
 - (void)tspk_startMonitoringForRegion:(id)arg1;
 - (void)tspk_startMonitoringSignificantLocationChanges;
@@ -178710,6 +177951,20 @@ typedef union {
 - (void)tspk_requestLocation;
 - (void)tspk_requestTemporaryFullAccuracyAuthorizationWithPurposeKey:(id)arg1 completion:(CDUnknownBlockType)arg2;
 - (void)tspk_startUpdatingHeading;
+@end
+
+@interface MPMediaLibrary (TSPrivacyKitAuth)
++ (void)tspk_requestAuthorization:(CDUnknownBlockType)arg1;
++ (void)tspkAuth_preload;
++ (void)tspk_media_preload;
+- (void)tspk_getPlaylistWithUUID:(id)arg1 creationMetadata:(id)arg2 completionHandler:(CDUnknownBlockType)arg3;
+- (void)tspk_addItemWithProductID:(id)arg1 completionHandler:(CDUnknownBlockType)arg2;
+@end
+
+@interface PHPhotoLibrary (TSPrivacyKitAuth)
++ (void)tspk_requestAuthorizationForAccessLevel:(long long)arg1 handler:(CDUnknownBlockType)arg2;
++ (void)tspk_requestAuthorization:(CDUnknownBlockType)arg1;
++ (void)tspk_auth_preload;
 @end
 
 @interface AVCaptureSession (TSPrivacyKit)
@@ -178726,6 +177981,38 @@ typedef union {
 + (void)tspk_requestTrackingAuthorizationWithCompletionHandler:(CDUnknownBlockType)arg1;
 + (void)tspk_preload;
 + (void)AWEComplianceRequestTrackingAuthorizationWithCompletionHandler:(CDUnknownBlockType)arg1;
+@end
+
+@interface MPMediaQuery (TSPrivacyKit)
++ (id)tspk_init;
++ (void)tspk_media_preload;
+@end
+
+@interface PHCollectionList (TSPrivacyKit)
++ (id)tspk_fetchTopLevelUserCollectionsWithOptions:(id)arg1;
++ (void)tspk_photo_preload;
+@end
+
+@interface PHAssetCollection (TSPrivacyKit)
++ (id)tspk_fetchAssetCollectionsWithLocalIdentifiers:(id)arg1 options:(id)arg2;
++ (id)tspk_fetchTopLevelUserCollectionsWithOptions:(id)arg1;
++ (id)tspk_fetchAssetCollectionsWithType:(long long)arg1 subtype:(long long)arg2 options:(id)arg3;
++ (void)tspk_photo_preload;
+@end
+
+@interface PHAssetChangeRequest (TSPrivacyKit)
++ (id)tspk_creationRequestForAssetFromImageAtFileURL:(id)arg1;
++ (void)tspk_photo_preload;
+@end
+
+@interface RPScreenRecorder (TSPrivacyKit)
++ (void)forwardMethodEventToChannelWithMethodName:(id)arg1 apiUsageType:(unsigned long long)arg2 instance:(id)arg3 hashTag:(id)arg4 isNonsenstive:(_Bool)arg5;
++ (void)tspk_preload;
+- (void)tspk_handleStopMethodCalled:(id)arg1;
+- (void)tspk_handleStartMethodCalled:(id)arg1;
+- (void)tspk_stopRecordingWithHandler:(CDUnknownBlockType)arg1;
+- (void)tspk_startRecordingWithHandler:(CDUnknownBlockType)arg1;
+- (void)tspk_startRecordingWithMicrophoneEnabled:(_Bool)arg1 handler:(CDUnknownBlockType)arg2;
 @end
 
 @interface UIAlertController (Private)

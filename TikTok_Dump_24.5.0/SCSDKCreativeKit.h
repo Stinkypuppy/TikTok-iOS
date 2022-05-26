@@ -20,7 +20,7 @@ struct picoproto_ctx_s {
 #pragma mark -
 
 //
-// File: /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/SCSDKCreativeKit.framework/SCSDKCreativeKit
+// File: SCSDKCreativeKit
 // UUID: 3F2B1817-FCE9-30C1-9F1D-10EB7A98D0B6
 //
 //                           Arch: arm64
@@ -33,9 +33,9 @@ struct picoproto_ctx_s {
 // Objective-C Garbage Collection: Unsupported
 //
 //                       Run path: @executable_path/Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/SCSDKCreativeKit.framework/Frameworks
+//                               = /Frameworks
 //                       Run path: @loader_path/Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/SCSDKCreativeKit.framework/Frameworks
+//                               = /Frameworks
 //
 
 @protocol NSCoding

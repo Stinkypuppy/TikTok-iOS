@@ -7,15 +7,15 @@
 #pragma mark -
 
 //
-// File: /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/crypto.framework/crypto
-// UUID: 6B19C8D3-4D2D-37DC-86EE-B669CBE1A38A
+// File: libvcn
+// UUID: CDC805BC-8B1B-3471-AA70-1543AC6E510D
 //
 //                           Arch: arm64
 //                Current version: 0.0.0
 //          Compatibility version: 0.0.0
 //                 Source version: 0.0.0.0.0
-//            Minimum iOS version: 9.0.0
-//                    SDK version: 15.0.0
+//            Minimum iOS version: 8.0.0
+//                    SDK version: 14.3.0
 //
 
 //

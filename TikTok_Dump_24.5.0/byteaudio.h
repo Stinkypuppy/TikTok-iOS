@@ -222,8 +222,8 @@ typedef struct vector<__weak id<RTCAudioSessionDelegate>, std::__1::allocator<__
 #pragma mark -
 
 //
-// File: /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/byteaudio.framework/byteaudio
-// UUID: 3D1C40EC-C1CA-30B7-836C-C9AD3EC75454
+// File: byteaudio
+// UUID: 4CD426C5-0D4E-3423-BF28-62668ABF463A
 //
 //                           Arch: arm64
 //                Current version: 1.0.1
@@ -235,9 +235,9 @@ typedef struct vector<__weak id<RTCAudioSessionDelegate>, std::__1::allocator<__
 // Objective-C Garbage Collection: Unsupported
 //
 //                       Run path: @executable_path/../Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/Frameworks
+//                               = /Frameworks
 //                       Run path: @loader_path/Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/byteaudio.framework/Frameworks
+//                               = /Frameworks
 //                       Run path: @rpath
 //                               = @rpath
 //
@@ -853,3 +853,4 @@ typedef struct vector<__weak id<RTCAudioSessionDelegate>, std::__1::allocator<__
 - (id)initWithObserver:(struct NetworkMonitorObserver *)arg1;
 
 @end
+

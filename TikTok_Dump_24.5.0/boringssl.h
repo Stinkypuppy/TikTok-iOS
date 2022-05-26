@@ -7,7 +7,7 @@
 #pragma mark -
 
 //
-// File: /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/boringssl.framework/boringssl
+// File: boringssl
 // UUID: F658CF5B-5442-3D07-A139-3B618EFACC66
 //
 //                           Arch: arm64

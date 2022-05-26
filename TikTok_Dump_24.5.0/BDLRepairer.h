@@ -7,22 +7,26 @@
 #pragma mark -
 
 //
-// File: /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/TTFFmpeg.framework/TTFFmpeg
-// UUID: D4EC55D2-DB77-3B43-93C6-1C8CAC60007A
+// File: BDLRepairer
+// UUID: C8F2072B-E480-3273-8762-B4919D125A16
 //
 //                           Arch: arm64
 //                Current version: 1.0.0
 //          Compatibility version: 1.0.0
 //                 Source version: 0.0.0.0.0
 //            Minimum iOS version: 9.0.0
-//                    SDK version: 14.3.0
+//                    SDK version: 14.5.0
+//
+// Objective-C Garbage Collection: Unsupported
 //
 //                       Run path: @executable_path/Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/TTFFmpeg.framework/Frameworks
+//                               = /Frameworks
 //                       Run path: @loader_path/Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/TTFFmpeg.framework/Frameworks
+//                               = /Frameworks
 //
 
-//
-// This file does not contain any Objective-C runtime information.
-//
+@interface NSObject (BDLMusicallyCoreRepairer)
++ (void)load;
++ (void)initialize;
+@end
+

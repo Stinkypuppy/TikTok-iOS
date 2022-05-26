@@ -7,15 +7,20 @@
 #pragma mark -
 
 //
-// File: /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/libvcn.framework/libvcn
-// UUID: CDC805BC-8B1B-3471-AA70-1543AC6E510D
+// File: TTFFmpeg
+// UUID: F49E5340-CD8A-34B7-B8A4-0A0C8654D1DC
 //
 //                           Arch: arm64
-//                Current version: 0.0.0
-//          Compatibility version: 0.0.0
+//                Current version: 1.0.0
+//          Compatibility version: 1.0.0
 //                 Source version: 0.0.0.0.0
-//            Minimum iOS version: 8.0.0
+//            Minimum iOS version: 9.0.0
 //                    SDK version: 14.3.0
+//
+//                       Run path: @executable_path/Frameworks
+//                               = /Frameworks
+//                       Run path: @loader_path/Frameworks
+//                               = /Frameworks
 //
 
 //

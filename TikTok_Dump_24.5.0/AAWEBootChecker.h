@@ -7,26 +7,42 @@
 #pragma mark -
 
 //
-// File: /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/BDLRepairer.framework/BDLRepairer
-// UUID: C8F2072B-E480-3273-8762-B4919D125A16
+// File: AAWEBootChecker
+// UUID: 6E039FE4-FE34-368A-9C30-0CB77A8603D7
 //
 //                           Arch: arm64
 //                Current version: 1.0.0
 //          Compatibility version: 1.0.0
 //                 Source version: 0.0.0.0.0
 //            Minimum iOS version: 9.0.0
-//                    SDK version: 14.5.0
+//                    SDK version: 14.1.0
 //
 // Objective-C Garbage Collection: Unsupported
 //
 //                       Run path: @executable_path/Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/BDLRepairer.framework/Frameworks
+//                               = /Frameworks
 //                       Run path: @loader_path/Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/BDLRepairer.framework/Frameworks
+//                               = /Frameworks
 //
 
-@interface NSObject (BDLMusicallyCoreRepairer)
+@interface AAWEBootChecker : NSObject
+{
+}
+
++ (_Bool)shouldCheckTargetPath:(id)arg1;
 + (void)load;
-+ (void)initialize;
+
+@end
+
+@interface AAWEBootStub : NSObject
+{
+}
+
++ (void)load;
+
+@end
+
+@interface AAWEBootStub (cat)
++ (void)load;
 @end
 

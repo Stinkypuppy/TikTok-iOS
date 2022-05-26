@@ -27,7 +27,7 @@ typedef struct {
 #pragma mark -
 
 //
-// File: /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/SCSDKCoreKit.framework/SCSDKCoreKit
+// File: SCSDKCoreKit
 // UUID: BF9CCD13-9636-31C8-974E-DF38CA5DB02D
 //
 //                           Arch: arm64
@@ -40,9 +40,9 @@ typedef struct {
 // Objective-C Garbage Collection: Unsupported
 //
 //                       Run path: @executable_path/Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/SCSDKCoreKit.framework/Frameworks
+//                               = /Frameworks
 //                       Run path: @loader_path/Frameworks
-//                               = /Users/lizynz/Desktop/Payload/TikTok.app/Frameworks/SCSDKCoreKit.framework/Frameworks
+//                               = /Frameworks
 //
 
 @protocol AnalyticsEventsQueueDelegate <NSObject>
