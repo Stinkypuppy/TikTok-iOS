@@ -864,8 +864,8 @@ typedef union {
 #pragma mark -
 
 //
-// File: MusicallyCore
-// UUID: 0B29F68B-5048-3F16-90F0-6874E0EB2EE7
+// File: TikTokCore
+// UUID: 2828C53C-02E8-3554-816C-546C364695D4
 //
 //                           Arch: arm64
 //                Current version: 1.0.0
@@ -3954,6 +3954,15 @@ typedef union {
 @end
 
 @protocol AWEIMMessageReactionBarViewDelegate
+@end
+
+@protocol AWEIMMessageRefreshManagerProtocol
+@end
+
+@protocol AWEIMMessageRequestViewOutput
+@end
+
+@protocol AWEIMMessageRequestViewProtocol
 @end
 
 @protocol AWEIMModuleService
@@ -7698,6 +7707,9 @@ typedef union {
 @protocol FeedBackMessageCellProtocol
 @end
 
+@protocol GBKGuideSettingAgeLimitService
+@end
+
 @protocol GBLAnchorBusinessStatusAction
 @end
 
@@ -8212,6 +8224,9 @@ typedef union {
 @protocol GBLMessageConsumerFeedback
 @end
 
+@protocol GBLMessageDecoder
+@end
+
 @protocol GBLMessageGiftFilterActions
 @end
 
@@ -8571,7 +8586,10 @@ typedef union {
 @protocol HGHTMLGameControllerDelegate
 @end
 
-@protocol HGHTMLRecordViewDelegate
+@protocol HGHTMLLoadingViewDelegate
+@end
+
+@protocol HGHTMLPostRecordViewDelegate
 @end
 
 @protocol HGHostCustomNetworkPluginDelegate
@@ -8608,6 +8626,9 @@ typedef union {
 @end
 
 @protocol HGReachabilityStateDelegate
+@end
+
+@protocol HGRouterPluginDelegate
 @end
 
 @protocol HGSDKTimingMessage
@@ -9291,6 +9312,9 @@ typedef union {
 @end
 
 @protocol IESIMPushMessageReceiverMessage
+@end
+
+@protocol IESIMSendMessageLoggerDelegate
 @end
 
 @protocol IESIMSendMessageLoggerProtocol
@@ -11799,6 +11823,9 @@ typedef union {
 @protocol IESVideoPlayerDelegate
 @end
 
+@protocol IESVideoPlayerGestureDelegate
+@end
+
 @protocol IESVideoPlayerGestureManaging
 @end
 
@@ -12705,6 +12732,9 @@ typedef union {
 @protocol MFMessageComposeViewControllerDelegate
 @end
 
+@protocol MKLocalSearchCompleterDelegate
+@end
+
 @protocol MKMapViewDelegate
 @end
 
@@ -13324,6 +13354,9 @@ typedef union {
 @end
 
 @protocol TIMFileUploaderProtocol
+@end
+
+@protocol TIMFilteredConversationFetcherProtocol
 @end
 
 @protocol TIMHistoryMessagePullerProtocol
@@ -13992,6 +14025,12 @@ typedef union {
 @protocol TTKCommentBubbleConfigProtocol
 @end
 
+@protocol TTKCommentDataControllerAdapterDelegate
+@end
+
+@protocol TTKCommentDataControllerAdapterProtocol
+@end
+
 @protocol TTKCommentListActionProtocol
 @end
 
@@ -14020,6 +14059,9 @@ typedef union {
 @end
 
 @protocol TTKCommentPageProtocol
+@end
+
+@protocol TTKCommentPermissionCheckerProtocol
 @end
 
 @protocol TTKCommentSearchViewControllerProtocol
@@ -14564,6 +14606,9 @@ typedef union {
 @protocol TTKFeedPreloadServiceProtocol
 @end
 
+@protocol TTKFeedPreloadTaskDelegate
+@end
+
 @protocol TTKFeedProgressBarViewServiceProtocol
 @end
 
@@ -14597,10 +14642,10 @@ typedef union {
 @protocol TTKFeedTabWidgetServiceProtocol
 @end
 
-@protocol TTKFeedTableViewGestureInteractionDataSource
+@protocol TTKFeedTableViewGestureInteracting
 @end
 
-@protocol TTKFeedTableViewGestureProtocol
+@protocol TTKFeedTableViewGestureInteractorManaging
 @end
 
 @protocol TTKFeedTableViewMultipleDelegate
@@ -14685,6 +14730,9 @@ typedef union {
 @end
 
 @protocol TTKFriendsFeedMessage
+@end
+
+@protocol TTKFriendsPlayedVideosRecorderProtocol
 @end
 
 @protocol TTKFriendsRecommendBottomViewDelegate
@@ -14976,6 +15024,9 @@ typedef union {
 @end
 
 @protocol TTKMusicMainFeedPlayerProtocol
+@end
+
+@protocol TTKMusicModalViewInterface
 @end
 
 @protocol TTKMusicModalViewManagerProtocol
@@ -15341,9 +15392,6 @@ typedef union {
 @protocol TTKPreLoginProtocol
 @end
 
-@protocol TTKPreloadTaskDelegate
-@end
-
 @protocol TTKPrivacyHighlightForTeensHeaderViewDelegate
 @end
 
@@ -15606,6 +15654,9 @@ typedef union {
 @end
 
 @protocol TTKSearchAdLearnMoreView
+@end
+
+@protocol TTKSearchEventTrackingManagerProtocol
 @end
 
 @protocol TTKSearchHistoryManagerProtocol
@@ -15936,6 +15987,12 @@ typedef union {
 @protocol TTKUnreadCountContext
 @end
 
+@protocol TTKUpvoteBubbleDataControllerDelegate
+@end
+
+@protocol TTKUpvoteBubbleElementDelegate
+@end
+
 @protocol TTKUpvoteBubbleScrollerViewDataSource
 @end
 
@@ -15967,6 +16024,9 @@ typedef union {
 @end
 
 @protocol TTKUpvoteServiceProtocol
+@end
+
+@protocol TTKUpvoteTrackManagerProtocol
 @end
 
 @protocol TTKUserEmailConsentService
@@ -16356,6 +16416,9 @@ typedef union {
 @protocol TUXSegmentedControlConfigurationProtocol
 @end
 
+@protocol TUXSegmentedControlDelegate
+@end
+
 @protocol TUXSegmentedItemConfigurationProtocol
 @end
 
@@ -16740,6 +16803,9 @@ typedef union {
 @protocol TikTokFeedTabControlDelegate
 @end
 
+@protocol TikTokFeedTabItemMusicControlProtocol
+@end
+
 @protocol TikTokFriendInvitationPopViewDelegate
 @end
 
@@ -16949,6 +17015,12 @@ typedef union {
 @end
 
 @protocol TikTokLiveMessageProtocol
+@end
+
+@protocol TikTokLiveMessageReceiver
+@end
+
+@protocol TikTokLiveMessageSubscriber
 @end
 
 @protocol TikTokLiveNotificationManagerProtocol
@@ -17674,7 +17746,7 @@ typedef union {
 @protocol attributionDelegate
 @end
 
-@interface BDLDecompressor_MusicallyCore : NSObject <NSCopying>
+@interface BDLDecompressor_TikTokCore : NSObject <NSCopying>
 {
     int _foo;
 }
@@ -44329,25 +44401,43 @@ typedef union {
 
 @end
 
-@interface HGHTMLGameIcon : UIView
+@interface HGHTMLMorePanelView : UIView
 {
 }
 
 @end
 
-@interface HGHTMLRecordController : UIViewController
+@interface HGReportIcon : UIView
 {
 }
 
 @end
 
-@interface HGButton : UIButton
+@interface HGHTMLToolBarView : UIView
 {
 }
 
 @end
 
-@interface HGHTMLRecordView : UIView
+@interface HGHTMLPostRecordView : UIView
+{
+}
+
+@end
+
+@interface DefaultPostImageView : UIView
+{
+}
+
+@end
+
+@interface HGHTMLRecordButton : UIButton
+{
+}
+
+@end
+
+@interface HGHTMLRecordPresenter : NSObject
 {
 }
 
@@ -44413,12 +44503,6 @@ typedef union {
 
 @end
 
-@interface HGPluginMedia : HGPluginBase
-{
-}
-
-@end
-
 @interface HGPluginApplication : HGPluginBase
 {
 }
@@ -44474,12 +44558,6 @@ typedef union {
 @end
 
 @interface HGBusinessAPIUtil : NSObject
-{
-}
-
-@end
-
-@interface HGSensitiveAPIUtil : NSObject
 {
 }
 
@@ -48742,13 +48820,19 @@ typedef union {
 
 @end
 
+@interface HTSLivePBResponseSerializer : NSObject
+{
+}
+
+@end
+
 @interface HTSLiveMessageValueTransformer : NSObject
 {
 }
 
 @end
 
-@interface HTSLivePBResponseSerializer : NSObject
+@interface IESLiveMessageDecoder : NSObject
 {
 }
 
@@ -48797,12 +48881,6 @@ typedef union {
 @end
 
 @interface HTSLiveMessageCompoundTransport : NSObject
-{
-}
-
-@end
-
-@interface IESLiveMessageDecoder : NSObject
 {
 }
 
@@ -52938,6 +53016,12 @@ typedef union {
 
 @end
 
+@interface GBLAgeLimitAlertContentView : UIView
+{
+}
+
+@end
+
 @interface IESLiveMTGuideSettingPanelView : UIView
 {
 }
@@ -52999,6 +53083,12 @@ typedef union {
 @end
 
 @interface IESLiveMTGuideModeratorTableViewCell : IESLiveMTCommonTableViewCell
+{
+}
+
+@end
+
+@interface GBLPreviewSettingAgeLimitCell : UIView
 {
 }
 
@@ -53935,6 +54025,12 @@ typedef union {
 @end
 
 @interface IESLiveMTGiftListItem : NSObject
+{
+}
+
+@end
+
+@interface IESLiveMTGiftPanelRetryView : UIView
 {
 }
 
@@ -56514,6 +56610,12 @@ typedef union {
 
 @end
 
+@interface GBLAgeRestrictionFinishViewController : UIViewController
+{
+}
+
+@end
+
 @interface IESLiveMTFinishWebViewConfig : NSObject
 {
 }
@@ -56773,6 +56875,12 @@ typedef union {
 @end
 
 @interface IESLiveMTLaunchTaskLeaksFinder : IESLiveMTInsignificantLaunchTask
+{
+}
+
+@end
+
+@interface IESLiveMTLaunchTaskManageGiftEffect : IESLiveMTInsignificantLaunchTask
 {
 }
 
@@ -57132,6 +57240,12 @@ typedef union {
 
 @end
 
+@interface IESLiveMTOpenLiveGameGuideInfo : MTLModel
+{
+}
+
+@end
+
 @interface IESLiveMTOpenLiveForbidden : MTLModel
 {
 }
@@ -57151,6 +57265,12 @@ typedef union {
 @end
 
 @interface IESLiveMTOpenLiveQuality : MTLModel
+{
+}
+
+@end
+
+@interface GBLAgeRestrictedConfig : MTLModel
 {
 }
 
@@ -57385,6 +57505,12 @@ typedef union {
 @end
 
 @interface IESLiveGiftPollInfoGiftPollOption : MTLModel
+{
+}
+
+@end
+
+@interface IESLiveGiftRiskCtlStrategies : MTLModel
 {
 }
 
@@ -65892,6 +66018,12 @@ typedef union {
 @end
 
 @interface NoteDetail : GPBMessage
+{
+}
+
+@end
+
+@interface GoalInfo : GPBMessage
 {
 }
 
@@ -80283,12 +80415,6 @@ typedef union {
 
 @end
 
-@interface TIMPBNBaseResp : GPBMessage
-{
-}
-
-@end
-
 @interface TIMPBNSendMessageResponseBody : GPBMessage
 {
 }
@@ -81663,6 +81789,12 @@ typedef union {
 
 @end
 
+@interface TIMFilteredConversationFetcher : NSObject
+{
+}
+
+@end
+
 @interface TIMStrangerConversationModel : MTLModel
 {
 }
@@ -82156,6 +82288,12 @@ typedef union {
 @end
 
 @interface TIMOUserManager : NSObject
+{
+}
+
+@end
+
+@interface TIMOFilteredConversationDataSource : NSObject
 {
 }
 
@@ -89956,12 +90094,6 @@ typedef union {
 
 @end
 
-@interface TTKBTMTrackPositionModel : NSObject
-{
-}
-
-@end
-
 @interface TTKBTMTrackManager : NSObject
 {
 }
@@ -90131,6 +90263,12 @@ typedef union {
 @end
 
 @interface IESOwnPlayerWrapper : NSObject
+{
+}
+
+@end
+
+@interface IESPreloadRequest : NSObject
 {
 }
 
@@ -97898,7 +98036,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_Pods_MusicallyCore : NSObject
+@interface PodsDummy_Pods_TikTokCore : NSObject
 {
 }
 
@@ -97922,7 +98060,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AAWELaunchOptimizationTikTok_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AAWELaunchOptimizationTikTok_Pods_TikTokCore : NSObject
 {
 }
 
@@ -97952,7 +98090,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AAWELaunchTimeTrackerTikTok_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AAWELaunchTimeTrackerTikTok_Pods_TikTokCore : NSObject
 {
 }
 
@@ -97985,7 +98123,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEABTest_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEABTest_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98039,7 +98177,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEAppSettings_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEAppSettings_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98081,7 +98219,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEAuth_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEAuth_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98093,7 +98231,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEBaseLib_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEBaseLib_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98117,7 +98255,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEBaseModel_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEBaseModel_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98129,7 +98267,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEBind_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEBind_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98177,7 +98315,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWECPPLibWrapper_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWECPPLibWrapper_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98189,7 +98327,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWECodeRunner_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWECodeRunner_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98213,7 +98351,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEElement_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEElement_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98237,7 +98375,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEEncrypt_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEEncrypt_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98255,7 +98393,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEEnvironment_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEEnvironment_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98291,7 +98429,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEFoundationKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEFoundationKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98399,7 +98537,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEGeckoService_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEGeckoService_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98447,7 +98585,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWELanguages_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWELanguages_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98459,7 +98597,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWELazyRegister_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWELazyRegister_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98525,7 +98663,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWELocalizations_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWELocalizations_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98561,7 +98699,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWELog_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWELog_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98615,7 +98753,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWELynxKitService_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWELynxKitService_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98639,7 +98777,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEMVVMFramework_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEMVVMFramework_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98657,7 +98795,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEMonitor_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEMonitor_Pods_TikTokCore : NSObject
 {
 }
 
@@ -98693,7 +98831,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWENetwork_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWENetwork_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99011,7 +99149,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEPerformanceMonitor_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEPerformanceMonitor_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99047,7 +99185,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEPluginManager_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEPluginManager_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99065,7 +99203,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWERTL_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWERTL_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99221,7 +99359,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEResourceService_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEResourceService_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99269,7 +99407,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWERouterService_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWERouterService_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99299,7 +99437,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEStudioTransition_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEStudioTransition_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99395,7 +99533,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWETrackerService_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWETrackerService_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99551,7 +99689,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_AWEUIKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_AWEUIKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99629,7 +99767,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_ArtSoter_I18N_Pods_MusicallyCore : NSObject
+@interface PodsDummy_ArtSoter_I18N_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99653,7 +99791,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_BCAAKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BCAAKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99677,13 +99815,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_BDARifleSDKI18N_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BDARifleSDKI18N_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_BDAlogProtocol_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BDAlogProtocol_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99695,7 +99833,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_BDAssert_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BDAssert_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99713,7 +99851,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_BDMonitorProtocol_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BDMonitorProtocol_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99737,7 +99875,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_BDXBridgeSDK_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BDXBridgeSDK_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99755,7 +99893,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_BDXContainer_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BDXContainer_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99773,7 +99911,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_BDXLynxKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BDXLynxKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99833,7 +99971,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_BDXResourceLoader_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BDXResourceLoader_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99875,7 +100013,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_BDXServiceCenter_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BDXServiceCenter_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99887,7 +100025,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_BDXWebKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BDXWebKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99911,7 +100049,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_Bind_Pods_MusicallyCore : NSObject
+@interface PodsDummy_Bind_Pods_TikTokCore : NSObject
 {
 }
 
@@ -99923,7 +100061,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_BulletX_Pods_MusicallyCore : NSObject
+@interface PodsDummy_BulletX_Pods_TikTokCore : NSObject
 {
 }
 
@@ -100116,12 +100254,6 @@ typedef union {
 @end
 
 @interface ACCAudioExport : NSObject
-{
-}
-
-@end
-
-@interface ACCAudioNetServiceImpl : NSObject
 {
 }
 
@@ -100518,12 +100650,6 @@ typedef union {
 @end
 
 @interface ACCCanvasUtils : NSObject
-{
-}
-
-@end
-
-@interface ACCCaptionsNetServiceImpl : NSObject
 {
 }
 
@@ -102263,12 +102389,6 @@ typedef union {
 
 @end
 
-@interface ACCLoggerExternalHeader : NSObject
-{
-}
-
-@end
-
 @interface ACCLVAudioComponent : ACCFeatureComponent
 {
 }
@@ -102689,6 +102809,12 @@ typedef union {
 
 @end
 
+@interface ACCPublishFunctionalTextMarkedupParserResult : NSObject
+{
+}
+
+@end
+
 @interface ACCPublishFunctionalTextMetaAttributes : NSObject
 {
 }
@@ -102702,12 +102828,6 @@ typedef union {
 @end
 
 @interface ACCPublishHashtagMeta : NSObject
-{
-}
-
-@end
-
-@interface ACCPublishNetServiceImpl : NSObject
 {
 }
 
@@ -103626,12 +103746,6 @@ typedef union {
 @end
 
 @interface ACCStickerLocationUtils : NSObject
-{
-}
-
-@end
-
-@interface ACCDonationStickerNetServiceImpl : NSObject
 {
 }
 
@@ -106703,7 +106817,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_CameraClientTikTok_Pods_MusicallyCore : NSObject
+@interface PodsDummy_CameraClientTikTok_Pods_TikTokCore : NSObject
 {
 }
 
@@ -107429,13 +107543,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_CreationKitArch_Pods_MusicallyCore : NSObject
+@interface PodsDummy_CreationKitArch_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_CreationKitBeauty_Pods_MusicallyCore : NSObject
+@interface PodsDummy_CreationKitBeauty_Pods_TikTokCore : NSObject
 {
 }
 
@@ -107561,7 +107675,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_CreationKitComponents_Pods_MusicallyCore : NSObject
+@interface PodsDummy_CreationKitComponents_Pods_TikTokCore : NSObject
 {
 }
 
@@ -107579,19 +107693,19 @@ typedef union {
 
 @end
 
-@interface PodsDummy_CreationKitInfra_Pods_MusicallyCore : NSObject
+@interface PodsDummy_CreationKitInfra_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_CreationKitRTProtocol_Pods_MusicallyCore : NSObject
+@interface PodsDummy_CreationKitRTProtocol_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_CreationKitStickerPanel_Pods_MusicallyCore : NSObject
+@interface PodsDummy_CreationKitStickerPanel_Pods_TikTokCore : NSObject
 {
 }
 
@@ -107609,7 +107723,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_CreativeAlbumKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_CreativeAlbumKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -107819,7 +107933,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_CreativeKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_CreativeKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -107831,7 +107945,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_CreativeKitSticker_Pods_MusicallyCore : NSObject
+@interface PodsDummy_CreativeKitSticker_Pods_TikTokCore : NSObject
 {
 }
 
@@ -107849,13 +107963,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_FirebaseCoreDiagnostics_Pods_MusicallyCore : NSObject
+@interface PodsDummy_FirebaseCoreDiagnostics_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_GoogleToolboxForMac_Pods_MusicallyCore : NSObject
+@interface PodsDummy_GoogleToolboxForMac_Pods_TikTokCore : NSObject
 {
 }
 
@@ -107879,7 +107993,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_HTSEventKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_HTSEventKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -107893,7 +108007,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_HTSRTLManager_Pods_MusicallyCore : NSObject
+@interface PodsDummy_HTSRTLManager_Pods_TikTokCore : NSObject
 {
 }
 
@@ -107971,13 +108085,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_HTSServiceKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_HTSServiceKit_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_HeliumGame_Pods_MusicallyCore : NSObject
+@interface PodsDummy_HeliumGame_Pods_TikTokCore : NSObject
 {
 }
 
@@ -108157,7 +108271,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_HybridKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_HybridKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -108253,13 +108367,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_IESCommonVideoPlayer_Pods_MusicallyCore : NSObject
+@interface PodsDummy_IESCommonVideoPlayer_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_IESFoundation_Pods_MusicallyCore : NSObject
+@interface PodsDummy_IESFoundation_Pods_TikTokCore : NSObject
 {
 }
 
@@ -108385,7 +108499,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_IESGeckoKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_IESGeckoKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -108511,7 +108625,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_IESLiveMTKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_IESLiveMTKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -108995,7 +109109,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_IESLiveMTPlayer_Pods_MusicallyCore : NSObject
+@interface PodsDummy_IESLiveMTPlayer_Pods_TikTokCore : NSObject
 {
 }
 
@@ -109007,7 +109121,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_IESSharePlay_Pods_MusicallyCore : NSObject
+@interface PodsDummy_IESSharePlay_Pods_TikTokCore : NSObject
 {
 }
 
@@ -109115,13 +109229,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_IESWebViewMonitor_Pods_MusicallyCore : NSObject
+@interface PodsDummy_IESWebViewMonitor_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_KiteLog_Pods_MusicallyCore : NSObject
+@interface PodsDummy_KiteLog_Pods_TikTokCore : NSObject
 {
 }
 
@@ -109133,7 +109247,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_KiteProbe_Pods_MusicallyCore : NSObject
+@interface PodsDummy_KiteProbe_Pods_TikTokCore : NSObject
 {
 }
 
@@ -109223,7 +109337,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_Lynx_Pods_MusicallyCore : NSObject
+@interface PodsDummy_Lynx_Pods_TikTokCore : NSObject
 {
 }
 
@@ -109511,7 +109625,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_MDLMediaDataLoader_Pods_MusicallyCore : NSObject
+@interface PodsDummy_MDLMediaDataLoader_Pods_TikTokCore : NSObject
 {
 }
 
@@ -109523,7 +109637,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_Mantle_Pods_MusicallyCore : NSObject
+@interface PodsDummy_Mantle_Pods_TikTokCore : NSObject
 {
 }
 
@@ -109670,7 +109784,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_Rich_Pods_MusicallyCore : NSObject
+@interface PodsDummy_Rich_Pods_TikTokCore : NSObject
 {
 }
 
@@ -109730,13 +109844,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_SnapKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_SnapKit_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_Spark_Pods_MusicallyCore : NSObject
+@interface PodsDummy_Spark_Pods_TikTokCore : NSObject
 {
 }
 
@@ -109766,43 +109880,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_SwiftBasicAdapter_Pods_MusicallyCore : NSObject
+@interface PodsDummy_SwiftBasicAdapter_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_SwiftRegister_Pods_MusicallyCore : NSObject
-{
-}
-
-@end
-
-@interface ATSAccessEntrySubscriber : NSObject
-{
-}
-
-@end
-
-@interface ATSBadcaseEventSubscriber : NSObject
-{
-}
-
-@end
-
-@interface ATSDowngradeEventSubscriber : NSObject
-{
-}
-
-@end
-
-@interface ATSIgnoreDetectSubscriber : NSObject
-{
-}
-
-@end
-
-@interface ATSKeyPathEventSubscriber : NSObject
+@interface PodsDummy_SwiftRegister_Pods_TikTokCore : NSObject
 {
 }
 
@@ -109815,6 +109899,12 @@ typedef union {
 @end
 
 @interface TSDeallocAssociate : NSObject
+{
+}
+
+@end
+
+@interface TSPKAccessEntrySubscriber : NSObject
 {
 }
 
@@ -109916,6 +110006,12 @@ typedef union {
 
 @end
 
+@interface TSPKBadcaseEventSubscriber : NSObject
+{
+}
+
+@end
+
 @interface TSPKBaseEvent : NSObject
 {
 }
@@ -109941,12 +110037,6 @@ typedef union {
 @end
 
 @interface TSPKCLLManagerPipeline : TSPKDetectPipeline
-{
-}
-
-@end
-
-@interface TSPKCLLManagerNormalPipeline : TSPKCLLManagerPipeline
 {
 }
 
@@ -110114,6 +110204,12 @@ typedef union {
 
 @end
 
+@interface TSPKDowngradeEventSubscriber : NSObject
+{
+}
+
+@end
+
 @interface TSPKEntryManager : NSObject
 {
 }
@@ -110222,7 +110318,19 @@ typedef union {
 
 @end
 
+@interface TSPKIgnoreDetectSubscriber : NSObject
+{
+}
+
+@end
+
 @interface TSPKInSameSubnetworkTrigger : TSPKDetectTrigger
+{
+}
+
+@end
+
+@interface TSPKKeyPathEventSubscriber : NSObject
 {
 }
 
@@ -110474,7 +110582,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TSPrivacyKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TSPrivacyKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -110498,13 +110606,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TTBridgeUnify_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TTBridgeUnify_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_TTMacroManager_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TTMacroManager_Pods_TikTokCore : NSObject
 {
 }
 
@@ -110516,7 +110624,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TTPolicyStore_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TTPolicyStore_Pods_TikTokCore : NSObject
 {
 }
 
@@ -110546,7 +110654,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TTSecurityPluginAdapter_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TTSecurityPluginAdapter_Pods_TikTokCore : NSObject
 {
 }
 
@@ -110564,7 +110672,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TUX_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TUX_Pods_TikTokCore : NSObject
 {
 }
 
@@ -111524,7 +111632,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokAdViewabilitySDK_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokAdViewabilitySDK_Pods_TikTokCore : NSObject
 {
 }
 
@@ -111566,7 +111674,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokAppConfigurations_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokAppConfigurations_Pods_TikTokCore : NSObject
 {
 }
 
@@ -111720,7 +111828,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokAudio_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokAudio_Pods_TikTokCore : NSObject
 {
 }
 
@@ -111762,7 +111870,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokBizBridge_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokBizBridge_Pods_TikTokCore : NSObject
 {
 }
 
@@ -111876,7 +111984,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokBizBridgeImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokBizBridgeImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -112171,6 +112279,12 @@ typedef union {
 @end
 
 @interface AWEKnowTheFactModel : MTLModel
+{
+}
+
+@end
+
+@interface TTKShareWarnInfoModel : MTLModel
 {
 }
 
@@ -112507,6 +112621,18 @@ typedef union {
 @end
 
 @interface AWECommentLabelModel : MTLModel
+{
+}
+
+@end
+
+@interface AWECommentShareACL : MTLModel
+{
+}
+
+@end
+
+@interface AWECommentShareInfo : MTLModel
 {
 }
 
@@ -113286,7 +113412,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokBizModel_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokBizModel_Pods_TikTokCore : NSObject
 {
 }
 
@@ -113532,7 +113658,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokBizSettings_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokBizSettings_Pods_TikTokCore : NSObject
 {
 }
 
@@ -114834,7 +114960,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokBizUIComponent_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokBizUIComponent_Pods_TikTokCore : NSObject
 {
 }
 
@@ -115308,7 +115434,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokBootConfig_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokBootConfig_Pods_TikTokCore : NSObject
 {
 }
 
@@ -115338,13 +115464,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokBulletKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokBulletKit_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_TikTokColorResource_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokColorResource_Pods_TikTokCore : NSObject
 {
 }
 
@@ -115668,7 +115794,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokComment_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokComment_Pods_TikTokCore : NSObject
 {
 }
 
@@ -115890,6 +116016,12 @@ typedef union {
 
 @end
 
+@interface TTKCommentDataControllerChangeModel : NSObject
+{
+}
+
+@end
+
 @interface TTKCommentDislikeHelper : NSObject
 {
 }
@@ -115974,6 +116106,12 @@ typedef union {
 
 @end
 
+@interface TTKCommentListInputAccessoryView : UIView
+{
+}
+
+@end
+
 @interface TTKCommentListViewModel : TTKCommentCommonViewModel
 {
 }
@@ -116040,7 +116178,25 @@ typedef union {
 
 @end
 
-@interface TTKCommentPreloadTask : TTKPreloadBaseTask
+@interface TTKCommentPanelUpvoteLoadMoreCell : AWECommentPanelBaseCell
+{
+}
+
+@end
+
+@interface TTKCommentPanelUpvoteLoadMoreCellHelper : NSObject
+{
+}
+
+@end
+
+@interface TTKCommentPermissionChecker : NSObject
+{
+}
+
+@end
+
+@interface TTKCommentPreloadTask : TTKFeedPreloadBaseTask
 {
 }
 
@@ -116143,6 +116299,12 @@ typedef union {
 @end
 
 @interface TTKCommentTranslateButton : UIView
+{
+}
+
+@end
+
+@interface TTKCommentUpvoteLoadMoreInfo : NSObject
 {
 }
 
@@ -118590,7 +118752,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokCommerce_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokCommerce_Pods_TikTokCore : NSObject
 {
 }
 
@@ -119574,7 +119736,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokCommonBundle_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokCommonBundle_Pods_TikTokCore : NSObject
 {
 }
 
@@ -120234,7 +120396,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokCompliance_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokCompliance_Pods_TikTokCore : NSObject
 {
 }
 
@@ -120636,7 +120798,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokCreatorMonetization_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokCreatorMonetization_Pods_TikTokCore : NSObject
 {
 }
 
@@ -121584,7 +121746,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokDemaciaPlayer_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokDemaciaPlayer_Pods_TikTokCore : NSObject
 {
 }
 
@@ -122502,7 +122664,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokDetailCollection_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokDetailCollection_Pods_TikTokCore : NSObject
 {
 }
 
@@ -122880,13 +123042,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokDiscover_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokDiscover_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_TikTokDiscoverEntry_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokDiscoverEntry_Pods_TikTokCore : NSObject
 {
 }
 
@@ -122970,7 +123132,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokDonationImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokDonationImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -123108,7 +123270,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokDonationModel_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokDonationModel_Pods_TikTokCore : NSObject
 {
 }
 
@@ -123132,7 +123294,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokDylibManager_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokDylibManager_Pods_TikTokCore : NSObject
 {
 }
 
@@ -123654,7 +123816,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokECInfluencer_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokECInfluencer_Pods_TikTokCore : NSObject
 {
 }
 
@@ -124920,6 +125082,12 @@ typedef union {
 
 @end
 
+@interface ECLiveProductHotTag : GPBMessage
+{
+}
+
+@end
+
 @interface ECLiveTraceInfo : GPBMessage
 {
 }
@@ -125562,6 +125730,18 @@ typedef union {
 
 @end
 
+@interface TikTokECDeliveryLogisticPromotionItemModel : MTLModel
+{
+}
+
+@end
+
+@interface TikTokECDeliveryLogisticPromotionModel : MTLModel
+{
+}
+
+@end
+
 @interface TikTokECDeliverySpendMoreForFreeModel : MTLModel
 {
 }
@@ -125569,6 +125749,24 @@ typedef union {
 @end
 
 @interface TikTokECDeliveryLogisticDataModel : MTLModel
+{
+}
+
+@end
+
+@interface TikTokECDeliveryPromotionCell : UICollectionViewCell
+{
+}
+
+@end
+
+@interface TikTokECDeliveryPromotionSectionController : AWEBaseListSectionController
+{
+}
+
+@end
+
+@interface TikTokECDeliveryPromotionSectionViewModel : AWEBaseListSectionViewModel
 {
 }
 
@@ -126036,7 +126234,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokECommerce_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokECommerce_Pods_TikTokCore : NSObject
 {
 }
 
@@ -128334,6 +128532,18 @@ typedef union {
 
 @end
 
+@interface TTKECHotTagAnimationView : UIView
+{
+}
+
+@end
+
+@interface TTKECHotTagModel : MTLModel
+{
+}
+
+@end
+
 @interface TTKECInstallmentInfoItemCell : UICollectionViewCell
 {
 }
@@ -128664,6 +128874,12 @@ typedef union {
 
 @end
 
+@interface TTKECMallPreloadManager : NSObject
+{
+}
+
+@end
+
 @interface TTKECMallRecommendTabModel : MTLModel
 {
 }
@@ -128886,6 +129102,12 @@ typedef union {
 
 @end
 
+@interface TTKECPopProductCardClickAPI : ECAPI
+{
+}
+
+@end
+
 @interface TTKECQuickProductEntranceModel : MTLModel
 {
 }
@@ -129000,7 +129222,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokExtension_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokExtension_Pods_TikTokCore : NSObject
 {
 }
 
@@ -129293,7 +129515,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokExternalRouter_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokExternalRouter_Pods_TikTokCore : NSObject
 {
 }
 
@@ -130091,7 +130313,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeed_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeed_Pods_TikTokCore : NSObject
 {
 }
 
@@ -130224,6 +130446,12 @@ typedef union {
 @end
 
 @interface TikTokFeedTabItemFollowControl : TikTokFeedTabItemControl
+{
+}
+
+@end
+
+@interface TikTokFeedTabItemMusicControl : TikTokFeedTabItemControl
 {
 }
 
@@ -132173,6 +132401,12 @@ typedef union {
 
 @end
 
+@interface TTKVideoPinchPanHandler : NSObject
+{
+}
+
+@end
+
 @interface TTKVideoPlayerCaptionController : NSObject
 {
 }
@@ -132275,7 +132509,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedAnchor_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeedAnchor_Pods_TikTokCore : NSObject
 {
 }
 
@@ -132545,7 +132779,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedBizUI_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeedBizUI_Pods_TikTokCore : NSObject
 {
 }
 
@@ -132575,7 +132809,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedConfig_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeedConfig_Pods_TikTokCore : NSObject
 {
 }
 
@@ -132701,7 +132935,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedContainerBasic_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeedContainerBasic_Pods_TikTokCore : NSObject
 {
 }
 
@@ -132767,7 +133001,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedContainerExt_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeedContainerExt_Pods_TikTokCore : NSObject
 {
 }
 
@@ -132947,7 +133181,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedInteractionBasic_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeedInteractionBasic_Pods_TikTokCore : NSObject
 {
 }
 
@@ -133559,7 +133793,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedInteractionBiz_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeedInteractionBiz_Pods_TikTokCore : NSObject
 {
 }
 
@@ -133727,7 +133961,7 @@ typedef union {
 
 @end
 
-@interface TTKFeedInteractionBizPreloadTask : TTKPreloadBaseTask
+@interface TTKFeedInteractionBizPreloadTask : TTKFeedPreloadBaseTask
 {
 }
 
@@ -133812,6 +134046,12 @@ typedef union {
 @end
 
 @interface TTKFeedInteractionScreenRecordManager : AWEPlayInteractionBaseManager
+{
+}
+
+@end
+
+@interface TTKFeedInteractionTableViewGestureManager : AWEPlayInteractionBaseManager
 {
 }
 
@@ -134087,7 +134327,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedInteractionExt_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeedInteractionExt_Pods_TikTokCore : NSObject
 {
 }
 
@@ -134195,7 +134435,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedModel_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeedModel_Pods_TikTokCore : NSObject
 {
 }
 
@@ -134219,13 +134459,13 @@ typedef union {
 
 @end
 
-@interface TTKPreloadBasePipeline : NSObject
+@interface TTKFeedPreloadBasePipeline : NSObject
 {
 }
 
 @end
 
-@interface TTKPreloadBaseTask : NSObject
+@interface TTKFeedPreloadBaseTask : NSObject
 {
 }
 
@@ -134237,7 +134477,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedPlayer_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeedPlayer_Pods_TikTokCore : NSObject
 {
 }
 
@@ -135461,7 +135701,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedProtoBuf_Pods_MusicallyCore : NSObject
+@interface DurationHighPrecisionStructV2 : GPBMessage
+{
+}
+
+@end
+
+@interface PodsDummy_TikTokFeedProtoBuf_Pods_TikTokCore : NSObject
 {
 }
 
@@ -135557,7 +135803,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokFeedSticker_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokFeedSticker_Pods_TikTokCore : NSObject
 {
 }
 
@@ -135767,7 +136013,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokGamification_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokGamification_Pods_TikTokCore : NSObject
 {
 }
 
@@ -136661,7 +136907,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokGecko_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokGecko_Pods_TikTokCore : NSObject
 {
 }
 
@@ -136679,7 +136925,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokHeliumGame_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokHeliumGame_Pods_TikTokCore : NSObject
 {
 }
 
@@ -136728,6 +136974,12 @@ typedef union {
 @end
 
 @interface TTKGetAnchorResponseModel : AWEBaseApiModel
+{
+}
+
+@end
+
+@interface TTKHGPluginRouterImpl : NSObject
 {
 }
 
@@ -137298,6 +137550,12 @@ typedef union {
 @end
 
 @interface AWEIMContactViewModel : NSObject
+{
+}
+
+@end
+
+@interface AWEIMConversationMessageRefreshManager : NSObject
 {
 }
 
@@ -137903,7 +138161,25 @@ typedef union {
 
 @end
 
+@interface AWEIMFilteredMessageRequestBanner : UIView
+{
+}
+
+@end
+
+@interface AWEIMFilteredRequestAlertViewController : UIViewController
+{
+}
+
+@end
+
 @interface AWEIMForwardIconView : UIView
+{
+}
+
+@end
+
+@interface AWEIMForwardImageCardTemplateDefaultImpl : NSObject
 {
 }
 
@@ -138468,6 +138744,18 @@ typedef union {
 @end
 
 @interface AWEIMIcebreakingPanel : UIView
+{
+}
+
+@end
+
+@interface AWEIMImageCardTemplateMessage : AWEIMTemplateMessage
+{
+}
+
+@end
+
+@interface AWEIMImageCardTemplateMessageTableViewCell : AWEIMUserMessageTableViewCell
 {
 }
 
@@ -139079,7 +139367,67 @@ typedef union {
 
 @end
 
+@interface AWEIMMessageRefreshManager : NSObject
+{
+}
+
+@end
+
 @interface AWEIMMessageReportMenuItem : AWEIMBaseMessageMenuItem
+{
+}
+
+@end
+
+@interface AWEIMMessageRequestDeleteAllDialog : NSObject
+{
+}
+
+@end
+
+@interface AWEIMMessageRequestDeleteAllPanel : UIView
+{
+}
+
+@end
+
+@interface AWEIMMessageRequestManager : NSObject
+{
+}
+
+@end
+
+@interface AWEIMMessageRequestPresenter : NSObject
+{
+}
+
+@end
+
+@interface AWEIMMessageRequestRiskHintInteractor : AWEIMInteractorObject
+{
+}
+
+@end
+
+@interface AWEIMMessageRequestRiskHintView : UIView
+{
+}
+
+@end
+
+@interface AWEIMMessageRequestTracker : NSObject
+{
+}
+
+@end
+
+@interface AWEIMMessageRequestViewController : UIViewController
+{
+}
+
+@end
+
+@interface AWEIMMessageRequestViewModel : NSObject
 {
 }
 
@@ -139871,6 +140219,12 @@ typedef union {
 
 @end
 
+@interface AWEIMShareLiveCardRestrictedView : UIView
+{
+}
+
+@end
+
 @interface AWEIMShareLiveCardView : UIView
 {
 }
@@ -140315,12 +140669,6 @@ typedef union {
 
 @end
 
-@interface AWEIMStrangerChatListViewController : UIViewController
-{
-}
-
-@end
-
 @interface AWEIMStrangerGreetingMessage : AWEIMGreetingMessage
 {
 }
@@ -140520,6 +140868,396 @@ typedef union {
 @end
 
 @interface AWEIMTableViewUpdateSafeChecker : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateTTL : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePreviewHint : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePreviewHintBuilder : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateBaseResp : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateQueryData : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateQueryDataBuilder : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateBaseReq : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateBaseReqBuilder : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateBaseImage : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateBaseImageBuilder : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateLinkInfo : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateLinkInfoBuilder : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateBaseVideo : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateBaseVideoBuilder : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateBaseText : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateBaseTextBuilder : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateButtonStyle : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateButton : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateImageCardTitle : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateImageCardTitleBuilder : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateImageCard : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateImageCardBuilder : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateImageCardContentBuilder : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateMessage : AWEIMMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplateMessageContent : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplateMessageContentBuilder : NSObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNBaseRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNBaseText : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNBaseImage : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNBaseVideo : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNButton : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNButtonStyle : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNTTL : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNBaseReq : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNBaseResp : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNQueryData : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNLinkInfo : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNPreviewHint : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNChatNoticeRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNNotice : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNFocusCardRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNFocusCard : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNFocusCardInfo : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNImageRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNImage : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNImageCardRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNImageCard : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNImageCardTitle : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNInfoCardRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNInfoCard : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNInfoCardContent : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNInfoCardTitle : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNInfoCardButton : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNMessageRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNMessageContent : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNTextRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNText : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNVideoCardRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNVideoCard : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNVideoTag : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNVideoCardMeta : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNVideoCardFallbackInfo : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNWelcomeCardRoot : GPBRootObject
+{
+}
+
+@end
+
+@interface AWEIMTemplatePBNWelcomeCard : GPBMessage
+{
+}
+
+@end
+
+@interface AWEIMTemplateSendMessageModel : AWEIMSendMessageModel
 {
 }
 
@@ -141065,7 +141803,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokIM_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokIM_Pods_TikTokCore : NSObject
 {
 }
 
@@ -141179,7 +141917,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokIcon_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokIcon_Pods_TikTokCore : NSObject
 {
 }
 
@@ -141221,7 +141959,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokInfraConfig_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokInfraConfig_Pods_TikTokCore : NSObject
 {
 }
 
@@ -141636,7 +142374,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokInfraConfigImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokInfraConfigImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -141708,7 +142446,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokKids_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokKids_Pods_TikTokCore : NSObject
 {
 }
 
@@ -145016,7 +145754,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokLive_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokLive_Pods_TikTokCore : NSObject
 {
 }
 
@@ -145251,6 +145989,18 @@ typedef union {
 @end
 
 @interface TikTokLiveMessageProtocolImpl : NSObject
+{
+}
+
+@end
+
+@interface TikTokLiveMessageReceiverImpl : NSObject
+{
+}
+
+@end
+
+@interface TikTokLiveMessageSubscriberImpl : NSObject
 {
 }
 
@@ -145502,7 +146252,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokLocationCompliance_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokLocationCompliance_Pods_TikTokCore : NSObject
 {
 }
 
@@ -145533,12 +146283,6 @@ typedef union {
 @end
 
 @interface TTKLocationComplianceTrackConfig : NSObject
-{
-}
-
-@end
-
-@interface TTKPlaceMark : NSObject
 {
 }
 
@@ -145580,7 +146324,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokLynxKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokLynxKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -145616,7 +146360,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokLynxKitBizUI_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokLynxKitBizUI_Pods_TikTokCore : NSObject
 {
 }
 
@@ -145646,7 +146390,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokMainThreadChecker_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokMainThreadChecker_Pods_TikTokCore : NSObject
 {
 }
 
@@ -145712,7 +146456,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokMainThreadCheckerSwift_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokMainThreadCheckerSwift_Pods_TikTokCore : NSObject
 {
 }
 
@@ -146062,13 +146806,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokMediaDownloader_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokMediaDownloader_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_TikTokMusicStreaming_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokMusicStreaming_Pods_TikTokCore : NSObject
 {
 }
 
@@ -146140,7 +146884,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokMusicStreamingImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokMusicStreamingImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -146296,6 +147040,12 @@ typedef union {
 
 @end
 
+@interface TTKMusicFeedContainerViewControllerV2 : UIViewController
+{
+}
+
+@end
+
 @interface TTKMusicFeedItemViewController : UIViewController
 {
 }
@@ -146345,6 +147095,24 @@ typedef union {
 @end
 
 @interface TTKMusicPlayInfoResponseModel : AWEBaseApiModel
+{
+}
+
+@end
+
+@interface TTKMusicFeedTopPanelButton : UIButton
+{
+}
+
+@end
+
+@interface TTKMusicFeedTopPanelContentView : UIView
+{
+}
+
+@end
+
+@interface TTKMusicFeedTopPanel : UIView
 {
 }
 
@@ -146446,6 +147214,18 @@ typedef union {
 
 @end
 
+@interface TTKMusicModalPriorityQueue : NSObject
+{
+}
+
+@end
+
+@interface TTKMusicModalViewManagerV2 : NSObject
+{
+}
+
+@end
+
 @interface TTKMusicPadFeedMoreListViewController : UIViewController
 {
 }
@@ -146500,7 +147280,19 @@ typedef union {
 
 @end
 
+@interface TTKMusicPlayQueueActionSheetHeaderV2 : UIView
+{
+}
+
+@end
+
 @interface TTKMusicPlayQueueMusicCell : UITableViewCell
+{
+}
+
+@end
+
+@interface TTKMusicPlayQueueMusicCellV2 : UITableViewCell
 {
 }
 
@@ -146554,6 +147346,12 @@ typedef union {
 
 @end
 
+@interface TTKMusicPlayQueueViewControllerV2 : UIViewController
+{
+}
+
+@end
+
 @interface TTKMusicPlayRecordManager : NSObject
 {
 }
@@ -146590,7 +147388,7 @@ typedef union {
 
 @end
 
-@interface TTKMusicPreloadTask : TTKPreloadBaseTask
+@interface TTKMusicPreloadTask : TTKFeedPreloadBaseTask
 {
 }
 
@@ -146704,13 +147502,19 @@ typedef union {
 
 @end
 
+@interface TTKMusicXTabFeedContainerViewController : TTKMusicFeedContainerViewControllerV2
+{
+}
+
+@end
+
 @interface TTKMusicStreamingBundle : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_TikTokNavi_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokNavi_Pods_TikTokCore : NSObject
 {
 }
 
@@ -146788,6 +147592,12 @@ typedef union {
 
 @end
 
+@interface TTKNaviOnboardingDefines : NSObject
+{
+}
+
+@end
+
 @interface TTKNaviProfileEditEntranceTableViewCell : UITableViewCell
 {
 }
@@ -146842,7 +147652,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokNaviImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokNaviImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -147754,7 +148564,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokNetworkBusiness_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokNetworkBusiness_Pods_TikTokCore : NSObject
 {
 }
 
@@ -147772,7 +148582,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokNewScanImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokNewScanImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -148126,7 +148936,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokNotice_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokNotice_Pods_TikTokCore : NSObject
 {
 }
 
@@ -149596,7 +150406,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokOpenShare_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokOpenShare_Pods_TikTokCore : NSObject
 {
 }
 
@@ -149620,7 +150430,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokPOI_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokPOI_Pods_TikTokCore : NSObject
 {
 }
 
@@ -149632,7 +150442,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokPOIImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokPOIImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -149752,6 +150562,12 @@ typedef union {
 
 @end
 
+@interface TTKPOIMapKitSearchManager : NSObject
+{
+}
+
+@end
+
 @interface TTKPOIMapView : MKMapView
 {
 }
@@ -149788,7 +150604,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokPOIModel_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokPOIModel_Pods_TikTokCore : NSObject
 {
 }
 
@@ -150484,7 +151300,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokPassport_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokPassport_Pods_TikTokCore : NSObject
 {
 }
 
@@ -150508,7 +151324,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokPlayList_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokPlayList_Pods_TikTokCore : NSObject
 {
 }
 
@@ -150628,7 +151444,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokPlayListImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokPlayListImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -150796,13 +151612,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokPlayListService_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokPlayListService_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_TikTokPopupCenterBasic_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokPopupCenterBasic_Pods_TikTokCore : NSObject
 {
 }
 
@@ -150892,7 +151708,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokPopupCenterConfig_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokPopupCenterConfig_Pods_TikTokCore : NSObject
 {
 }
 
@@ -151006,7 +151822,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokPrivacyCenter_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokPrivacyCenter_Pods_TikTokCore : NSObject
 {
 }
 
@@ -151780,7 +152596,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokPrivacyKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokPrivacyKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -151822,13 +152638,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokProtection_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokProtection_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_TikTokQnA_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokQnA_Pods_TikTokCore : NSObject
 {
 }
 
@@ -152482,7 +153298,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokRegionManager_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokRegionManager_Pods_TikTokCore : NSObject
 {
 }
 
@@ -152734,7 +153550,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokSearch_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSearch_Pods_TikTokCore : NSObject
 {
 }
 
@@ -152842,7 +153658,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokSearchEntry_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSearchEntry_Pods_TikTokCore : NSObject
 {
 }
 
@@ -152861,6 +153677,12 @@ typedef union {
 @end
 
 @interface TikTokSearchResultDescriptionHighlightUtil : NSObject
+{
+}
+
+@end
+
+@interface TTKSearchEventTrackingManager : NSObject
 {
 }
 
@@ -152902,7 +153724,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokSecurity_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSecurity_Pods_TikTokCore : NSObject
 {
 }
 
@@ -152914,7 +153736,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokServiceInterface_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokServiceInterface_Pods_TikTokCore : NSObject
 {
 }
 
@@ -153012,7 +153834,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokSettings_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSettings_Pods_TikTokCore : NSObject
 {
 }
 
@@ -153986,7 +154808,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokShare_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokShare_Pods_TikTokCore : NSObject
 {
 }
 
@@ -154004,7 +154826,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokSharePlayServiceImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSharePlayServiceImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -154196,13 +155018,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokShareService_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokShareService_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_TikTokSocial_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSocial_Pods_TikTokCore : NSObject
 {
 }
 
@@ -154256,7 +155078,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokSocialBizUI_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSocialBizUI_Pods_TikTokCore : NSObject
 {
 }
 
@@ -154346,6 +155168,12 @@ typedef union {
 
 @end
 
+@interface TTKSocialMultiAvatarView : UIView
+{
+}
+
+@end
+
 @interface TTKStoryAvatarViewConfig : NSObject
 {
 }
@@ -154430,7 +155258,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokSocialImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSocialImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -154874,6 +155702,30 @@ typedef union {
 
 @end
 
+@interface TTKUpvoteBubbleDataController : NSObject
+{
+}
+
+@end
+
+@interface TTKUpvoteBubbleElementWhoRepostedView : UIView
+{
+}
+
+@end
+
+@interface TTKUpvoteBubbleElement : TTKUpvoteBubbleScrollerElement
+{
+}
+
+@end
+
+@interface TTKUpvoteBubbleModel : NSObject
+{
+}
+
+@end
+
 @interface TTKUpvoteBubbleControllerView : UIView
 {
 }
@@ -154898,7 +155750,7 @@ typedef union {
 
 @end
 
-@interface TTKUpvoteCommentBubbleElement : TTKUpvoteBubbleScrollerElement
+@interface TTKUpvoteCommentDataControllerAdapter : NSObject
 {
 }
 
@@ -155018,12 +155870,6 @@ typedef union {
 
 @end
 
-@interface TTKUpvotePolyBubbleElement : TTKUpvoteBubbleScrollerElement
-{
-}
-
-@end
-
 @interface TTKUpvotePubishSuccessViewController : UIViewController
 {
 }
@@ -155037,6 +155883,12 @@ typedef union {
 @end
 
 @interface TTKUpvoteTrackManager : NSObject
+{
+}
+
+@end
+
+@interface TTKUpvoteV2GuideViewController : TUXSheetIntroVC
 {
 }
 
@@ -155144,7 +155996,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokSocialModel_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSocialModel_Pods_TikTokCore : NSObject
 {
 }
 
@@ -155187,6 +156039,12 @@ typedef union {
 @end
 
 @interface TTKMentionStickerBindingModel : MTLModel
+{
+}
+
+@end
+
+@interface TTKUpvoteDataControllerPublishModel : NSObject
 {
 }
 
@@ -155252,7 +156110,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokSparkKitImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSparkKitImpl_Pods_TikTokCore : NSObject
+{
+}
+
+@end
+
+@interface TikTokSparkTUXNavBar : TUXNavBar
 {
 }
 
@@ -155312,7 +156176,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokSplashKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSplashKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -155336,7 +156200,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokSpriteKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokSpriteKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -156188,12 +157052,6 @@ typedef union {
 
 @end
 
-@interface ACCPublishFunctionalTextMarkedupParserResult : NSObject
-{
-}
-
-@end
-
 @interface ACCPublishFunctionalTextMarkedupParser : NSObject
 {
 }
@@ -156440,6 +157298,12 @@ typedef union {
 
 @end
 
+@interface AWEACCAudioNetServiceImpl : NSObject
+{
+}
+
+@end
+
 @interface AWEACCBubbleImpl : NSObject
 {
 }
@@ -156447,6 +157311,12 @@ typedef union {
 @end
 
 @interface AWEACCCacheImpl : NSObject
+{
+}
+
+@end
+
+@interface AWEACCCaptionsNetServiceImpl : NSObject
 {
 }
 
@@ -156483,6 +157353,12 @@ typedef union {
 @end
 
 @interface AWEACCCutSameImpl : NSObject
+{
+}
+
+@end
+
+@interface AWEACCDonationStickerNetServiceImpl : NSObject
 {
 }
 
@@ -156651,6 +157527,12 @@ typedef union {
 @end
 
 @interface AWEACCPOITrackImpl : NSObject
+{
+}
+
+@end
+
+@interface AWEACCPublishNetServiceImpl : NSObject
 {
 }
 
@@ -159506,7 +160388,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokStudio_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokStudio_Pods_TikTokCore : NSObject
 {
 }
 
@@ -161060,7 +161942,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokStudioImplWithLocation_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokStudioImplWithLocation_Pods_TikTokCore : NSObject
 {
 }
 
@@ -161102,7 +161984,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokTabBar_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokTabBar_Pods_TikTokCore : NSObject
 {
 }
 
@@ -161180,7 +162062,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokTabBarImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokTabBarImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -161414,7 +162296,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokTextInputController_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokTextInputController_Pods_TikTokCore : NSObject
 {
 }
 
@@ -161438,7 +162320,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokTheme_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokTheme_Pods_TikTokCore : NSObject
 {
 }
 
@@ -161588,7 +162470,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokTokamak_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokTokamak_Pods_TikTokCore : NSObject
 {
 }
 
@@ -161685,6 +162567,12 @@ typedef union {
 @end
 
 @interface TTKWatchDogProtectManager : NSObject
+{
+}
+
+@end
+
+@interface TTKWatchDogProtectManagerT : NSObject
 {
 }
 
@@ -161966,7 +162854,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokUGKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokUGKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -162674,7 +163562,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokUITracker_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokUITracker_Pods_TikTokCore : NSObject
 {
 }
 
@@ -163939,7 +164827,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokUser_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokUser_Pods_TikTokCore : NSObject
 {
 }
 
@@ -165847,7 +166735,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokUserCenter_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokUserCenter_Pods_TikTokCore : NSObject
 {
 }
 
@@ -165962,6 +166850,24 @@ typedef union {
 @end
 
 @interface TTKCarouselView : UIView
+{
+}
+
+@end
+
+@interface TTKContentLanguagePopupTableViewCell : UITableViewCell
+{
+}
+
+@end
+
+@interface TTKContentLanguagePopupViewController : UIViewController
+{
+}
+
+@end
+
+@interface TTKContentLanguageViewController : UIViewController
 {
 }
 
@@ -166447,7 +167353,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokUserCenterConfig_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokUserCenterConfig_Pods_TikTokCore : NSObject
 {
 }
 
@@ -166465,7 +167371,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokUserJourney_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokUserJourney_Pods_TikTokCore : NSObject
 {
 }
 
@@ -166681,7 +167587,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokUserJourneyImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokUserJourneyImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -167035,7 +167941,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokUserModel_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokUserModel_Pods_TikTokCore : NSObject
 {
 }
 
@@ -167793,7 +168699,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokUserProfile_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokUserProfile_Pods_TikTokCore : NSObject
 {
 }
 
@@ -168189,7 +169095,7 @@ typedef union {
 
 @end
 
-@interface TTKProfilePostWorkPreloadTask : TTKPreloadBaseTask
+@interface TTKProfilePostWorkPreloadTask : TTKFeedPreloadBaseTask
 {
 }
 
@@ -168201,7 +169107,7 @@ typedef union {
 
 @end
 
-@interface TTKProfilePreloadTask : TTKPreloadBaseTask
+@interface TTKProfilePreloadTask : TTKFeedPreloadBaseTask
 {
 }
 
@@ -168255,7 +169161,7 @@ typedef union {
 
 @end
 
-@interface TTKProfileStoryEntrancePreloadTask : TTKPreloadBaseTask
+@interface TTKProfileStoryEntrancePreloadTask : TTKFeedPreloadBaseTask
 {
 }
 
@@ -168267,7 +169173,7 @@ typedef union {
 
 @end
 
-@interface TTKProfileUserModelPreloadTask : TTKPreloadBaseTask
+@interface TTKProfileUserModelPreloadTask : TTKFeedPreloadBaseTask
 {
 }
 
@@ -168777,7 +169683,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokUserRecommend_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokUserRecommend_Pods_TikTokCore : NSObject
 {
 }
 
@@ -169569,6 +170475,12 @@ typedef union {
 
 @end
 
+@interface TTKProfileUserRecommendViewController : UIViewController
+{
+}
+
+@end
+
 @interface TTKRelationButton : TUXButton
 {
 }
@@ -169588,12 +170500,6 @@ typedef union {
 @end
 
 @interface TTKRelationUserCardPlaceHolderTableViewCell : UITableViewCell
-{
-}
-
-@end
-
-@interface TTKRelationUserCardPresentContainer : UIViewController
 {
 }
 
@@ -169911,6 +170817,12 @@ typedef union {
 
 @end
 
+@interface TTKUserSuggestionPopupContainer : UIViewController
+{
+}
+
+@end
+
 @interface TTKUserSuggestionPopupHintCell : UITableViewCell
 {
 }
@@ -170045,7 +170957,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokVersionManager_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokVersionManager_Pods_TikTokCore : NSObject
 {
 }
 
@@ -170243,7 +171155,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokVideoFeed_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokVideoFeed_Pods_TikTokCore : NSObject
 {
 }
 
@@ -170291,7 +171203,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokVideoPlayerWrapper_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokVideoPlayerWrapper_Pods_TikTokCore : NSObject
 {
 }
 
@@ -170711,7 +171623,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokWebView_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokWebView_Pods_TikTokCore : NSObject
 {
 }
 
@@ -170735,13 +171647,13 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokWidgetCenter_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokWidgetCenter_Pods_TikTokCore : NSObject
 {
 }
 
 @end
 
-@interface PodsDummy_TikTokWidgetCenterImpl_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokWidgetCenterImpl_Pods_TikTokCore : NSObject
 {
 }
 
@@ -170831,7 +171743,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_TikTokXBridgeKit_Pods_MusicallyCore : NSObject
+@interface PodsDummy_TikTokXBridgeKit_Pods_TikTokCore : NSObject
 {
 }
 
@@ -171128,7 +172040,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_XElement_Pods_MusicallyCore : NSObject
+@interface PodsDummy_XElement_Pods_TikTokCore : NSObject
 {
 }
 
@@ -171182,7 +172094,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_YYWebImage_Pods_MusicallyCore : NSObject
+@interface PodsDummy_YYWebImage_Pods_TikTokCore : NSObject
 {
 }
 
@@ -171230,7 +172142,7 @@ typedef union {
 
 @end
 
-@interface PodsDummy_vmsdk_Pods_MusicallyCore : NSObject
+@interface PodsDummy_vmsdk_Pods_TikTokCore : NSObject
 {
 }
 
@@ -171656,6 +172568,8 @@ typedef union {
 - (id)bdinstall_stringValueForKey:(id)arg1;
 - (id)bdinstall_dictionaryValueForKey:(id)arg1 defaultValue:(id)arg2;
 - (id)bdinstall_dictionaryValueForKey:(id)arg1;
+- (id)bdpu_stringValueForKey:(id)arg1;
+- (id)bdpu_dictionaryValueForKey:(id)arg1;
 - (_Bool)bdtracker_containDictionary:(id)arg1;
 - (id)bdtracker_arrayValueForKey:(id)arg1;
 - (id)bdtracker_mutableDictionaryValueForKey:(id)arg1;
@@ -173232,6 +174146,7 @@ typedef union {
 - (void)tspk_viewDidDisappear:(_Bool)arg1;
 - (void)tspk_viewWillAppear:(_Bool)arg1;
 - (void)tspk_viewDidAppear:(_Bool)arg1;
+- (void)tspk_dealloc;
 @property(retain, nonatomic) TUXSheetTransitioningDelegate *tux_sheetTransitionController;
 - (id)addTUXNavBar:(id)arg1;
 - (id)createTUXNavBarWithStyle:(unsigned long long)arg1;
@@ -174081,7 +174996,7 @@ typedef union {
 + (id)ko_appBundleID;
 + (id)swizzle_bundleForClass:(Class)arg1;
 + (void)swizzleInstanceMethod:(Class)arg1 original:(SEL)arg2 swizzled:(SEL)arg3;
-+ (void)_aweLazyRegisterLoad_MusicallyCore;
++ (void)_aweLazyRegisterLoad_TikTokCore;
 + (void)_aweLazyRegisterLoad_AWEFakeBundleID;
 @property(readonly, nonatomic) NSArray *bundleActivators;
 @property(nonatomic) unsigned long long bundleState;
@@ -174585,6 +175500,7 @@ typedef union {
 + (id)ttk_imageWithGamiResourcePath:(id)arg1;
 + (id)ttk_gamiImageWithName:(id)arg1;
 + (id)awe_imImageNamed:(id)arg1;
++ (id)aweim_roundedCornerImageWithImage:(id)arg1 dimension:(double)arg2;
 + (id)_tiktokIconWithImage:(id)arg1 backgroundSize:(struct CGSize)arg2 backgroundColor:(id)arg3 radius:(double)arg4 offset:(struct CGPoint)arg5 borderWidth:(double)arg6 borderColor:(id)arg7 configuration:(id)arg8;
 + (id)_titokIconWithSVGData:(struct NSVGimage *)arg1 size:(struct CGSize)arg2 color:(id)arg3 backgroundSize:(struct CGSize)arg4 backgroundColor:(id)arg5 radius:(double)arg6 offset:(struct CGPoint)arg7 borderWidth:(double)arg8 borderColor:(id)arg9 configuration:(id)arg10;
 + (void)setShadowType:(id)arg1 forContext:(struct CGContext *)arg2;
@@ -175660,7 +176576,7 @@ typedef union {
 + (id)aweim_internalRoutingURLToQnADetailWithQAID:(id)arg1 paramDict:(id)arg2;
 + (id)aweim_internalRoutingURLToChatMesageWithConversationID:(id)arg1 paramDict:(id)arg2;
 + (id)aweim_internalRoutingURLToChatMesageWithUserID:(id)arg1 paramDict:(id)arg2;
-+ (id)aweim_internalRoutingURLToChatMesageWithUserID:(id)arg1 isStranger:(_Bool)arg2 secUID:(id)arg3 nickname:(id)arg4 alias:(id)arg5 WithParamDict:(id)arg6;
++ (id)aweim_internalRoutingURLToChatMesageWithUserID:(id)arg1 isStranger:(_Bool)arg2 isFilteredRequest:(_Bool)arg3 secUID:(id)arg4 nickname:(id)arg5 alias:(id)arg6 WithParamDict:(id)arg7;
 + (id)aweim_internalRoutingURLToStrangerChatListWithParamDict:(id)arg1;
 + (id)aweim_internalRoutingURLToStoryDetailWithStoryID:(id)arg1 paramDict:(id)arg2;
 + (id)aweim_internalRoutingURLToChatListWithParamDict:(id)arg1;
@@ -178101,6 +179017,14 @@ typedef union {
 @interface SKPaymentQueue (LivePayment)
 + (void)lazyLoad;
 - (void)ieslive_addTransactionObserver:(id)arg1;
+@end
+
+@interface MKPlacemark (Address)
+- (id)poi_formattedAddress;
+@end
+
+@interface MKMapItem (Upload)
+- (id)ttk_mapItemJson;
 @end
 
 @interface SKAction (TTKDragonBones)

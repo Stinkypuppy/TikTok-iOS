@@ -7,8 +7,8 @@
 #pragma mark -
 
 //
-// File: MuseDiscoverFramework
-// UUID: EBA0B709-8432-3A82-B219-4981E5486992
+// File: TTKDiscoverFramework
+// UUID: 3CD5BAA9-3AFD-3530-8A7A-6C6324DBC05F
 //
 //                           Arch: arm64
 //                Current version: 1.0.0
@@ -304,7 +304,7 @@
 @protocol UIViewControllerPreviewingDelegate
 @end
 
-@interface BDLDecompressor_MuseDiscoverFramework : NSObject <NSCopying>
+@interface BDLDecompressor_TTKDiscoverFramework : NSObject <NSCopying>
 {
     int _foo;
 }
@@ -323,7 +323,7 @@
 
 @end
 
-@interface PodsDummy_Pods_MuseDiscoverFramework : NSObject
+@interface PodsDummy_Pods_TTKDiscoverFramework : NSObject
 {
 }
 
@@ -443,7 +443,7 @@
 
 @end
 
-@interface PodsDummy_TikTokDiscoverImp_Pods_MuseDiscoverFramework : NSObject
+@interface PodsDummy_TikTokDiscoverImp_Pods_TTKDiscoverFramework : NSObject
 {
 }
 
