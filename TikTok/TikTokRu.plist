@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Скачать видео</string>
+		<key>subtitle</key>
+		<string>Без водяного знака</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>TikBar</string>
+		<key>subtitle</key>
+		<string>Сохранить, поделиться и скачать видео</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Cкачать фото</string>
+		<key>subtitle</key>
+		<string>Скачать фото без водяного знака</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Скрыть UI интерфейс</string>
+		<key>subtitle</key>
+		<string>Cпрятать всё на экране</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Авт. проигрывать следующее видео</string>
+		<key>subtitle</key>
+		<string>Авт. перейдёт к следующему видео</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Авт. пропускать прямые эфиры в ленте</string>
+		<key>subtitle</key>
+		<string>Авт. пропуск прямой трансляции в ленте</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Показать перемотку видео</string>
+		<key>subtitle</key>
+		<string>Показывает перемотку для видео</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Включить загрузку видео в HD</string>
+		<key>subtitle</key>
+		<string>Загружайте HD видео</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Скачать изображение профиля</string>
+		<key>subtitle</key>
+		<string>Просмотр и скачивание</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Показать общее кол-во видео</string>
+		<key>subtitle</key>
+		<string>Общее кол-во видео в профиле</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Длинные комментарии</string>
+		<key>subtitle</key>
+		<string>Длина комментария меняется с 150 до 240</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Длинное описание профиля</string>
+		<key>subtitle</key>
+		<string>Длина описания профиля меняется с 80 до 222</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Показать код страны для видео</string>
+		<key>subtitle</key>
+		<string>Показывает из какой страны видео</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Копировать информацию профиля</string>
+		<key>subtitle</key>
+		<string>Появится кнопка для копирования данных</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Вкл. прозрачные комментарии</string>
+		<key>subtitle</key>
+		<string>Комментарии с полупрозрачным фоном</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Убрать метку просмотрено</string>
+		<key>subtitle</key>
+		<string>Убирает метку просмотрено</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Читать скрытые комментарии</string>
+		<key>subtitle</key>
+		<string>Когда пользователь запретил комментарии</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Просмотр видео на модерации</string>
+		<key>subtitle</key>
+		<string>Которые находятся на рассмотрении</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Показать дату создания видео</string>
+		<key>subtitle</key>
+		<string>Показывает в профиле</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Не показывать рек. аккаунты</string>
+		<key>subtitle</key>
+		<string>Скрывает рек. аккаунты в профиле</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Добавить синюю галочку</string>
+		<key>subtitle</key>
+		<string>Только на вашем устройстве (фейк)</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Не повторять видео</string>
+		<key>subtitle</key>
+		<string>Видео не будет повторяться после завершения</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Включить звук в видео</string>
+		<key>subtitle</key>
+		<string>Там где он отключён</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Показать реальное кол. подписчиков</string>
+		<key>subtitle</key>
+		<string>Показывает полное кол. подписчиков</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Показать полные данные профиля</string>
+		<key>subtitle</key>
+		<string>Полное кол. подписок, подписчиков и лайков</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Показать статус подписки</string>
+		<key>subtitle</key>
+		<string>Показывает кто подписан на Вас</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Открывать ссылки в Safari</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Удалить рекламу</string>
+		<key>subtitle</key>
+		<string>Отключает всю рекламу в приложении</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Изменить регион 🌍</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Подтверждать лайки</string>
+		<key>subtitle</key>
+		<string>Появляется баннер с подтверждением</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Подтверждать подписку</string>
+		<key>subtitle</key>
+		<string>Появляется баннер с подтверждением</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Установить пароль 🔐</string>
+		<key>subtitle</key>
+		<string>Добавляет пароль при входе в приложение</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Обход SSL</string>
+		<key>subtitle</key>
+		<string>Просмотр трафика через Charles</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Об авторах</string>
+	</dict>
+</array>
+</plist>

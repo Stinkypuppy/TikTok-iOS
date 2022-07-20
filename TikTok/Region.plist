@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>По умолчанию</string>
+		<key>isoCode</key>
+		<string></string>
+		<key>mccCode</key>
+		<string></string>
+		<key>mncCode</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇦🇺 Австралия - AU</string>
+		<key>isoCode</key>
+		<string>AU</string>
+		<key>mccCode</key>
+		<string>505</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇦🇹 Австрия - AT</string>
+		<key>isoCode</key>
+		<string>AT</string>
+		<key>mccCode</key>
+		<string>232</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇦🇿 Азербайджан - AZ</string>
+		<key>isoCode</key>
+		<string>AZ</string>
+		<key>mccCode</key>
+		<string>400</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇦🇱 Албания - AL</string>
+		<key>isoCode</key>
+		<string>AL</string>
+		<key>mccCode</key>
+		<string>276</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇦🇷 Аргентина - AR</string>
+		<key>isoCode</key>
+		<string>AR</string>
+		<key>mccCode</key>
+		<string>722</string>
+		<key>mncCode</key>
+		<string>010</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇦🇲 Армения - AM</string>
+		<key>isoCode</key>
+		<string>AM</string>
+		<key>mccCode</key>
+		<string>283</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇧🇾 Беларусь - BY</string>
+		<key>isoCode</key>
+		<string>BY</string>
+		<key>mccCode</key>
+		<string>257</string>
+		<key>mncCode</key>
+		<string>02</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇧🇪 Бельгия - BE</string>
+		<key>isoCode</key>
+		<string>BE</string>
+		<key>mccCode</key>
+		<string>206</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇧🇬 Болгария - BG</string>
+		<key>isoCode</key>
+		<string>BG</string>
+		<key>mccCode</key>
+		<string>284</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇧🇴 Боливия - BO</string>
+		<key>isoCode</key>
+		<string>BO</string>
+		<key>mccCode</key>
+		<string>736</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇧🇷 Бразилия - BR</string>
+		<key>isoCode</key>
+		<string>BR</string>
+		<key>mccCode</key>
+		<string>724</string>
+		<key>mncCode</key>
+		<string>00</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇬🇧 Великобритания - GB</string>
+		<key>isoCode</key>
+		<string>GB</string>
+		<key>mccCode</key>
+		<string>234</string>
+		<key>mncCode</key>
+		<string>00</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇻🇪 Венесуэла - VE</string>
+		<key>isoCode</key>
+		<string>VE</string>
+		<key>mccCode</key>
+		<string>734</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇭🇺 Венгрия - HU</string>
+		<key>isoCode</key>
+		<string>HU</string>
+		<key>mccCode</key>
+		<string>216</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇻🇳 Вьетнам - VN</string>
+		<key>isoCode</key>
+		<string>VN</string>
+		<key>mccCode</key>
+		<string>452</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇩🇪 Германия - DE</string>
+		<key>isoCode</key>
+		<string>DE</string>
+		<key>mccCode</key>
+		<string>262</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇬🇷 Греция - GR</string>
+		<key>isoCode</key>
+		<string>GR</string>
+		<key>mccCode</key>
+		<string>202</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇬🇪 Грузия - GE</string>
+		<key>isoCode</key>
+		<string>GE</string>
+		<key>mccCode</key>
+		<string>282</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇩🇰 Дания - DK</string>
+		<key>isoCode</key>
+		<string>DK</string>
+		<key>mccCode</key>
+		<string>238</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇪🇬 Египет - EG</string>
+		<key>isoCode</key>
+		<string>EG</string>
+		<key>mccCode</key>
+		<string>602</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇮🇪 Ирландия - IE</string>
+		<key>isoCode</key>
+		<string>IE</string>
+		<key>mccCode</key>
+		<string>272</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇮🇸 Исландия - IS</string>
+		<key>isoCode</key>
+		<string>IS</string>
+		<key>mccCode</key>
+		<string>274</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇪🇸 Испания - ES</string>
+		<key>isoCode</key>
+		<string>ES</string>
+		<key>mccCode</key>
+		<string>214</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇮🇹 Италия - IT</string>
+		<key>isoCode</key>
+		<string>IT</string>
+		<key>mccCode</key>
+		<string>222</string>
+		<key>mncCode</key>
+		<string>02</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇰🇿 Казахстан - KZ</string>
+		<key>isoCode</key>
+		<string>KZ</string>
+		<key>mccCode</key>
+		<string>401</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇨🇦 Канада - CA</string>
+		<key>isoCode</key>
+		<string>CA</string>
+		<key>mccCode</key>
+		<string>302</string>
+		<key>mncCode</key>
+		<string>100</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇨🇾 Кипр - CY</string>
+		<key>isoCode</key>
+		<string>CY</string>
+		<key>mccCode</key>
+		<string>280</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇨🇴 Колумбия - CO</string>
+		<key>isoCode</key>
+		<string>CO</string>
+		<key>mccCode</key>
+		<string>732</string>
+		<key>mncCode</key>
+		<string>001</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇨🇷 Коста-Рика - CR</string>
+		<key>isoCode</key>
+		<string>CR</string>
+		<key>mccCode</key>
+		<string>712</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇽🇰 Косово - XK</string>
+		<key>isoCode</key>
+		<string>XK</string>
+		<key>mccCode</key>
+		<string>221</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇰🇬 Киргизия - KG</string>
+		<key>isoCode</key>
+		<string>KG</string>
+		<key>mccCode</key>
+		<string>437</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇨🇺 Куба - CU</string>
+		<key>isoCode</key>
+		<string>CU</string>
+		<key>mccCode</key>
+		<string>368</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇱🇻 Латвия - LV</string>
+		<key>isoCode</key>
+		<string>LV</string>
+		<key>mccCode</key>
+		<string>247</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇱🇹 Литва - LT</string>
+		<key>isoCode</key>
+		<string>LT</string>
+		<key>mccCode</key>
+		<string>246</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇲🇾 Малайзия - MY</string>
+		<key>isoCode</key>
+		<string>MY</string>
+		<key>mccCode</key>
+		<string>502</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇲🇻 Мальдивы - MV</string>
+		<key>isoCode</key>
+		<string>MV</string>
+		<key>mccCode</key>
+		<string>472</string>
+		<key>mncCode</key>
+		<string>02</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇲🇽 Мексика - MX</string>
+		<key>isoCode</key>
+		<string>MX</string>
+		<key>mccCode</key>
+		<string>334</string>
+		<key>mncCode</key>
+		<string>001</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇲🇩 Молдова - MD</string>
+		<key>isoCode</key>
+		<string>MD</string>
+		<key>mccCode</key>
+		<string>259</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇳🇱 Нидерланды - NL</string>
+		<key>isoCode</key>
+		<string>NL</string>
+		<key>mccCode</key>
+		<string>204</string>
+		<key>mncCode</key>
+		<string>00</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇳🇿 Новая Зеландия - NZ</string>
+		<key>isoCode</key>
+		<string>NZ</string>
+		<key>mccCode</key>
+		<string>530</string>
+		<key>mncCode</key>
+		<string>00</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇳🇴 Норвегия - NO</string>
+		<key>isoCode</key>
+		<string>NO</string>
+		<key>mccCode</key>
+		<string>242</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇵🇾 Парагвай - PY</string>
+		<key>isoCode</key>
+		<string>PY</string>
+		<key>mccCode</key>
+		<string>744</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇵🇪 Перу - PE</string>
+		<key>isoCode</key>
+		<string>PE</string>
+		<key>mccCode</key>
+		<string>716</string>
+		<key>mncCode</key>
+		<string>06</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇵🇱 Польша - PL</string>
+		<key>isoCode</key>
+		<string>PL</string>
+		<key>mccCode</key>
+		<string>260</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇵🇹 Португалия - PT</string>
+		<key>isoCode</key>
+		<string>PT</string>
+		<key>mccCode</key>
+		<string>268</string>
+		<key>mncCode</key>
+		<string>02</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇷🇺 Россия - RU</string>
+		<key>isoCode</key>
+		<string>RU</string>
+		<key>mccCode</key>
+		<string>250</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇷🇴 Румыния - RO</string>
+		<key>isoCode</key>
+		<string>RO</string>
+		<key>mccCode</key>
+		<string>226</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇷🇸 Сербия - RS</string>
+		<key>isoCode</key>
+		<string>RS</string>
+		<key>mccCode</key>
+		<string>220</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇸🇬 Сингапур - SG</string>
+		<key>isoCode</key>
+		<string>SG</string>
+		<key>mccCode</key>
+		<string>525</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇸🇰 Словакия - SK</string>
+		<key>isoCode</key>
+		<string>SK</string>
+		<key>mccCode</key>
+		<string>231</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇸🇮 Словения - SI</string>
+		<key>isoCode</key>
+		<string>SI</string>
+		<key>mccCode</key>
+		<string>293</string>
+		<key>mncCode</key>
+		<string>40</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇺🇸 США - US</string>
+		<key>isoCode</key>
+		<string>US</string>
+		<key>mccCode</key>
+		<string>311</string>
+		<key>mncCode</key>
+		<string>000</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇹🇯 Таджикистан - TJ</string>
+		<key>isoCode</key>
+		<string>TJ</string>
+		<key>mccCode</key>
+		<string>436</string>
+		<key>mncCode</key>
+		<string>02</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇹🇭 Таиланд - TH</string>
+		<key>isoCode</key>
+		<string>TH</string>
+		<key>mccCode</key>
+		<string>520</string>
+		<key>mncCode</key>
+		<string>00</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇹🇷 Турция - TR</string>
+		<key>isoCode</key>
+		<string>TR</string>
+		<key>mccCode</key>
+		<string>286</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇺🇿 Узбекистан - UZ</string>
+		<key>isoCode</key>
+		<string>UZ</string>
+		<key>mccCode</key>
+		<string>434</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇺🇦 Украина - UA</string>
+		<key>isoCode</key>
+		<string>UA</string>
+		<key>mccCode</key>
+		<string>255</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇵🇭 Филиппины - PH</string>
+		<key>isoCode</key>
+		<string>PH</string>
+		<key>mccCode</key>
+		<string>515</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇫🇮 Финляндия - FI</string>
+		<key>isoCode</key>
+		<string>FI</string>
+		<key>mccCode</key>
+		<string>244</string>
+		<key>mncCode</key>
+		<string>03</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇫🇷 Франция - FR</string>
+		<key>isoCode</key>
+		<string>FR</string>
+		<key>mccCode</key>
+		<string>208</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇭🇷 Хорватия - HR</string>
+		<key>isoCode</key>
+		<string>HR</string>
+		<key>mccCode</key>
+		<string>219</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇨🇿 Чехия - CZ</string>
+		<key>isoCode</key>
+		<string>CZ</string>
+		<key>mccCode</key>
+		<string>230</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇨🇱 Чили - CL</string>
+		<key>isoCode</key>
+		<string>CL</string>
+		<key>mccCode</key>
+		<string>730</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇨🇭 Швейцария - CH</string>
+		<key>isoCode</key>
+		<string>CH</string>
+		<key>mccCode</key>
+		<string>228</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇸🇪 Швеция - SE</string>
+		<key>isoCode</key>
+		<string>SE</string>
+		<key>mccCode</key>
+		<string>240</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇪🇨 Эквадор - EC</string>
+		<key>isoCode</key>
+		<string>EC</string>
+		<key>mccCode</key>
+		<string>740</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇪🇪 Эстония - EE</string>
+		<key>isoCode</key>
+		<string>EE</string>
+		<key>mccCode</key>
+		<string>248</string>
+		<key>mncCode</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇰🇷 Южная Корея - KR</string>
+		<key>isoCode</key>
+		<string>KR</string>
+		<key>mccCode</key>
+		<string>450</string>
+		<key>mncCode</key>
+		<string>05</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇯🇲 Ямайка - JM</string>
+		<key>isoCode</key>
+		<string>JM</string>
+		<key>mccCode</key>
+		<string>338</string>
+		<key>mncCode</key>
+		<string>020</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>🇯🇵 Япония - JP</string>
+		<key>isoCode</key>
+		<string>JP</string>
+		<key>mccCode</key>
+		<string>440</string>
+		<key>mncCode</key>
+		<string>00</string>
+	</dict>
+</array>
+</plist>
