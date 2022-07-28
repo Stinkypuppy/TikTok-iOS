@@ -1,5 +1,4 @@
-# TikTok-iOS-for-Developer
-FLEX and Dump
+# TikTok-iOS
 
 #### RU
 
