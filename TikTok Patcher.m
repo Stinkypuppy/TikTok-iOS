@@ -1,3 +1,17 @@
+NSString *noURL = @"";
+
+%hook NSURLRequest
++(NSURLRequest *) requestWithURL: (NSURL *)url {
+    
+        NSString *newURL = url.absoluteString;
+        newURL = [newURL stringByReplacingOccurrencesOfString:@"" withString:noURL];
+
+        url = [NSURL URLWithString:newURL];
+        
+    return %orig;
+}
+%end
+
 NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
         NSString *documentsDir = [documentPaths objectAtIndex:0];
         NSString *folder = @"Heimdallr";
