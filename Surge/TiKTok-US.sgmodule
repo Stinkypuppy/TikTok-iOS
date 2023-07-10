@@ -12,5 +12,8 @@
 ^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 (^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
 
+[Script]
+tiktoksslbypass = type=generic,script-path=https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/tiktoksslbypass.js, timeout=30
+
 [MITM]
 hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com
