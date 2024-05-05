@@ -214,7 +214,7 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TikTok.lis
 5. Добавьте `MitM Hostname:` *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com.
 
 ---
-### <a id="Не могу смотреть ТикТок"> Не могу смотреть ТикТок </a>
+### <a id="Не могу смотреть TikTok"> Не могу смотреть TikTok </a>
 
 Добавьте следующие два элемента в hostname
 ```
