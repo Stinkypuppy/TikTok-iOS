@@ -106,9 +106,6 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/Tik
 
 ### <a id="Loon"> Loon </a>
 
-
-**Шаги**
-
 1. Откройте`Loon` - `Profile` - `MitM` - `Certificate Management` - Создайте и установите сертификат.
 
 2. Откройте Настройки - Установите профиль - Перейдите во вкладку "Об этом ус-ве" - "Доверие сертификатам" - Вкл.
