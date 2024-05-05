@@ -179,7 +179,7 @@ https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/Surge%2BEgern/TiKTok-US
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TikTok.list
 ```
 
-5. Включите MitM и добавьте Hostname: *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com.
+5. Включите `MitM и добавьте Hostname:` *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com.
 
 ---
 
@@ -211,7 +211,7 @@ https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/Surge%2BEgern/TiKTok-US
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TikTok.list
 ```
 
-5. Добавьте `MitM Hostname: *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com.
+5. Добавьте `MitM Hostname:` *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com.
 
 ---
 ### <a id="Не могу смотреть ТикТок"> Не могу смотреть ТикТок </a>
