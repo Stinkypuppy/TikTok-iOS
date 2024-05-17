@@ -1,9 +1,9 @@
-# TikTok-iOS
+#TikTok-iOS
 
 #### RU
 
-- Установить .deb можно при помощи Filza File Manager
-- Deb можно вшить в .ipa при помощи Sideloadly или Azule
+- You can install .deb using Filza File Manager
+- Deb can be embedded into .ipa using Sideloadly or Azule
 
 #### EN
 
@@ -14,204 +14,204 @@
 
 ---
 
-##### Разблокировка TikTok на iPhone (не вынимая симку) + смена регионов + публикация видео + прямой эфир + лайки и комментарии
+##### Unlock TikTok on iPhone (without removing the SIM card) + change regions + publish videos + live broadcast + likes and comments
 
-> Cодержание
+> Contents
 
 * [TikTok](#TikTok)
-* [Подготовка](#Подготовка)
+* [Preparation](#Preparation)
 * [Quantumult X](#Quantumult-X)
 * [Loon](#Loon)
 * [Surge](#Surge)
 * [Egern](#Egern)
 ---
-### <a id="Подготовка"> Подготовка </a>
+### <a id="Preparation">Preparation </a>
 
-- Скачать TikTok из App Store
-    * Используйте свой Apple ID и пароль.
+- Download TikTok from the App Store
+     *Use your Apple ID and password.
 
-- Подготовьте Quantumult X｜Loon｜Surge｜Egern｜Shadowrocket (все инструменты платные).
-     * Доступно в App Store.
+- Prepare Quantumult X｜Loon｜Surge｜Egern｜Shadowrocket (all tools are paid).
+      *Available on the App Store.
 
-- Используйте протоколы ss/ssr/vmess и т.д.
-     * Найти можно в интернете.
+- Use ss/ssr/vmess protocols, etc.
+      *You can find it on the Internet.
 ---
-**Информация:**
+**Information:**
 
-- TikTok вызывает ограничения при использовании, что делает невозможным расшифровку через MiMt. Используйте обход SSL.
+- TikTok causes restrictions when used, making decryption via MiMt impossible. Use SSL bypass.
 
-- Измените двухзначное английское сокращение страны/региона, который вы хотите увидеть.
+- Change the two-digit English abbreviation of the country/region you want to see.
 
-    * Измените значение CN на SG, MO, TW и т.д. чтобы поменять регион.
+     * Change the value of CN to SG, MO, TW, etc. to change the region.
 ---
 
 ### <a id="Quantumult-X"> Quantumult X </a>
 
 
-1. Откройте `Quantumult X`
+1. Open `Quantumult X`
 
-2. Перейдите в настройки - `MitM` - `Generate CA` - `Install CA`
+2. Go to settings - `MitM` - `Generate CA` - `Install CA`
 
-3. Откройте Настройки - Установите профиль - Перейдите во вкладку "Об этом ус-ве" - "Доверие сертификатам" - Вкл.
+3. Open Settings - Install a profile - Go to the "About this device" tab - "Trust certificates" - On.
 
-4. Вернитесь в настройки `Quantumult X` - `Profile` - `Edit` - Для удобства нажимайте на стрелочку вверху экрана. 
+4. Return to the `Quantumult X` settings - `Profile` - `Edit` - For convenience, click on the arrow at the top of the screen.
 
-5. Нажмите на `[rewrite_remote]`, чтобы добавить копию соответствующей страны ниже (пример).
+5. Click on `[rewrite_remote]` to add a copy of the corresponding country below (example).
 
-**Япония**
+**Japan**
 ```
 https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/Quantumult/TikTok-JP.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 ```
 
-**Тайвань**
+**Taiwan**
 ```
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-TW.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 ```
 
-**Южная Корея**
+**South Korea**
 ```
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-KR.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 ```
 
-**США**
+**USA**
 ```
 https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/Quantumult/TiKTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 ```
 
-6. Добавьте следующую запись в `[rewrite_local]`
+6. Add the following entry to `[rewrite_local]`
 
 ```
 (?<=_region=)RU(?=&) url 307 KR
 (?<=&mcc_mnc=)4 url 307 2
-^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) url 302  $1$3
+^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) url 302 $1$3
 (?<=\d\/\?\w{7}_\w{4}=)1[6-9]..(?=.?.?&) url 307 17
 ```
 
-6.1 Добавить в `[mitm]`
+6.1 Add to `[mitm]`
 
 ```
 hostname = *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com
 ```
 
-7. Найдите `[filter_remote]` и добавьте файл .list
+7. Find `[filter_remote]` and add a .list file
 
 ```
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled= true
 ```
 
-8. Вернитесь на главнуб страницу `Quantumult X` - `Proxy` - `Other` - `TikTok`- Выбрать Proxy.
+8. Return to the main page `Quantumult X` - `Proxy` - `Other` - `TikTok` - Select Proxy.
 
-9. Включите  `MitM` и `Rewrite`.
+9. Enable `MitM` and `Rewrite`.
 ---
 
-### <a id="Loon"> Loon </a>
+### <a id="Loon">Loon </a>
 
-1. Откройте`Loon` - `Profile` - `MitM` - `Certificate Management` - Создайте и установите сертификат.
+1. Open `Loon` - `Profile` - `MitM` - `Certificate Management` - Create and install a certificate.
 
-2. Откройте Настройки - Установите профиль - Перейдите во вкладку "Об этом ус-ве" - "Доверие сертификатам" - Вкл.
+2. Open Settings - Install a profile - Go to the "About this device" tab - "Trust certificates" - On.
 
-3. Вернитесь на стартовую страницу `Loon` - `Edit` - переместите все Shortcut из Hidden в Visible.
+3. Return to the `Loon` start page - `Edit` - move all Shortcuts from Hidden to Visible.
 
-4. Вернитесь на стартовую страницу `Loon` - `Plugin` - `➕` - Выбери один из плагинов, который доступен ниже - Нажми красную кнопку Install.
+4. Return to the `Loon` start page - `Plugin` - `➕` - Select one of the plugins that is available below - Click the red Install button.
 
-**Южная Корея**
+**South Korea**
 ```
 https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/Loon/TikTok-KR.plugin
 ```
 
-**Великобритания**
+**Great Britain**
 ```
 https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/Loon/TikTok-UK.plugin
 ```
 
-**США**
+**USA**
 ```
 https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/Loon/TikTok-US.plugin
 ```
 
-5. Добавьте правила переадресации TikTok в `[Rule]`：
+5. Add TikTok forwarding rules to `[Rule]`：
 
 ```
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Loon/TikTok.list, tag=TikTok, policy=TikTok, update-interval=86400, enabled=true
 ```
 
-6. Включите `MitM` и `Cuptured Session`.
+6. Enable `MitM` and `Cuptured Session`.
 
 ---
 
 ### <a id="Surge"> Surge </a>
 
 
-1. Откройте`Surge` - `Home` - `Capture` - `MitM` `Configure` - Создайте и установите сертификат.
+1. Open `Surge` - `Home` - `Capture` - `MitM` `Configure` - Create and install a certificate.
 
-2. Откройте Настройки - Установите профиль - Перейдите во вкладку "Об этом ус-ве" - "Доверие сертификатам" - Вкл.
+2. Open Settings - Install a profile - Go to the "About this device" tab - "Trust certificates" - On.
 
-3. Вернитесь в `Surge` - `Home` - `Modify` `Module` `Install New Module` - Выбери один из модулей, который доступен ниже:
+3. Return to `Surge` - `Home` - `Modify` `Module` `Install New Module` - Select one of the modules that is available below:
 
-**Великобритания**
+**Great Britain**
 ```
 https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/Surge%2BEgern/TiKTok-GB.sgmodule
 ```
 
-**США**
+**USA**
 ```
 https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/Surge%2BEgern/TiKTok-US.sgmodule
 ```
 
-4. Вернитесь в `Surge` - `Home` - `General` - `Proxy Rule` - Добавьте
+4. Return to `Surge` - `Home` - `General` - `Proxy Rule` - Add
 
 ```
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TikTok.list
 ```
 
-5. Включите `MitM и добавьте Hostname:` *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com.
+5. Enable `MitM and add Hostname:` *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com.
 
 ---
 
-### <a id="Egern"> Egern </a>
+### <a id="Egern">Egern </a>
 
 
-1. Откройте`Egern` - `Tools` - `Certificate` - Создайте и установите сертификат.
+1. Open `Egern` - `Tools` - `Certificate` - Create and install a certificate.
 
-2. Откройте Настройки - Установите профиль - Перейдите во вкладку "Об этом ус-ве" - "Доверие сертификатам" - Вкл.
+2. Open Settings - Install a profile - Go to the "About this device" tab - "Trust certificates" - On.
 
-3. Вернитесь в `Egern` - `Tools` - `Modules` - `➕` - Выбери один из модулей, который доступен ниже:
+3. Return to `Egern` - `Tools` - `Modules` - `➕` - Select one of the modules that is available below:
 
 
-**Великобритания**
+**Great Britain**
 ```
 https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/Surge%2BEgern/TiKTok-GB.sgmodule
 ```
 
-**США**
+**USA**
 ```
 https://raw.githubusercontent.com/Lizynz/TikTok-iOS/main/Surge%2BEgern/TiKTok-US.sgmodule
 ```
 
-4. Вернитесь в `Tools` - `Rules` - `➕` - Добавьте
+4. Return to `Tools` - `Rules` - `➕` - Add
 
 ```
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TikTok.list
 ```
 
-5. Добавьте `MitM Hostname:` *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com.
+5. Add `MitM Hostname:` *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com.
 
 ---
-### <a id="Не могу смотреть TikTok"> Не могу смотреть TikTok </a>
+### <a id="Can't watch TikTok"> Can't watch TikTok</a>
 
-Добавьте следующие два элемента в hostname
+Add the following two elements to hostname
 ```
 -*snssdk.com, -*amemv.com
 ```
 
 ---
-### <a id="IP-прокси DouYin"> IP-прокси DouYin </a>
+### <a id="DouYin IP proxy">DouYin IP proxy </a>
 
-Переадресация
+Forwarding
 
 ```
 https://raw.githubusercontent.com/Semporia/Quantumult-X/master/Filter/DouYin.list
 ```
 
-## Credits:
-* [Semporia](https://github.com/Semporia/TikTok-Unlock?tab=readme-ov-file#-%E6%8A%96%E9%9F%B3%E7%84%A1%E6%B3%95%E8%A7%80%E7%9C%8B-)
+##Credits:
+* [Semporia](https://github.com/Semporia/TikTok-Unlock?tab=readme-ov-file#-%E6%8A%96%E9%9F%B3%E7%84%A1%E6%B3 %95%E8%A7%80%E7%9C%8B-)
